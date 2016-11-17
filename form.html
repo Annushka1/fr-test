@@ -15,19 +15,19 @@
 			<nav class="main-nav__nav"> 
 				<ul class="main-nav__list"> 
 					<li class="main-nav__item main-nav__item-active"> 
-						<a class=main-nav__link href="#"></a> 
+						<a class=main-nav__link href="#">Номера</a> 
 					</li> 
 					<li class="main-nav__item"> 
-						<a class=main-nav__link href="#"></a> 
+						<a class=main-nav__link href="#">Коттедж</a> 
 					</li> 
 					<li class="main-nav__item"> 
-						<a class=main-nav__link href="#"></a> 
+						<a class=main-nav__link href="#">Ресторан</a> 
 					</li> 
 					<li class="main-nav__item"> 
-						<a class=main-nav__link href="#"></a> 
+						<a class=main-nav__link href="#">Отдых</a> 
 					</li> 
 					<li class="main-nav__item"> 
-						<a class=main-nav__link href="#"></a> 
+						<a class=main-nav__link href="#">Контакты</a> 
 					</li> 
 				</ul> 
 			</nav> 
@@ -51,132 +51,143 @@
 		</p>
 	</section>
 
-	<section class="date-to-stay">
-		<div class="order-step">
-			<span class="order-step__step">Шаг 1</span>
-			<h3 class="order-step__title">Дата отдыха</h3>
-			<div class="order-step__item">
-				<h4 class="order-step__option">Дата въезда</h4>
-				<input type="date">
+	<form>
+		<section class="date-to-stay">
+			<div class="order-step">
+				<span class="order-step__step">Шаг 1</span>
+				<h3 class="order-step__title">Дата отдыха</h3>
+				<div class="order-step__item">
+					<h4 class="order-step__option">Дата въезда</h4>
+					<input type="date" name="date-from">
+				</div>
+				<div class="orser-step__item">
+					<h4 class="order-step__option">Дата въезда</h4>
+					<input type="date" name="date-to">
+				</div>
 			</div>
-			<div class="orser-step__item">
-				<h4 class="order-step__option">Дата въезда</h4>
-				<input type="date">
-			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="location">
-		<div class="order-step">
-			<span class="order-step__step">Шаг 2</span>
-			<h3 class="order-step__title">Место проживания</h3>
-			<div class="location__item">
-				<h4 class="location__option">Отель</h4>
-			</div>
-			<div class="location__item">
-				<h4 class="location__option">Коттедж</h4>
-			</div>
-		</div>	
-	</section>
+		<section class="location">
+			<div class="order-step">
+				<span class="order-step__step">Шаг 2</span>
+				<h3 class="order-step__title">Место проживания</h3>
+				<div class="location__item">
+					<h4 class="location__option">
+					<input type="radio" name="place-type" value="hotel" checked>
+					Отель</h4>
+				</div>
+				<div class="location__item">
+					<h4 class="location__option">
+					<input type="radio" name="place-type" value="cottage">
+					Коттедж</h4>
+				</div>
+			</div>	
+		</section>
 
-	<section class="type-digs">
-		<div class="order-step">
-			<span class="order-step__step">Шаг 3</span>
-			<h3 class="order-step__title">Тип коттеджа</h3>
-			<div class="type-digs__item">
-			<!-- это выпадающее меню? -->
-				<ul class="type-digs__option  type-digs__option--active">Флагман
-					<li>Площадь 100 м.кв</li>
-					<li>3 комнаты</li>
-					<li>5 спальных мест</li>
-					<li>Раздельны санузел</li>
-					<li>WI-FI</li>
-				</ul>
-			</div>
-			<div class="type-digs__item">
-				<ul class="type-digs__option">Озерный
-					<li>Площадь 100 м.кв</li>
-					<li>3 комнаты</li>
-					<li>5 спальных мест</li>
-					<li>Раздельны санузел</li>
-					<li>WI-FI</li>
-				</ul>
-			</div>
-			<div class="type-digs__item">
-				<ul class="type-digs__option">Ольховка
-					<li>Площадь 100 м.кв</li>
-					<li>3 комнаты</li>
-					<li>5 спальных мест</li>
-					<li>Раздельны санузел</li>
-					<li>WI-FI</li>
-				</ul>
-			</div>
-			<div class="type-digs__item">
-				<ul class="type-digs__option">Портовый
-					<li>Площадь 100 м.кв</li>
-					<li>3 комнаты</li>
-					<li>5 спальных мест</li>
-					<li>Раздельны санузел</li>
-					<li>WI-FI</li>
-				</ul>
-			</div>
-		</div>	
-	</section>
+		<section class="type-digs">
+			<div class="order-step">
+				<span class="order-step__step">Шаг 3</span>
+				<h3 class="order-step__title">Тип коттеджа</h3>
+				<div class="type-digs__item">
+					<h4 class="type-digs__title">Флагман</h4>
+					<ul class="type-digs__option  type-digs__option--active">
+						<li>Площадь 100 м.кв</li>
+						<li>3 комнаты</li>
+						<li>5 спальных мест</li>
+						<li>Раздельны санузел</li>
+						<li>WI-FI</li>
+					</ul>
+				</div>
+				<div class="type-digs__item">
+					<h4 class="type-digs__title">Озерный</h4>
+					<ul class="type-digs__option">
+						<li>Площадь 100 м.кв</li>
+						<li>3 комнаты</li>
+						<li>5 спальных мест</li>
+						<li>Раздельны санузел</li>
+						<li>WI-FI</li>
+					</ul>
+				</div>
+				<div class="type-digs__item">
+					<h4 class="type-digs__title">Ольховка</h4>
+					<ul class="type-digs__option">Ольховка
+						<li>Площадь 100 м.кв</li>
+						<li>3 комнаты</li>
+						<li>5 спальных мест</li>
+						<li>Раздельны санузел</li>
+						<li>WI-FI</li>
+					</ul>
+				</div>
+				<div class="type-digs__item">
+				<h4 class="type-digs__title">Портовый</h4>
+					<ul class="type-digs__option">
+						<li>Площадь 100 м.кв</li>
+						<li>3 комнаты</li>
+						<li>5 спальных мест</li>
+						<li>Раздельны санузел</li>
+						<li>WI-FI</li>
+					</ul>
+				</div>
+			</div>	
+		</section>
 
-	<section class="personal-information">
-		<div class="order-step">
-			<span class="order-step__step">Шаг 4</span>
-			<h3 class="order-step__title">Персональная информация</h3>
-			<input type="text" placeholder="имя"  class="personal-information__item">
-			<input type="text" placeholder="фамилия"  class="personal-information__item">
-			<input type="text" placeholder="номер телефона"  class="personal-information__item">
-			<input type="text" placeholder="e-mail"  class="personal-information__item">
-		</div>
-		<p>Далеко-далеко за словесными горами в стране, гласных и согласных.</p>
-		<p>Но собрал, большого рекламных маленький. Страну, если.</p>
-	</section>
+		<section class="personal-information">
+			<div class="order-step">
+				<span class="order-step__step">Шаг 4</span>
+				<h3 class="order-step__title">Персональная информация</h3>
+					<input type="text" name="personal-name" placeholder="имя"  class="personal-information__item">
+					<input type="text" name="personal-surname" placeholder="фамилия"  class="personal-information__item">			
+					<label><input type="text" name="personal-phone" placeholder="номер телефона"  class="personal-information__item">
+					Мы свяжемся с вами, в случае необходимости.</label>
+					<label><input type="text" name="personal-mail" placeholder="e-mail"  class="personal-information__item">
+					На этот адрес мы вышлем вам подтверждение о забронированном номере.</label>
+			</div>
+		</section>
 
-	<section class="payment">
-		<div class="order-step">
-		<span class="order-step__step">Шаг 5</span>
-			<h4 class="order-step__title">Способ оплаты</h3>
-			<div class="payment__total-payment">
-				<h4 class="payment__total-payment-title">К оплате</h4>
-				<p class="payment_total-payment-text">Пожалуйста, <span class="payment_total-payment-text--underline"> выберите дату</span> въезда и выезда, чтобы увидеть сумму к оплате</p>
-			</div>
-		<div class="payment__postpayment">
-			<h4 class="payment__postpayment-title">По приезду</h4>
-			<p class="payment__postpayment-text">Вы можете произвести оплату по факту заселения.</p>
-		</div>
-		<div class="payment__prepayment">
-			<h4 class="payment__prepayment-title">Сейчас</h4>
-			<p class="payment__prepayment-text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
-			<div class="requisite">
-				<span class="requisite__item">Номер карты<input type="text" placeholder="0000-0000-0000-0000"  class="requisite__item--long"></span>
-				<span class="requisite__item">Код CVV<input type="text" placeholder="123"  class="requisite__item--short"> </span>
-				<p class="requisite__hint">Здесь будет подсказка</p>
-				<span class="requisite__item">Фамилия владельца карты<input type="text" placeholder="Vladimirov Vladimir"  class="requisite__item--long"></span>
-				<span class="requisite__item"> Действует до<input type="text" placeholder="01/2018"  class="requisite__item--short"></span>
-			</div>
-		</div>
-		<a href="#booking-form" class="btn btn--green">Забронировать</a>
-	</section>
+		<section class="payment">
+			<div class="order-step">
+			<span class="order-step__step">Шаг 5</span>
+				<h4 class="order-step__title">Способ оплаты</h3>
+				<div class="payment__postpayment">
+					<h4 class="payment__postpayment-title">По приезду</h4>
+					<p class="payment__postpayment-text">Вы можете произвести оплату по факту заселения.</p>
+				</div>
+				<div class="payment__prepayment">
+					<h4 class="payment__prepayment-title">Сейчас</h4>
+					<p class="payment__prepayment-text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+					<div class="requisite">
+						<label class="requisite__item">Номер карты <input name="payment-number" type="text" placeholder="0000-0000-0000-0000"  class="requisite__item--long"></label>
+						<label class="requisite__item">Код CVV <input name="payment-code" type="text" placeholder="123"  class="requisite__item--short"> </label>
+						<p class="requisite__hint">Здесь будет подсказка</p>
+						<label class="requisite__item">Фамилия владельца карты <input name="payment-name" type="text" placeholder="Vladimirov Vladimir"  class="requisite__item--long"></label>
+						<label class="requisite__item"> Действует до <input name="payment-validity" type="text" placeholder="01/2018"  class="requisite__item--short"></label>
+					</div>
+				</div>
+				<div class="payment__total-payment">
+					<h4 class="payment__total-payment-title">К оплате</h4>
+					<p class="payment_total-payment-text">Пожалуйста, <span class="payment_total-payment-text--underline"> выберите дату</span> въезда и выезда, чтобы увидеть сумму к оплате</p>
+				</div>
+			<a href="#booking-form" class="btn btn--green">Забронировать</a>
+		</section>
+	</form>
+	
 <footer class="page-footer">
 	<div class="page-footer__inner">
 		<div class="page-footer__contact">
-		  <span>г.Санкт-Петербург,</span>
-		  <span> Пулковское ш.600</span>
+		  <div>г.Санкт-Петербург,</div>
+		  <div> Пулковское ш.600</div>
 		</div>
-		<a href="#" class="main-logo"></a>
-		<img src="#" alt="">
-		<div class="footer-link">
-			<a href="" class="footer-link__link"></a>
-			<a href="" class="footer-link__link"></a>
-			<a href="" class="footer-link__link"></a>
+		<div class="page-footer__inner-footer-logo">
+			<a href="#" class="main-logo"><img src="#" alt="logo"></a>		
+			<div class="footer-link">
+				<a href="" class="footer-link__link"></a>
+				<a href="" class="footer-link__link"></a>
+				<a href="" class="footer-link__link"></a>
+			</div>
 		</div>
 	    <div class="page-footer__contact">
-		  <span>+7 812 777-55-88</span>
-		  <span>info@greenvalley.ru</span>
+		  <div>+7 812 777-55-88</div>
+		  <div>info@greenvalley.ru</div>
 		</div>
 	</div>
 </footer>
