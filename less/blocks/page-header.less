@@ -1,3 +1,47 @@
 .page-header {
   color: @text-color;
+
+  & a {
+		text-decoration: none;
+	}
+}
+
+.main-logo {
+	color: #0ab89d;
+	font-size: @font-size+1;
+	text-transform: uppercase;
+	height: 55px;
+
+	& span, & img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.main-nav__item {
+	display: inline-block;	
+			color: #000;
+}
+
+.main-nav__item--active {
+	color: #ff7435;
+	font-weight: 500;	
+}
+
+.btn {
+	padding: 8px 15px;
+	background-color: #ff7435;
+	color: #fff;
+	border-radius: 15px;
+	font-weight: 500;
+	display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: @btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
 }
