@@ -1,0 +1,49 @@
+.rest-type-switcher {
+	text-align: center;
+    
+	&__item {
+		display: inline-block;
+		text-transform: uppercase;
+		a {
+			text-decoration: none;
+		}
+
+		&--active {
+			position: relative;
+
+			a {
+				color: red;	
+			}
+
+			&:before {
+				position: absolute;
+				content: "";
+				width: 40px;
+				height: 3px;
+				background-color: red;
+				bottom: -10px;
+				right: 50%;
+				transform: translateX(50%);
+			}
+		}
+	}
+
+	&__options-list {
+		
+		li {
+			display: none;
+
+			@media (min-width: @screen-lg) {
+			display: inline-block;
+			}		
+		}
+	}
+
+	&__options-item {
+		display: none;
+		&--active {
+			display: inline-block;
+		}
+	}
+    
+}
