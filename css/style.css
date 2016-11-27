@@ -314,8 +314,11 @@ p {
   font-weight: 500;
   text-transform: uppercase;
 }
+.btn--icon-calendar {
+  padding: 10px 20px 10px 40px;
+}
 .btn--icon-calendar:before {
-  padding-left: 20px;
+  padding-left: 40px;
   content: "";
   position: absolute;
   height: 15px;
@@ -323,6 +326,7 @@ p {
   background: url('../../img/ic-calendar.png');
   top: 10px;
   left: 15px;
+  background-repeat: no-repeat;
 }
 .btn--reviews {
   border: 3px solid #fff;
@@ -375,12 +379,80 @@ p {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
+  padding: 140px 0 70px 0;
 }
 .map__title {
-  margin: 140px 0 35px 0;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: 'PT Serif', serif;
+  font-size: 30px;
+  font-weight: 500;
 }
 .map__item-title {
   margin: 90px 0;
+}
+.map__iframe {
+  height: 400px;
+  padding-bottom: 85px;
+}
+.track-type {
+  padding: 20px 0 70px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.track-type__item {
+  width: 415px;
+  margin: 0 42px;
+}
+.track-type__item-title {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.track-type__item-title:before {
+  content: "";
+  position: absolute;
+  background: url('../../img/bus.png');
+  width: 50px;
+  height: 75px;
+  top: -60px;
+  right: 50%;
+  background-repeat: no-repeat;
+  transform: translateX(50%);
+}
+.track-type__item-text {
+  font-size: 16px;
+}
+.placement {
+  background-color: #19bc99;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.placement__title {
+  color: #fff;
+  font-family: 'PT Serif', serif;
+  font-size: 30px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+}
+.placement__item {
+  width: 380px;
+  background-color: #fff;
+  margin-right: 20px;
+  padding: 70px 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.placement__img {
+  width: 100%;
 }
 @media (min-width: 768px) {
   .page-header__inner {
