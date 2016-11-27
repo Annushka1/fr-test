@@ -1,5 +1,5 @@
 body {
-  .some-mixin();	
+  //.some-mixin();	
   min-width: 320px;
   margin: 0;
   font-family: @font-text;
@@ -18,7 +18,7 @@ body {
 // Body reset
 
 html {
-  font-size: 10px;
+  font-size: @font-size;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -45,7 +45,7 @@ textarea {
 
 a {
   // color: @link-color;
-  // text-decoration: none;
+  text-decoration: none;
 
   &:hover,
   &:focus {
@@ -60,4 +60,8 @@ a {
 
 img{
 	max-width: 100%;
+}
+
+h3, p {
+  margin: 0;
 }

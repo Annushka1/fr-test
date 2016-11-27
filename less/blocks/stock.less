@@ -1,0 +1,37 @@
+.stock {
+
+  &__title {
+    margin: 0;
+    font-family: @font-title;
+    font-size: @font-size30;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__item {
+    display: none;
+    padding: 198px 0 20px 0;
+    background-image: url(../../img/stock-bg.png);
+    background-size: cover;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__item-title {
+    padding: 8px;
+    background-color: #fff;
+    width: 350px; 
+    color: @color-orange; 
+  }
+
+  &__text {
+    padding: 8px;
+    background-color: #fff;
+    width: 350px;
+    font-size: @font-size16;
+  } 
+
+}

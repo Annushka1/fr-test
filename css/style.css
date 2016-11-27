@@ -1,8 +1,40 @@
-.page-header {
-  color: #000;
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  color: #191919;
 }
-.page-header a {
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
   text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+h3,
+p {
+  margin: 0;
+}
+.page-header {
+  color: #191919;
 }
 .page-header__inner {
   margin: 0 auto;
@@ -15,8 +47,16 @@
 .page-header .btn {
   display: none;
 }
+.page-header__phone-link {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 18px;
+  font-weight: Bold;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #000;
+  text-align: left;
+}
 .main-logo {
-  color: #0ab89d;
   font-size: 15px;
   text-transform: uppercase;
   height: 55px;
@@ -26,13 +66,27 @@
 .main-logo img {
   display: inline-block;
   vertical-align: middle;
+  color: #0ab89d;
+}
+.main-nav {
+  font-weight: 500;
+}
+.main-nav__item-active a {
+  color: #ff7435;
 }
 .main-nav__item {
   display: block;
-  color: #000;
+  text-transform: uppercase;
+}
+.main-nav__item a {
+  color: #191919;
 }
 .main-nav__list {
   padding-left: 0;
+}
+.main-nav__item--active {
+  color: #ff7435;
+  font-weight: 500;
 }
 .gamburger {
   position: absolute;
@@ -64,16 +118,188 @@
   height: 4px;
   background-color: red;
 }
-.main-nav__item--active {
+.page-footer {
+  display: none;
+}
+.rest-type-switcher {
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.rest-type-switcher__item {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+.rest-type-switcher__item a {
+  text-decoration: none;
+  color: #838383;
+}
+.rest-type-switcher__item--active {
+  position: relative;
+}
+.rest-type-switcher__item--active a {
   color: #ff7435;
+}
+.rest-type-switcher__item--active:before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 3px;
+  background-color: #ff7435;
+  bottom: -10px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.rest-type-switcher__type {
+  -ms-flex-order: 1;
+      order: 1;
+}
+.rest-type-switcher__type-item {
+  background-image: url('../../img/reflecting-in-lake-matheson.png');
+  background-size: cover;
+  background-position: bottom;
+  display: none;
+  text-align: left;
+}
+.rest-type-switcher__type-item--active {
+  display: block;
+}
+.rest-type-switcher__type-inner {
+  padding: 70px 0;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.rest-type-switcher__type-inner p {
+  padding: 10px;
+  background-color: #fff;
+}
+.rest-type-switcher__type-title {
+  padding: 10px;
+  background-color: #fff;
+  font-family: 'PT Serif', serif;
+  font-size: 36px;
+  line-height: 42px;
   font-weight: 500;
 }
+.rest-type-switcher__tab {
+  -ms-flex-order: 2;
+      order: 2;
+}
+.rest-type-switcher__options {
+  -ms-flex-order: 3;
+      order: 3;
+}
+.rest-type-switcher__options-item {
+  padding: 40px 0;
+  background-image: url(../../img/helth.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  background-color: #fff;
+}
+.rest-type-switcher__options-item p {
+  font-size: 16px;
+  margin: 0;
+}
+.rest-type-switcher__options-title {
+  font-family: 'PT Serif', serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.rest-type-switcher__options-item {
+  display: none;
+}
+.rest-type-switcher__options-item--active {
+  display: block;
+}
+.rest-type-switcher__options-list {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.rest-type-switcher__options-list li {
+  width: 25%;
+}
+.rest-type-switcher__option-pict {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-position: center;
+}
+.reviews {
+  background-color: #19bc99;
+  padding: 20px 0;
+}
+.reviews__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.reviews__title {
+  color: #fff;
+  font-family: 'PT Serif', serif;
+  font-size: 30px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+}
+.reviews__item {
+  width: 480px;
+  background-color: #fff;
+  margin-right: 20px;
+  padding: 70px 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.reviews__review-text {
+  font-size: 16px;
+}
+.reviews__author {
+  margin-bottom: 30px;
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+}
+.reviews__author:before {
+  position: absolute;
+  content: "";
+  background: url('../../img/kate.png');
+  height: 82px;
+  width: 82px;
+  background-repeat: no-repeat;
+  top: -120px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.reviews__author:after {
+  position: absolute;
+  content: "";
+  background: url('../../img/ic-vk.png');
+  width: 22px;
+  height: 13px;
+  background-repeat: no-repeat;
+  top: 30px;
+  right: 50%;
+  transform: translateX(50%);
+}
 .btn {
-  padding: 8px 15px;
+  padding: 10px 20px 10px 20px;
   background-color: #ff7435;
   color: #fff;
-  border-radius: 15px;
-  font-weight: 500;
+  border-radius: 50px;
   display: inline-block;
   margin-bottom: 0;
   text-align: center;
@@ -84,60 +310,86 @@
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-}
-.page-footer {
-  display: none;
-}
-.rest-type-switcher {
-  text-align: center;
-}
-.rest-type-switcher__item {
-  display: inline-block;
+  position: relative;
+  font-weight: 500;
   text-transform: uppercase;
 }
-.rest-type-switcher__item a {
-  text-decoration: none;
-}
-.rest-type-switcher__item--active {
-  position: relative;
-}
-.rest-type-switcher__item--active a {
-  color: red;
-}
-.rest-type-switcher__item--active:before {
-  position: absolute;
+.btn--icon-calendar:before {
+  padding-left: 20px;
   content: "";
-  width: 40px;
-  height: 3px;
-  background-color: red;
-  bottom: -10px;
-  right: 50%;
-  transform: translateX(50%);
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: url('../../img/ic-calendar.png');
+  top: 10px;
+  left: 15px;
 }
-.rest-type-switcher__options-list li {
+.btn--reviews {
+  border: 3px solid #fff;
+  background-color: #19bc99;
+  padding: 10px 30px;
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.gallery-type {
   display: none;
 }
-.rest-type-switcher__options-item {
+.gallery-type--active {
+  display: block;
+}
+.stock__title {
+  margin: 0;
+  font-family: 'PT Serif', serif;
+  font-size: 30px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+}
+.stock__item {
   display: none;
+  padding: 198px 0 20px 0;
+  background-image: url(../../img/stock-bg.png);
+  background-size: cover;
 }
-.rest-type-switcher__options-item--active {
-  display: inline-block;
+.stock__item--active {
+  display: block;
 }
-.reviews__inner {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.stock__item-title {
+  padding: 8px;
+  background-color: #fff;
+  width: 350px;
+  color: #ff7435;
 }
-.reviews__inner__item {
-  width: 25%;
+.stock__text {
+  padding: 8px;
+  background-color: #fff;
+  width: 350px;
+  font-size: 16px;
+}
+.map {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.map__title {
+  margin: 140px 0 35px 0;
+}
+.map__item-title {
+  margin: 90px 0;
 }
 @media (min-width: 768px) {
   .page-header__inner {
     width: 768px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   .page-header__inner {
-    width: 1200px;
+    width: 1180px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -151,17 +403,18 @@
   .page-header .btn {
     display: block;
   }
+  .main-nav {
+    margin-right: 35px;
+  }
   .main-nav__item {
     display: inline-block;
+    padding-right: 15px;
   }
   .gamburger span {
     display: none;
   }
   .page-footer {
     display: block;
-  }
-  .rest-type-switcher__options-list li {
-    display: inline-block;
   }
 }
 

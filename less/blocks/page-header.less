@@ -1,10 +1,6 @@
 .page-header {
   color: @text-color;
 
-    a {
-		text-decoration: none;
-	}
-
 	&__inner{
 		margin: 0 auto;
 		text-align: center;
@@ -16,6 +12,7 @@
 
 		@media (min-width: @screen-lg) {
 			width: @container-lg;
+      // display: inline-block;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -36,10 +33,21 @@
 	        display: block;
 	    }
 	}
+
+  &__phone-link {
+  font-family: @font-tel;
+  font-size: @font-size18;
+  font-weight: Bold;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #000;
+  text-align: left;
+  }
+
 }
 
 .main-logo {
-	color: #0ab89d;
+	
 	font-size: @font-size+1;
 	text-transform: uppercase;
 	height: 55px;
@@ -53,23 +61,44 @@
 	& span, & img {
 		display: inline-block;
 		vertical-align: middle;
+    color: #0ab89d;
 	}
 }
 
 
 
 .main-nav {
+  font-weight: @font-weight-Medium;
+  
+  @media (min-width: @screen-lg) {
+    margin-right: 35px;
+  }
+
+  &__item-active a {
+    color: @color-orange;
+  }
+
 	&__item {
 	display: block;	
-	color: #000;
+	text-transform: uppercase;
+
+  a {
+    color: @text-color;
+  }
 
 		@media (min-width: @screen-lg) {
 			display: inline-block;
+      padding-right: 15px;
 		}
 	}
 	&__list {
 		padding-left: 0;
 	}
+
+  &__item--active {
+  color: #ff7435;
+  font-weight: 500; 
+  }
 
 }
 
@@ -111,25 +140,5 @@
   }
 }
 
-.main-nav__item--active {
-	color: #ff7435;
-	font-weight: 500;	
-}
 
-.btn {
-	padding: 8px 15px;
-	background-color: #ff7435;
-	color: #fff;
-	border-radius: 15px;
-	font-weight: 500;
-	display: inline-block;
-    margin-bottom: 0; // For input.btn
-    // font-weight: @btn-font-weight;
-    text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    border: 1px solid transparent;
-    white-space: nowrap;
-}
+

@@ -1,0 +1,368 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bdr",
+				"bdrs\tborder-radius"
+			],
+			[
+				"di",
+				"d-i\tdisplay: inline;"
+			],
+			[
+				"pa",
+				"page-header.less"
+			],
+			[
+				"var",
+				"variables.less"
+			],
+			[
+				"sort",
+				"sortItem"
+			],
+			[
+				"s",
+				"sortItem"
+			],
+			[
+				"q",
+				"querySelectorAll"
+			],
+			[
+				"d",
+				"document"
+			],
+			[
+				"ca",
+				"catalogItem"
+			],
+			[
+				"ons",
+				"onsubmit\tAttr"
+			],
+			[
+				"so",
+				"sortBtn"
+			],
+			[
+				"ph",
+				"phoneListen"
+			],
+			[
+				"mo",
+				"modalLine"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"chec",
+				"deliveryCheck"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"va",
+				"validation"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 327.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/anna/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/anna/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/anna/projects/GreenValley/css/style.css",
+		"/home/anna/projects/GreenValley/less/blocks/rest-type-switcher__type.html",
+		"/home/anna/projects/GreenValley/less/blocks/page-footer.less",
+		"/home/anna/projects/GreenValley/css/style.css.map",
+		"/home/anna/projects/GreenValley/less/bootstrap/scaffolding.less",
+		"/home/anna/projects/GreenValley/inexpensive.html",
+		"/home/anna/projects/GreenValley/form.html",
+		"/home/anna/projects/GreenValley/room.html",
+		"/home/anna/Рабочий стол/spectex24/index.html",
+		"/home/anna/projects/GreenValley/less/bootstrap/buttons.less",
+		"/home/anna/projects/GreenValley/less/style.less",
+		"/home/anna/projects/GreenValley/less/global.less",
+		"/home/anna/projects/GreenValley/npm-debug.log",
+		"/home/anna/projects/GreenValley/less/blocks/page-header.less",
+		"/home/anna/projects/GreenValley/index.html",
+		"/home/anna/projects/GreenValley/less/variables.less",
+		"/home/anna/projects/GreenValley/less/mixins.less",
+		"/home/anna/projects/coupon/js/main.js",
+		"/home/anna/projects/GreenValley/gulpfile.js",
+		"/home/anna/.bashrc",
+		"/home/anna/projects/test-666/index.html",
+		"/home/anna/projects/test-666/.bash_profile",
+		"/home/anna/.bashrs",
+		"/home/anna/.bash_profile",
+		"/home/anna/bash_profile",
+		"/home/anna/projects/test-console/test.txt",
+		"/home/anna/Рабочий стол/coupon/js/red.js",
+		"/home/anna/Рабочий стол/coupon/js/main.js",
+		"/home/anna/Рабочий стол/coupon/index.html",
+		"/home/anna/Рабочий стол/GreenValley/form.html",
+		"/home/anna/Рабочий стол/GreenValley/inexpensive.html",
+		"/home/anna/Рабочий стол/GreenValley/room.html",
+		"/home/anna/Рабочий стол/GreenValley/index.html",
+		"/home/anna/.config/sublime-text-3/Packages/User/Emmet.sublime-settings",
+		"/home/anna/.config/sublime-text-3/Packages/User/SublimeServer.sublime-settings",
+		"/home/anna/Рабочий стол/coupon/js/generated.json",
+		"/home/anna/Рабочий стол/11111.js",
+		"/home/anna/Рабочий стол/coupon/js/11111.js",
+		"/home/anna/Рабочий стол/coupon/node_modules/browser-sync/node_modules/localtunnel/node_modules/request/node_modules/form-data/node_modules/async/node_modules/lodash/core.min.js",
+		"/home/anna/Рабочий стол/coupon/js/UploadCart.js",
+		"/home/anna/Рабочий стол/coupon/sftp-config.json",
+		"/home/anna/Рабочий стол/coupon/js/untitled.js",
+		"/home/anna/Рабочий стол/coupon/js/red11.js",
+		"/home/anna/Рабочий стол/coupon/js/orange3-4.js",
+		"/home/anna/Рабочий стол/proj/index.html",
+		"/home/anna/Рабочий стол/proj/css/style.css",
+		"/home/anna/Рабочий стол/css/style.css",
+		"/home/anna/Рабочий стол/coupon/js/orange.js",
+		"/home/anna/Рабочий стол/test.html",
+		"/home/anna/Рабочий стол/project/coupon/index.html",
+		"/home/anna/Рабочий стол/project/coupon/js/main.js",
+		"/home/anna/learn/4.js",
+		"/home/anna/learn/3.js",
+		"/home/anna/learn/2.js",
+		"/home/anna/learn/1.js",
+		"/home/anna/Рабочий стол/project/sp24/catalog.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"15px",
+			"rest-type-switcher__type-item--active",
+			"rest-type-switcher__type-item",
+			"container",
+			"screen",
+			"main-logo",
+			"@import",
+			"less\";",
+			"\"",
+			"variables",
+			"\"",
+			"variables",
+			"sans-serif",
+			"input",
+			"catalog__list",
+			"catalog__",
+			"catalog__i",
+			".bash_profile",
+			"catalog_sort__item",
+			"catalog_cart__btn",
+			"catalogItem",
+			"}\n",
+			"econo",
+			"btn",
+			"butt",
+			"form",
+			"order",
+			"catalog__list",
+			"item",
+			"}\n",
+			"item",
+			"orderBtn",
+			"order",
+			"checked",
+			"bindCoupons",
+			"bind",
+			"js-date ",
+			"consol",
+			"specialCart",
+			"priceFrom",
+			"catalogItem",
+			"form",
+			"querySelector",
+			"modal__inner",
+			"inner",
+			"disabled",
+			"catalog_cart__timer timer",
+			"catalog_cart--special",
+			"days",
+			"catalog_cart--special"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"boots",
+				"GreenValley/less/bootstrap/bootstrap.less"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,26 +1,31 @@
 .rest-type-switcher {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
     
 	&__item {
 		display: inline-block;
 		text-transform: uppercase;
+		padding-right: 20px;
+
 		a {
 			text-decoration: none;
+			color: #838383;
 		}
 
 		&--active {
 			position: relative;
 
 			a {
-				color: red;	
+				color: @color-orange;	
 			}
 
 			&:before {
 				position: absolute;
 				content: "";
-				width: 40px;
+				width: 32px;
 				height: 3px;
-				background-color: red;
+				background-color: @color-orange;
 				bottom: -10px;
 				right: 50%;
 				transform: translateX(50%);
@@ -28,22 +33,99 @@
 		}
 	}
 
-	&__options-list {
-		
-		li {
-			display: none;
+	&__type {
+		order: 1;
+	}
 
-			@media (min-width: @screen-lg) {
-			display: inline-block;
-			}		
+	&__type-item {
+	background-image: url('../../img/reflecting-in-lake-matheson.png');
+	background-size: cover;
+	background-position: bottom;
+	display: none;
+	text-align: left;
+  }
+
+	&__type-item--active {
+			display: block;
+	}
+
+	&__type-inner {
+		padding: 70px 0;
+		display: inline-flex;
+		flex-direction: column;
+
+		p {
+			padding: 10px;
+			background-color: @color-white;
 		}
+
+	}
+
+	&__type-title {
+		padding: 10px;
+		background-color: @color-white;
+		font-family: @font-title;
+		font-size: @font-size36;
+	  line-height: 42px;
+	  font-weight: 500;
+	}
+
+	&__tab {
+		order: 2;
+	}
+
+	&__options {
+		order: 3;
+	}
+
+	&__options-item {
+		padding: 40px 0;
+		background-image: url(../../img/helth.png);
+		background-size: cover;
+		background-position: center;
+		opacity: 1;
+		background-color: #fff;
+
+		p {
+			font-size: 16px;
+			margin: 0;
+		}
+	}
+
+	&__options-title {
+		font-family: @font-title;
+		font-size: 30px;
+		font-weight: 400;
 	}
 
 	&__options-item {
 		display: none;
-		&--active {
-			display: inline-block;
+	}
+
+	&__options-item--active {
+		display: block;
+	}
+
+	&__options-list {
+		display: inline-flex;
+		list-style-type: none;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		li {
+			width: 25%;
 		}
 	}
-    
+
+	&__option-pict {
+		display: block;
+		width: 80px;
+		height: 80px;
+		border-radius: 50px;
+		background-position: center;
+	}
+
+	&__option-text {
+
+	}
 }
