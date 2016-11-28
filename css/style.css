@@ -339,6 +339,7 @@ h3 {
 }
 .btn--icon-calendar {
   padding: 10px 20px 10px 40px;
+  margin-bottom: 30px;
 }
 .btn--icon-calendar:before {
   padding-left: 40px;
@@ -530,8 +531,8 @@ h3 {
 }
 .room-item {
   text-align: center;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-pack: center;
       justify-content: center;
   margin-bottom: 30px;
@@ -548,6 +549,58 @@ h3 {
 .room-item__text {
   font-size: 16px;
   margin: 40px 0 50px 0;
+}
+.room-details {
+  padding: 50px 0;
+  text-align: center;
+}
+.room-details__title {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+.room-details__item {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  margin: 50px 0;
+  text-align: left;
+}
+.room-details__img {
+  width: 580px;
+}
+.room-details__discription {
+  width: 580px;
+}
+.room-details__title-item {
+  font-size: 26px;
+}
+.room-details__text {
+  font-size: 16px;
+  padding: 25px 0;
+}
+.room-details__advantages {
+  font-size: 16px;
+  -moz-columns: 2;
+       columns: 2;
+  list-style-type: none;
+}
+.other-room {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fafafa;
+  padding: 50px 0;
+}
+.placement-item {
+  text-align: center;
+}
+.placement-item__img {
+  margin-bottom: 40px;
+}
+.placement-item__title {
+  font-size: 26px;
+  margin-bottom: 8px;
 }
 @media (min-width: 768px) {
   .page-header__inner {
