@@ -29,9 +29,17 @@ a {
 img {
   max-width: 100%;
 }
+h1,
+h2,
 h3,
 p {
   margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
 }
 .page-header {
   color: #191919;
@@ -118,8 +126,23 @@ p {
   height: 4px;
   background-color: red;
 }
+.page-footer {
+  padding: 50px 0;
+}
 .page-footer__inner {
   display: none;
+}
+.main-logo {
+  font-size: 15px;
+  text-transform: uppercase;
+  height: 55px;
+  font-family: 'PT Serif', serif;
+}
+.main-logo span,
+.main-logo img {
+  display: inline-block;
+  vertical-align: middle;
+  color: #0ab89d;
 }
 .rest-type-switcher {
   text-align: center;
@@ -296,7 +319,7 @@ p {
   transform: translateX(50%);
 }
 .btn {
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 8px 20px;
   background-color: #ff7435;
   color: #fff;
   border-radius: 50px;
@@ -336,6 +359,14 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+.btn--underlined {
+  background-color: transparent;
+  color: #191919;
+  border-bottom: 2px dashed #191919;
+  border-radius: 0;
+  padding: 0;
+  margin-left: 70px;
 }
 .gallery-type {
   display: none;
@@ -468,6 +499,56 @@ p {
   font-size: 18px;
   color: #ff7435;
 }
+.hotel-promo {
+  padding: 40px 0;
+  text-align: center;
+  background-image: url(../../img/hotel-promo.png);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.hotel-promo__title {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.hotel-promo p {
+  font-size: 18px;
+}
+.hotel-rooms {
+  padding: 50px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.hotel-rooms__title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.room-item {
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 30px;
+}
+.room-item__discriprion {
+  background-color: #fafafa;
+  width: 580px;
+  padding-bottom: 50px;
+}
+.room-item__title {
+  font-size: 26px;
+  margin: 40px 0 20px 0;
+}
+.room-item__text {
+  font-size: 16px;
+  margin: 40px 0 50px 0;
+}
 @media (min-width: 768px) {
   .page-header__inner {
     width: 768px;
@@ -502,7 +583,8 @@ p {
   .page-footer__inner {
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 

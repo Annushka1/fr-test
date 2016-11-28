@@ -1,13 +1,26 @@
 .page-footer {
-
+  padding: 50px 0;
   &__inner {
     display: none;
 
     @media (min-width: @screen-lg) {
         display: flex;
-        text-align: center;    }
+        justify-content: space-between;
+    }
   }
-
-
-
 }
+
+.main-logo {
+  
+  font-size: @font-size+1;
+  text-transform: uppercase;
+  height: 55px;
+  font-family: @font-title;
+
+  & span, & img {
+    display: inline-block;
+    vertical-align: middle;
+    color: #0ab89d;
+  }
+}
+// необходимо вырезать иконки соцсетей
