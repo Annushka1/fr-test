@@ -1,10 +1,24 @@
 .reviews {
   background-color: @color-green;
-  padding: 20px 0;
+
+  padding: 69px 0 55px 0;
+
+  @media (min-width: @screen-lg) {
+    padding: 50px 0;
+  }
+
   &__inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media (min-width: @screen-sm) {
+      width: @container-sm;
+    }
+
+    @media (min-width: @screen-lg) {
+      width: @container-lg;
+    }
+
   }
 
   &__title {
@@ -14,6 +28,7 @@
     font-weight: 400;
     width: 100%;
     text-align: center;
+    margin-bottom: 56px;
   }
 
   &__item {
@@ -23,6 +38,29 @@
     padding: 70px 40px;
     text-align: center;
     margin-bottom: 40px;
+
+    &:first-child:before {
+      position: absolute;
+      content: "";
+      background: url('../../img/kate.png');
+      height: 82px;
+      width: 82px;
+      background-repeat: no-repeat;
+      top: -120px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    &:first-child:after {
+      position: absolute;
+      content: "";
+      background: url('../../img/ic-vk.png');
+      width: 22px;
+      height: 13px;
+      background-repeat: no-repeat;
+      top: 30px;
+      right: 50%;
+      transform: translateX(50%);
+    }
   }
 
   &__review-text {
@@ -36,27 +74,6 @@
     position: relative;
     font-weight: 500;
 
-    &:before {
-      position: absolute;
-      content: "";
-      background: url('../../img/kate.png');
-      height: 82px;
-      width: 82px;
-      background-repeat: no-repeat;
-      top: -120px;
-      right: 50%;
-      transform: translateX(50%);
-    }
-    &:after {
-      position: absolute;
-      content: "";
-      background: url('../../img/ic-vk.png');
-      width: 22px;
-      height: 13px;
-      background-repeat: no-repeat;
-      top: 30px;
-      right: 50%;
-      transform: translateX(50%);
-    }
+  
   }
 }

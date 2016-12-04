@@ -5,6 +5,9 @@
 		margin: 0 auto;
 		text-align: center;
 		position: relative;
+    @media (min-width: @screen-xs) {
+      width: @container-xs;
+    }
 
 		@media (min-width: @screen-sm) {
 			width: @container-sm;
@@ -64,9 +67,11 @@
 
 .main-nav {
   font-weight: @font-weight-Medium;
+  display: none;
   
   @media (min-width: @screen-lg) {
     margin-right: 35px;
+    display: block;
   }
 
   &__item-active a {
@@ -105,8 +110,8 @@
   span {
   	position: relative;
   	width: 40px;
-  	height: 4px;
-  	background-color: red;
+  	height: 5px;
+  	background-color: @color-orange;
   	display: inline-block;
 
   	@media (min-width: @screen-lg) {
@@ -118,8 +123,8 @@
   		top: 10px;
   		left: 0;
   		width: 40px;
-  		height: 4px;
-  		background-color: red;
+  		height: 5px;
+  		background-color: @color-orange;
 
   	}
   	&:after {
@@ -128,8 +133,8 @@
   		top: 20px;
   		left: 0;
   		width: 40px;
-  		height: 4px;
-  		background-color: red;
+  		height: 5px;
+  		background-color: @color-orange;
 
   	}
   }
