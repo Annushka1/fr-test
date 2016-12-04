@@ -2,6 +2,8 @@
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+
+
     
 	&__item {
 		display: inline-block;
@@ -53,6 +55,10 @@
 		padding: 19px 0;
 		text-align: center;
 		margin: 0 auto;
+
+	  @media (min-width: @screen-xs) {
+      width: @container-xs;
+    }
 
 		@media (min-width: @screen-sm) {
 			width: @container-sm;

@@ -1,7 +1,20 @@
 .track-type {
-  padding: 20px 0 70px 0;
   display: flex;
   justify-content: center;
+
+  @media(min-width: @screen-xs) {
+    width: @container-xs;
+    flex-direction: column;
+  }
+
+  @media(min-width: @screen-sm) {
+    width: @container-sm;
+    flex-direction: column;
+  }
+
+  @media(min-width: @screen-lg) {
+    width: @container-lg;
+  }
 
   &__item {
     width: 415px;
@@ -13,6 +26,7 @@
     text-align: center;
     margin-bottom: 20px;
     position: relative;
+    padding: 90px 0 0 0;
 
     &:before {
       content: "";

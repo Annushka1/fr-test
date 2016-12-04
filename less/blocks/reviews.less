@@ -1,7 +1,17 @@
 .reviews {
   background-color: @color-green;
-
   padding: 69px 0 55px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: @screen-sm) {
+    flex-direction: column;
+  }
+
+  @media (min-width: @screen-xs) {
+    flex-direction: column;
+  }
 
   @media (min-width: @screen-lg) {
     padding: 50px 0;
@@ -11,6 +21,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (min-width: @screen-xs) {
+      width: @container-xs;
+    }
     @media (min-width: @screen-sm) {
       width: @container-sm;
     }
@@ -32,48 +46,70 @@
   }
 
   &__item {
-    width: 480px;
     background-color: #fff;
     margin-right: 20px;
     padding: 70px 40px;
     text-align: center;
     margin-bottom: 40px;
-
-    &:first-child:before {
-      position: absolute;
-      content: "";
-      background: url('../../img/kate.png');
-      height: 82px;
-      width: 82px;
-      background-repeat: no-repeat;
-      top: -120px;
-      right: 50%;
-      transform: translateX(50%);
+    position: relative;
+    
+    @media(min-width: @screen-xs) and (max-width: 479px){
+      width: 479px;
     }
-    &:first-child:after {
+
+    &:last-child {
+      display: none;
+    }
+
+    @media (min-width: @screen-sm) and (max-width: 1259px){
+      width: 479px;
+      &:last-child {
+        display: block;
+    }
+  }
+
+    @media (min-width: @screen-lg) {
+      width: 470px;
+      &:last-child {
+        display: block;
+      }  
+    }
+      
+
+    &:before {
+       position: absolute;
+       content: "";
+       background: url('../../img/kate.png');
+       height: 82px;
+       width: 82px;
+       background-repeat: no-repeat;
+       top: -30px;
+       right: 50%;
+       transform: translateX(50%);
+    }
+    &:after {
       position: absolute;
       content: "";
       background: url('../../img/ic-vk.png');
       width: 22px;
       height: 13px;
       background-repeat: no-repeat;
-      top: 30px;
+      bottom: 190px;
       right: 50%;
       transform: translateX(50%);
     }
   }
 
-  &__review-text {
-    font-size: @font-size16;
+    &__review-text {
+      font-size: @font-size16;
+    }
+
+
+    &__author {
+      margin-bottom: 30px;
+      display: inline-block;
+      font-weight: 500; 
+    }
   }
 
-
-  &__author {
-    margin-bottom: 30px;
-    display: inline-block;
-    position: relative;
-    font-weight: 500;
-
-  
-  }
-}
+ 
