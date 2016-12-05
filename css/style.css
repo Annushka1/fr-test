@@ -538,7 +538,8 @@ h3 {
 }
 .room-item {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  margin: 0 auto;
 }
 .room-item__discriprion {
   padding-bottom: 50px;
@@ -551,40 +552,6 @@ h3 {
 .room-item__text {
   font-size: 16px;
   margin: 40px 0 50px 0;
-}
-.room-details {
-  padding: 50px 0;
-  text-align: center;
-}
-.room-details__title {
-  font-size: 30px;
-  margin-bottom: 18px;
-}
-.room-details__item {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  text-align: center;
-  margin: 50px 0;
-  text-align: left;
-}
-.room-details__img {
-  width: 580px;
-}
-.room-details__discription {
-  width: 580px;
-}
-.room-details__title-item {
-  font-size: 26px;
-}
-.room-details__text {
-  font-size: 16px;
-  padding: 25px 0;
-}
-.room-details__advantages {
-  font-size: 16px;
-  -moz-columns: 2;
-       columns: 2;
-  list-style-type: none;
 }
 .other-room {
   display: -ms-flexbox;
@@ -612,6 +579,13 @@ h3 {
   .page-header__inner {
     width: 285px;
     padding: 17px 0;
+  }
+  .room-item {
+    width: 319px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 @media (min-width: 320px) {
@@ -654,6 +628,9 @@ h3 {
   .room-item__discriprion {
     width: 319px;
   }
+  .room-item__title {
+    margin-top: 0;
+  }
 }
 @media (min-width: 320px) and (max-width: 479px) {
   .reviews__item {
@@ -670,6 +647,13 @@ h3 {
   }
   .reviews__item:last-child {
     display: block;
+  }
+  .room-item {
+    width: 319;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 @media (min-width: 768px) {
@@ -753,6 +737,9 @@ h3 {
   .room-item__discriprion {
     width: 580px;
     display: inline-block;
+  }
+  .room-item__title {
+    margin-top: 0;
   }
 }
 @media (min-width: 1260px) {
@@ -856,10 +843,12 @@ h3 {
     width: 1180px;
   }
   .room-item {
+    width: 1180px;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-bottom: 30px;
   }
   .room-item__img {
     width: 580px;

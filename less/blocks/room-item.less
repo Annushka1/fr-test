@@ -1,20 +1,37 @@
 .room-item {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  @media(min-width: @screen-xs) and (max-width: 767px) {
+    width: 319px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media(min-width: @screen-sm) and (max-width: 1259px){
+    width: 319;
+    display: flex;  
+    flex-direction: column;
+  }
+
 
   @media(min-width: @screen-lg) {
+    width: @container-lg;
     display: inline-flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   &__img {
   @media(min-width: @screen-xs) {
     width: 319px;
+    // order:2;
   }
 
   @media(min-width: @screen-sm) {
     text-align: center;
     width: 580px;
+    // order:2;
   }
 
   @media(min-width: @screen-lg) {
@@ -47,12 +64,30 @@
   &__title {
     font-size: @font-size26;
     margin: 40px 0 20px 0;
+    @media(min-width: @screen-xs) {
+      margin-top: 0;
+    }
+
+    @media(min-width: @screen-sm) {
+     margin-top: 0;
+    }
   }
 
   &__text {
     font-size: @font-size16;
     margin: 40px 0 50px 0;
 
+    @media(min-width: @screen-xs) {
+      // order:2;
+    }
+
+    @media(min-width: @screen-sm) {
+     // order:2;
+    }
   }
+
+}
+
+.btn-block {
 
 }
