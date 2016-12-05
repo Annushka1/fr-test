@@ -599,6 +599,20 @@ h3 {
 .order-main {
   padding: 75px 0 45px 0;
   text-align: center;
+  margin: 0 auto;
+}
+.order-main__promo {
+  padding-bottom: 45px;
+}
+.order-main__title {
+  font-size: 30px;
+  margin-bottom: 26px;
+}
+.order-main__text {
+  font-size: 16px;
+}
+.order-main__text--orange {
+  color: #ff7435;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header__inner {
@@ -686,6 +700,9 @@ h3 {
   .placement-item:last-child__discription {
     width: 280px;
     background-color: #fff;
+  }
+  .order-main {
+    width: 285px;
   }
 }
 @media (min-width: 320px) and (max-width: 479px) {
@@ -838,6 +855,9 @@ h3 {
     height: 138px;
     background-color: #fff;
   }
+  .order-main {
+    width: 727px;
+  }
 }
 @media (min-width: 1260px) {
   .page-header__inner {
@@ -986,6 +1006,9 @@ h3 {
   .placement-item:last-child__discription {
     width: 380px;
     background-color: #fff;
+  }
+  .order-main {
+    width: 1180px;
   }
 }
 
