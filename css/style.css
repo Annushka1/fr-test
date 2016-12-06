@@ -614,6 +614,18 @@ h3 {
 .order-main__text--orange {
   color: #ff7435;
 }
+.order-step {
+  background-color: #f1f1f1;
+}
+.order-step__step {
+  color: #929292;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.order-step__title {
+  font-size: 26px;
+  margin-bottom: 36px;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header__inner {
     width: 285px;
@@ -703,6 +715,10 @@ h3 {
   }
   .order-main {
     width: 285px;
+  }
+  .order-step {
+    width: 285px;
+    padding: 50px 0;
   }
 }
 @media (min-width: 320px) and (max-width: 479px) {
