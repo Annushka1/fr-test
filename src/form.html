@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i,700|PT+Sans+Caption:400,700|PT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="page-header"> 
+	<div class="page-header__inner"> 
+
+		<a href="index.html" class="main-logo"><span>Green</span> <img src="img/Logo.png" alt=""> <span>Valley<span></a> 
+
+		<div class="main-nav"> 
+			<nav class="main-nav__nav"> 
+				<ul class="main-nav__list"> 
+					<li class="main-nav__item main-nav__item-active"> 
+						<a class=main-nav__link href="room.html">Номера</a> 
+					</li> 
+					<li class="main-nav__item"> 
+						<a class=main-nav__link href="inexpensive.html">Коттедж</a> 
+					</li> 
+					<li class="main-nav__item"> 
+						<a class=main-nav__link href="#">Ресторан</a> 
+					</li> 
+					<li class="main-nav__item"> 
+						<a class=main-nav__link href="#">Отдых</a> 
+					</li> 
+					<li class="main-nav__item"> 
+						<a class=main-nav__link href="#">Контакты</a> 
+					</li> 
+				</ul> 
+			</nav> 
+			<span class="main-nav__toggler"></span> 
+		</div> 
+
+		<div class="page-header__contacts"> 
+			<a href="tel:+78120000000" class="page-header__phone-link">+78120000000</a> 
+			<div class="page-header__adress">г. Санкт-Петербург, Приморское шоссе.</div> 
+		</div> 
+
+		<a href="#booking-form" class="btn btn--bg-orange btn--icon-calendar">Забронировать</a> 
+	</div> 
+</header> 
+
+<div class="order-main">
+	<section class="order-main__promo">
+		<h1 class="order-main__title">Бронирование</h1>
+		<p class="order-main__text">
+		Чтобы забронировать номер в отеле или котедже,</p> <p class="order-main__text"> заполните форму ниже или просто позвоните</p><p class="order-main__text"> по телефону<span class="order-main__text--orange"> +7 812 7-55-88</span>
+		</p>
+	</section>
+
+	<form>
+		<section class="date-to-stay">
+			<div class="order-step">
+				<span class="order-step__step">Шаг 1</span>
+				<h3 class="order-step__title">Дата отдыха</h3>
+				<div class="order-step__item">
+					<h4 class="order-step__option">Дата въезда</h4>
+					<input type="date" name="date-from">
+				</div>
+				<div class="orser-step__item">
+					<h4 class="order-step__option">Дата въезда</h4>
+					<input type="date" name="date-to">
+				</div>
+			</div>
+		</section>
+
+		<section class="location">
+			<div class="order-step">
+				<span class="order-step__step">Шаг 2</span>
+				<h3 class="order-step__title">Место проживания</h3>
+				<div class="location__item">
+					<h4 class="location__option">
+					<input type="radio" name="place-type" value="hotel" id="hotel" checked><label for="hotel"></label>
+					Отель</h4>
+				</div>
+				<div class="location__item">
+					<h4 class="location__option">
+					<input type="radio" name="place-type" value="cottage" id="cottage"><label for="cottage"></label>
+					Коттедж</h4>
+				</div>
+			</div>	
+		</section>
+
+		<section class="type-digs">
+			<div class="order-step">
+				<span class="order-step__step">Шаг 3</span>
+				<h3 class="order-step__title">Тип коттеджа</h3>
+				<div class="type-digs__item">
+					<h4 class="type-digs__title">Флагман</h4>
+					<ul class="type-digs__option  type-digs__option--active">
+						<li>Площадь 100 м.кв</li>
+						<li>3 комнаты</li>
+						<li>5 спальных мест</li>
+						<li>Раздельны санузел</li>
+						<li>WI-FI</li>
+					</ul>
+				</div>
+				<div class="type-digs__item">
+					<h4 class="type-digs__title">Озерный</h4>
+					<ul class="type-digs__option">
+						<li>Площадь 100 м.кв</li>
+						<li>3 комнаты</li>
+						<li>5 спальных мест</li>
+						<li>Раздельны санузел</li>
+						<li>WI-FI</li>
+					</ul>
+				</div>
+				<div class="type-digs__item">
+					<h4 class="type-digs__title">Ольховка</h4>
+					<ul class="type-digs__option">Ольховка
+						<li>Площадь 100 м.кв</li>
+						<li>3 комнаты</li>
+						<li>5 спальных мест</li>
+						<li>Раздельны санузел</li>
+						<li>WI-FI</li>
+					</ul>
+				</div>
+				<div class="type-digs__item">
+				<h4 class="type-digs__title">Портовый</h4>
+					<ul class="type-digs__option">
+						<li>Площадь 100 м.кв</li>
+						<li>3 комнаты</li>
+						<li>5 спальных мест</li>
+						<li>Раздельны санузел</li>
+						<li>WI-FI</li>
+					</ul>
+				</div>
+			</div>	
+		</section>
+
+		<section class="personal-information">
+			<div class="order-step">
+				<span class="order-step__step">Шаг 4</span>
+				<h3 class="order-step__title">Персональная информация</h3>
+					<input type="text" name="personal-name" placeholder="имя"  class="personal-information__item">
+					<input type="text" name="personal-surname" placeholder="фамилия"  class="personal-information__item">			
+					<label><input type="text" name="personal-phone" placeholder="номер телефона"  class="personal-information__item">
+					Мы свяжемся с вами, в случае необходимости.</label>
+					<label><input type="text" name="personal-mail" placeholder="e-mail"  class="personal-information__item">
+					На этот адрес мы вышлем вам подтверждение о забронированном номере.</label>
+			</div>
+		</section>
+
+		<section class="payment">
+			<div class="order-step">
+			<span class="order-step__step">Шаг 5</span>
+				<h4 class="order-step__title">Способ оплаты</h3>
+				<div class="payment__postpayment">
+					<h4 class="payment__postpayment-title">По приезду</h4>
+					<p class="payment__postpayment-text">Вы можете произвести оплату по факту заселения.</p>
+				</div>
+				<div class="payment__prepayment">
+					<h4 class="payment__prepayment-title">Сейчас</h4>
+					<p class="payment__prepayment-text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+					<div class="requisite">
+						<label class="requisite__item">Номер карты <input name="payment-number" type="text" placeholder="0000-0000-0000-0000"  class="requisite__item--long"></label>
+						<label class="requisite__item">Код CVV <input name="payment-code" type="text" placeholder="123"  class="requisite__item--short"> </label>
+						<p class="requisite__hint">Здесь будет подсказка</p>
+						<label class="requisite__item">Фамилия владельца карты <input name="payment-name" type="text" placeholder="Vladimirov Vladimir"  class="requisite__item--long"></label>
+						<label class="requisite__item"> Действует до <input name="payment-validity" type="text" placeholder="01/2018"  class="requisite__item--short"></label>
+					</div>
+				</div>
+				<div class="payment__total-payment">
+					<h4 class="payment__total-payment-title">К оплате</h4>
+					<p class="payment_total-payment-text">Пожалуйста, <span class="payment_total-payment-text--underline"> выберите дату</span> въезда и выезда, чтобы увидеть сумму к оплате</p>
+				</div>
+			<a href="#booking-form" class="btn btn--green">Забронировать</a>
+		</section>
+	</form>
+	
+<footer class="page-footer">
+	<div class="page-footer__inner">
+		<div class="page-footer__contact">
+		  <div>г.Санкт-Петербург,</div>
+		  <div> Пулковское ш.600</div>
+		</div>
+		<div class="page-footer__inner-footer-logo">
+			<a href="#" class="main-logo"><span>Green</span> <img src="img/Logo.png" alt=""> <span>Valley<span></a>	
+			<div class="footer-link">
+				<a href="" class="footer-link__link"></a>
+				<a href="" class="footer-link__link"></a>
+				<a href="" class="footer-link__link"></a>
+			</div>
+		</div>
+	    <div class="page-footer__contact">
+		  <div>+7 812 777-55-88</div>
+		  <div>info@greenvalley.ru</div>
+		</div>
+	</div>
+</footer>
+	
+</body>
+</html>

@@ -1,0 +1,62 @@
+.stock {
+
+  &__inner {
+    @media (min-width: @screen-xs) {
+      width: @container-xs;
+    }
+
+    @media (min-width: @screen-sm) {
+      width: @container-sm;
+    }
+
+    @media (min-width: @screen-lg) {
+      width: @container-lg;
+      padding: 50px 0;
+    }
+  }
+
+  
+
+  &__title {
+    margin: 0;
+    font-family: @font-title;
+    font-size: @font-size30;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 33px;
+    white-space: pre-wrap;
+
+    @media (min-width: @screen-sm) {
+      padding: 44px 0 34px 0;
+    }
+
+    @media (min-width: @screen-lg) {
+      padding: 50px 0 35px 0;
+    }
+  }
+
+  &__item {
+    display: none;
+    padding: 198px 0 20px 0;
+    background-image: url(../img/stock-bg.png);
+    background-size: cover;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__item-title {
+    padding: 8px;
+    background-color: #fff;
+    color: @color-orange; 
+  }
+
+  &__text {
+    padding: 8px;
+    background-color: #fff;
+    font-size: @font-size16;
+  } 
+
+}
