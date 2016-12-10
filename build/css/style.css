@@ -374,6 +374,7 @@ h3 {
   border-radius: 0;
   padding: 0;
   margin-left: 70px;
+  display: none;
 }
 .gallery-type {
   display: none;
@@ -542,10 +543,10 @@ h3 {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  background-color: #fafafa;
 }
 .room-item__discriprion {
   padding-bottom: 50px;
-  background-color: #fafafa;
 }
 .room-item__title {
   font-size: 26px;
@@ -601,7 +602,6 @@ h3 {
 .order-main {
   padding: 75px 0 45px 0;
   text-align: center;
-  margin: 0 auto;
 }
 .order-main__promo {
   padding-bottom: 45px;
@@ -619,6 +619,7 @@ h3 {
 .order-step {
   background-color: #f1f1f1;
   text-align: center;
+  padding: 50px 0;
 }
 .order-step__step {
   color: #929292;
@@ -628,6 +629,9 @@ h3 {
 .order-step__title {
   font-size: 26px;
   margin-bottom: 36px;
+}
+.order-step--bg-white {
+  background-color: #fff;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header__inner {
@@ -702,13 +706,6 @@ h3 {
   .placement-item:last-child__discription {
     width: 280px;
     background-color: #fff;
-  }
-  .order-main {
-    width: 285px;
-  }
-  .order-step {
-    width: 285px;
-    padding: 50px 0;
   }
 }
 @media (min-width: 320px) and (max-width: 479px) {
@@ -852,9 +849,6 @@ h3 {
     height: 138px;
     background-color: #fff;
   }
-  .order-main {
-    width: 727px;
-  }
 }
 @media (min-width: 1260px) {
   .page-header__inner {
@@ -929,6 +923,9 @@ h3 {
   .reviews__item:last-child {
     display: block;
   }
+  .btn--underlined {
+    display: inline-block;
+  }
   .stock__inner {
     width: 1180px;
     padding: 50px 0;
@@ -965,18 +962,20 @@ h3 {
     -ms-flex-direction: row;
     flex-direction: row;
     margin-bottom: 30px;
+    position: relative;
   }
   .room-item__img {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
-    -ms-flex-order: 1;
-    order: 1;
   }
   .room-item__discriprion {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 100px;
   }
   .title-wrapper {
     -ms-flex: 0 0 50%;
@@ -1014,9 +1013,6 @@ h3 {
   .placement-item:last-child__discription {
     width: 380px;
     background-color: #fff;
-  }
-  .order-main {
-    width: 1180px;
   }
 }
 
