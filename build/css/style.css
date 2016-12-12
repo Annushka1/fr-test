@@ -617,9 +617,9 @@ h3 {
   color: #ff7435;
 }
 .order-step {
-  background-color: #f1f1f1;
   text-align: center;
   padding: 50px 0;
+  margin: 0 auto;
 }
 .order-step__step {
   color: #929292;
@@ -632,6 +632,9 @@ h3 {
 }
 .order-step--bg-white {
   background-color: #fff;
+}
+.date-to-stay {
+  background-color: #f1f1f1;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header__inner {
@@ -848,6 +851,18 @@ h3 {
     width: 355px;
     height: 138px;
     background-color: #fff;
+  }
+  .order-step {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .order-step__step {
+    width: 100%;
+  }
+  .order-step__title {
+    width: 100%;
   }
 }
 @media (min-width: 1260px) {
