@@ -636,6 +636,12 @@ h3 {
 .date-to-stay {
   background-color: #f1f1f1;
 }
+.location__option {
+  width: 50%;
+}
+.location__option input {
+  display: none;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header__inner {
     width: 285px;
@@ -864,6 +870,12 @@ h3 {
   .order-step__title {
     width: 100%;
   }
+  .order-step__item {
+    width: 50%;
+  }
+  .order-step__option {
+    text-align: center;
+  }
 }
 @media (min-width: 1260px) {
   .page-header__inner {
@@ -1028,6 +1040,11 @@ h3 {
   .placement-item:last-child__discription {
     width: 380px;
     background-color: #fff;
+  }
+  .order-step__item {
+    width: 50%;
+    background-color: #fff;
+    padding-bottom: 50px;
   }
 }
 
