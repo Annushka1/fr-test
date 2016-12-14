@@ -76,10 +76,10 @@ return gulp.src('src/img/**/*.*')
 gulp.task('js', function () {
   return gulp.src([
       // список обрабатываемых файлов
-      dirs.source + '/js/jquery-3.1.0.min.js',
-      dirs.source + '/js/jquery-migrate-1.4.1.min.js',
-      dirs.source + '/js/owl.carousel.min.js',
-      dirs.source + '/js/script.js',
+      'src/js/jquery-3.1.0.min.js',
+      'src/js/jquery-migrate-1.4.1.min.js',
+      'src/js/owl.carousel.min.js',
+      'src/js/script.js',
     ])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(concat('script.min.js'))

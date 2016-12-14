@@ -185,11 +185,19 @@ h3 {
       order: 1;
 }
 .rest-type-switcher__type-item {
-  background-image: url('../img/main-gall-1.png');
   background-size: cover;
   background-position: bottom;
-  display: none;
   text-align: left;
+  display: none;
+}
+.rest-type-switcher__type-item:first-child {
+  background-image: url('../img/main-gall-1.png');
+}
+.rest-type-switcher__type-item:last-child {
+  background-image: url('../img/main-gall-2.png');
+}
+.rest-type-switcher__type-item--active {
+  display: block;
 }
 .rest-type-switcher__type-item--active {
   display: block;
