@@ -51,6 +51,7 @@ h3 {
 }
 .page-header__contacts {
   display: none;
+  text-align: left;
 }
 .page-header .btn {
   display: none;
@@ -101,6 +102,8 @@ h3 {
   position: absolute;
   top: 0;
   right: 0;
+  display: block;
+  margin-top: 25px;
 }
 .gamburger span {
   position: relative;
@@ -128,22 +131,35 @@ h3 {
   background-color: #ff7435;
 }
 .page-footer {
-  padding: 20px 0;
+  padding: 15px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 .page-footer__inner {
   margin: 0 auto;
 }
 .page-footer__contact {
   display: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
-.main-logo {
+.page-footer__contact a {
+  color: #000;
+}
+.page-footer .main-logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-size: 15px;
   text-transform: uppercase;
   height: 55px;
   font-family: 'PT Serif', serif;
 }
-.main-logo span,
-.main-logo img {
+.page-footer .main-logo span,
+.page-footer .main-logo img {
   display: inline-block;
   vertical-align: middle;
   color: #0ab89d;
@@ -361,7 +377,7 @@ h3 {
   position: absolute;
   height: 15px;
   width: 15px;
-  background: url('../../img/ic-calendar.png');
+  background: url('/img/ic-calendar.png');
   top: 10px;
   left: 15px;
   background-repeat: no-repeat;
@@ -650,15 +666,23 @@ h3 {
 .location__option input {
   display: none;
 }
-.footer-link__link--vk {
-  content: '';
-  position: relative;
-  background-image: url('../../img/footer-vk.png');
-  height: 20px;
-  width: 20px;
-  top: 5px;
-  left: 5px;
+.footer-link__link {
+  height: 35px;
+  width: 35px;
   background-repeat: no-repeat;
+  display: inline-block;
+  margin: 10px 5px 0 15px;
+  vertical-align: middle;
+}
+.footer-link__link--vk {
+  background-image: url('../../img/footer-vk.png');
+  margin-top: 15px;
+}
+.footer-link__link--ins {
+  background-image: url('../../img/footer-inst.png');
+}
+.footer-link__link--fb {
+  background-image: url('../../img/footer-fb.png');
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header__inner {
@@ -781,7 +805,11 @@ h3 {
     justify-content: space-between;
   }
   .page-footer__contact {
-    display: block;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: left;
   }
   .rest-type-switcher__type-inner {
     width: 727px;
@@ -930,7 +958,11 @@ h3 {
     justify-content: space-between;
   }
   .page-footer__contact {
-    display: block;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: left;
   }
   .rest-type-switcher__type-inner {
     width: 1180px;

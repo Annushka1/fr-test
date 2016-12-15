@@ -37,3 +37,7 @@ function changeTab(e) {
   document.querySelector(link).classList.add('rest-type-switcher__type-item--active');
 
 }
+
+for (var i=0;i<tabs.length; i++) { 
+  tabs[i].addEventLinstener('click', changeTab()) 
+}
