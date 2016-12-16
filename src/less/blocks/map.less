@@ -1,7 +1,5 @@
 .map {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+text-align: center;
 
   &__title {
     text-align: center;
@@ -22,17 +20,14 @@
 
   &__iframe {
     height: 400px;
-
-  @media(min-width: @screen-xs) {
     width: 100%;
-  }
 
   @media(min-width: @screen-sm) {
     width: 100%;
   }
 
   @media(min-width: @screen-lg) {
-    width: 100%;
+    width: @container-lg;
   }
   }
 }

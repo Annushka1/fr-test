@@ -3,6 +3,8 @@
 
   &__inner {
     text-align: center;
+    position: relative;
+    margin: 0 auto;
    
     @media(min-width: @screen-xs) {
       width: @container-xs;
@@ -27,7 +29,47 @@
     @media(min-width: @screen-lg) {
       margin: 0 80px 70px 0; 
       width: 412px;
+      text-align: left;
     }
+
+    &:last-child:before {
+      content: "";
+      position: absolute;
+      background: url('../../img/electro.png');
+      width: 60px;
+      height: 80px;
+      bottom: 95px;
+      right: 50%;
+      background-repeat: no-repeat;
+      transform: translateX(50%);
+
+      @media(min-width: @screen-sm) {
+        bottom: 60px;
+      }
+
+      @media(min-width: @screen-lg) {
+        bottom: 60px;
+        top: 45px;
+        right: 33%;
+      }
+    }
+
+    &:first-child:before {
+      content: "";
+      position: absolute;
+      background: url('../../img/bus.png');
+      width: 50px;
+      height: 75px;
+      top: 45px;
+      right: 50%;
+      background-repeat: no-repeat;
+      transform: translateX(50%);
+
+      @media(min-width: @screen-lg) {
+        bottom: 60px;
+        right: 74%;
+      }
+    } 
   }  
 
   &__item-title {
@@ -38,23 +80,10 @@
     padding: 90px 0 0 0;
     font-size: @font-size;
     font-weight: 500;  
-
-    &:before {
-      content: "";
-      position: absolute;
-      background: url('../../img/bus.png');
-      width: 50px;
-      height: 75px;
-      top: 40px;
-      right: 50%;
-      background-repeat: no-repeat;
-      transform: translateX(50%);
-   
-
-    }
   }
 
   &__item-text {
     font-size:@font-size16 ;
+    padding-left: 30px;
   }
 }

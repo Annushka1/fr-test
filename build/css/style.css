@@ -221,7 +221,6 @@ h3 {
 .rest-type-switcher__type-inner {
   padding: 19px 0;
   text-align: center;
-  margin: 0 auto;
 }
 .rest-type-switcher__type-inner p {
   padding: 10px;
@@ -229,10 +228,15 @@ h3 {
 }
 .rest-type-switcher__type-title {
   padding: 8px;
-  background-color: #fff;
   font-family: 'PT Serif', serif;
   font-size: 36px;
   font-weight: 500;
+  padding: 0;
+  display: block;
+}
+.rest-type-switcher__type-title span {
+  background-color: #fff;
+  display: block;
 }
 .rest-type-switcher__tab {
   -ms-flex-order: 2;
@@ -317,17 +321,6 @@ h3 {
 .reviews__item:last-child {
   display: none;
 }
-.reviews__item:before {
-  position: absolute;
-  content: "";
-  background: url('../../img/kate.png');
-  height: 82px;
-  width: 82px;
-  background-repeat: no-repeat;
-  top: -30px;
-  right: 50%;
-  transform: translateX(50%);
-}
 .reviews__item:after {
   position: absolute;
   content: "";
@@ -335,9 +328,14 @@ h3 {
   width: 22px;
   height: 13px;
   background-repeat: no-repeat;
-  bottom: 190px;
+  top: 90px;
   right: 50%;
   transform: translateX(50%);
+}
+.reviews__img {
+  position: absolute;
+  top: -30px;
+  left: 35%;
 }
 .reviews__review-text {
   font-size: 16px;
@@ -377,7 +375,7 @@ h3 {
   position: absolute;
   height: 15px;
   width: 15px;
-  background: url('/img/ic-calendar.png');
+  background: url('../../img/ic-calendar.png');
   top: 10px;
   left: 15px;
   background-repeat: no-repeat;
@@ -405,6 +403,10 @@ h3 {
 }
 .gallery-type--active {
   display: block;
+}
+.stock__inner {
+  width: 296px;
+  opacity: 0.95;
 }
 .stock__title {
   margin: 0;
@@ -436,12 +438,7 @@ h3 {
   font-size: 16px;
 }
 .map {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
+  text-align: center;
 }
 .map__title {
   text-align: center;
@@ -453,15 +450,40 @@ h3 {
 }
 .map__iframe {
   height: 400px;
+  width: 100%;
 }
 .track-type {
   margin: 0 auto;
 }
 .track-type__inner {
   text-align: center;
+  position: relative;
+  margin: 0 auto;
 }
 .track-type__item {
   margin-bottom: 35px;
+}
+.track-type__item:last-child:before {
+  content: "";
+  position: absolute;
+  background: url('../../img/electro.png');
+  width: 60px;
+  height: 80px;
+  bottom: 95px;
+  right: 50%;
+  background-repeat: no-repeat;
+  transform: translateX(50%);
+}
+.track-type__item:first-child:before {
+  content: "";
+  position: absolute;
+  background: url('../../img/bus.png');
+  width: 50px;
+  height: 75px;
+  top: 45px;
+  right: 50%;
+  background-repeat: no-repeat;
+  transform: translateX(50%);
 }
 .track-type__item-title {
   text-align: center;
@@ -471,19 +493,9 @@ h3 {
   font-size: 14px;
   font-weight: 500;
 }
-.track-type__item-title:before {
-  content: "";
-  position: absolute;
-  background: url('../../img/bus.png');
-  width: 50px;
-  height: 75px;
-  top: 40px;
-  right: 50%;
-  background-repeat: no-repeat;
-  transform: translateX(50%);
-}
 .track-type__item-text {
   font-size: 16px;
+  padding-left: 30px;
 }
 .placement {
   background-color: #19bc99;
@@ -716,21 +728,12 @@ h3 {
     width: 285px;
     text-align: center;
   }
-  .rest-type-switcher__type-inner {
-    width: 285px;
-  }
   .reviews {
     -ms-flex-direction: column;
     flex-direction: column;
   }
   .reviews__inner {
     width: 285px;
-  }
-  .stock__inner {
-    width: 285px;
-  }
-  .map__iframe {
-    width: 100%;
   }
   .track-type__inner {
     width: 285px;
@@ -812,15 +815,12 @@ h3 {
     text-align: left;
   }
   .rest-type-switcher__type-inner {
-    width: 727px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
     text-align: left;
   }
   .rest-type-switcher__type-title {
     display: inline-block;
+    background: #fff;
+    background-color: transparent;
   }
   .rest-type-switcher__options-list {
     padding: 0 140px;
@@ -843,8 +843,8 @@ h3 {
   .reviews__inner {
     width: 727px;
   }
-  .stock__inner {
-    width: 727px;
+  .reviews__img {
+    left: 41%;
   }
   .stock__title {
     padding: 44px 0 34px 0;
@@ -860,6 +860,9 @@ h3 {
   }
   .track-type__inner {
     width: 727px;
+  }
+  .track-type__item:last-child:before {
+    bottom: 60px;
   }
   .placement__item {
     width: 353px;
@@ -965,7 +968,7 @@ h3 {
     text-align: left;
   }
   .rest-type-switcher__type-inner {
-    width: 1180px;
+    width: 348px;
     padding: 70px 0;
     display: -ms-flexbox;
     display: flex;
@@ -975,6 +978,9 @@ h3 {
   }
   .rest-type-switcher__type-title {
     display: inline-block;
+  }
+  .rest-type-switcher__type-title span {
+    background-color: #fff;
   }
   .rest-type-switcher__options-list {
     width: 1180px;
@@ -1004,14 +1010,13 @@ h3 {
     display: inline-block;
   }
   .stock__inner {
-    width: 1180px;
-    padding: 50px 0;
+    width: 348px;
   }
   .stock__title {
     padding: 50px 0 35px 0;
   }
   .map__iframe {
-    width: 100%;
+    width: 1180px;
   }
   .track-type__inner {
     width: 1180px;
@@ -1023,6 +1028,16 @@ h3 {
   .track-type__item {
     margin: 0 80px 70px 0;
     width: 412px;
+    text-align: left;
+  }
+  .track-type__item:last-child:before {
+    bottom: 60px;
+    top: 45px;
+    right: 33%;
+  }
+  .track-type__item:first-child:before {
+    bottom: 60px;
+    right: 74%;
   }
   .hotel-promo__inner {
     width: 1180px;

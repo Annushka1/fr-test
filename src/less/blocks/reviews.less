@@ -74,20 +74,20 @@
       &:last-child {
         display: block;
       }  
-    }
+  }
       
 
-    &:before {
-       position: absolute;
-       content: "";
-       background: url('../../img/kate.png');
-       height: 82px;
-       width: 82px;
-       background-repeat: no-repeat;
-       top: -30px;
-       right: 50%;
-       transform: translateX(50%);
-    }
+    // &:before {
+    //    position: absolute;
+    //    content: "";
+    //    background: url('../../img/kate.png');
+    //    height: 82px;
+    //    width: 82px;
+    //    background-repeat: no-repeat;
+    //    top: -30px;
+    //    right: 50%;
+    //    transform: translateX(50%);
+    // }
     &:after {
       position: absolute;
       content: "";
@@ -95,11 +95,22 @@
       width: 22px;
       height: 13px;
       background-repeat: no-repeat;
-      bottom: 190px;
+      top: 90px;
       right: 50%;
       transform: translateX(50%);
     }
   }
+
+    &__img {
+      position: absolute;
+      top: -30px;
+      left: 35%;
+
+
+      @media(min-width: @screen-sm) {
+        left: 41%;
+      }
+    }
 
     &__review-text {
       font-size: @font-size16;
