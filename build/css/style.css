@@ -573,22 +573,28 @@ h3 {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
+  font-size: 30px;
 }
 .hotel-rooms__inner {
   margin: 0 auto;
 }
 .room-item {
   text-align: center;
-  margin-bottom: 50px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  margin-bottom: 50px;
+}
+.room-item__img {
+  margin-top: 30px;
 }
 .room-item__discriprion {
   padding-bottom: 50px;
+  margin: 0 auto;
 }
 .room-item__title {
   font-size: 26px;
@@ -596,7 +602,11 @@ h3 {
 }
 .room-item__text {
   font-size: 16px;
-  margin: 40px 0 50px 0;
+}
+.room-item__discriprion-inner {
+  margin: 40px 0 40px 0;
+  text-align: left;
+  padding: 0 20px 0 20px;
 }
 .room-details {
   padding: 50px 0;
@@ -621,6 +631,24 @@ h3 {
 .room-details__advantages {
   font-size: 16px;
   list-style-type: none;
+}
+.room-details__advantages li {
+  position: relative;
+  padding-left: 20px;
+}
+.room-details__advantages li:after {
+  content: "";
+  border-top: 2px solid #ff7435;
+  border-right: 2px solid #ff7435;
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(45deg);
 }
 .room-details__bonus {
   font-size: 16px;
@@ -754,9 +782,6 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .room-item__title {
-    margin-top: 0;
-  }
   .room-details {
     width: 285px;
   }
@@ -888,12 +913,13 @@ h3 {
   }
   .room-item__img {
     text-align: center;
+    margin: 50px 75px 0 75px;
   }
   .room-item__discriprion {
-    display: inline-block;
+    margin: 0;
   }
-  .room-item__title {
-    margin-top: 0;
+  .room-item__discriprion-inner {
+    padding-left: 110px;
   }
   .room-details {
     width: 727px;
@@ -1024,6 +1050,9 @@ h3 {
   .stock__title {
     padding: 50px 0 35px 0;
   }
+  .stock__item {
+    background-position: 0 0;
+  }
   .map__iframe {
     width: 1180px;
   }
@@ -1066,6 +1095,7 @@ h3 {
     position: relative;
   }
   .room-item__img {
+    margin: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
