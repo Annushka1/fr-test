@@ -174,7 +174,7 @@ h3 {
 .rest-type-switcher__item {
   display: inline-block;
   text-transform: uppercase;
-  padding-right: 20px;
+  padding-right: 5px;
 }
 .rest-type-switcher__item a {
   text-decoration: none;
@@ -241,6 +241,10 @@ h3 {
 .rest-type-switcher__tab {
   -ms-flex-order: 2;
       order: 2;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .rest-type-switcher__options {
   -ms-flex-order: 3;
@@ -423,6 +427,7 @@ h3 {
   padding: 198px 0 20px 0;
   background-image: url(../img/stock-bg.png);
   background-size: cover;
+  background-position: 30% 45%;
 }
 .stock__item--active {
   display: block;
@@ -513,14 +518,15 @@ h3 {
   font-weight: 400;
   width: 100%;
   text-align: center;
-  padding: 50px 0 34px 0;
+  padding: 30px 0 10px 0;
 }
 .placement__item {
   width: 280px;
   background-color: #fff;
   margin: 0 20px 40px 0;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
+  color: #000;
 }
 .placement__item-img {
   width: 100%;
@@ -813,6 +819,9 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: left;
+  }
+  .rest-type-switcher__item {
+    padding-right: 20px;
   }
   .rest-type-switcher__type-inner {
     text-align: left;

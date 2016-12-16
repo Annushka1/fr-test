@@ -4,11 +4,15 @@
 	flex-direction: column;
 
 
-    
+
 	&__item {
 		display: inline-block;
 		text-transform: uppercase;
-		padding-right: 20px;
+		padding-right: 5px;
+
+		@media(min-width: @screen-sm) {
+			padding-right: 20px;
+		}
 
 		a {
 			text-decoration: none;
@@ -19,7 +23,7 @@
 			position: relative;
 
 			a {
-				color: @color-orange;	
+				color: @color-orange;
 			}
 
 			&:before {
@@ -95,25 +99,25 @@
 	  font-weight: 500;
 	  padding: 0;
 	  display: block;
-	  
+
 
 
 	  @media (min-width: @screen-sm)  {
 	  	display: inline-block;
 	  	background: #fff;
- 
+
       background-color: transparent;
 
       span {
-      	
+
       }
 	  }
-		
+
 		@media (min-width: @screen-lg) {
 			display: inline-block;
 			span {
 				background-color: @color-white;
-				
+
 			}
 		}
 
@@ -125,6 +129,8 @@
 
 	&__tab {
 		order: 2;
+		display: flex;
+    justify-content: center;
 	}
 
 	&__options {
@@ -176,7 +182,7 @@
 			list-style-type: none;
 			justify-content: center;
 		}
-		
+
 
 		li {
 			width: 25%;
