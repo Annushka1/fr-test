@@ -1,14 +1,83 @@
 .location {
 
-&__option {
+  padding: 0 20px;
 
-  width: 50%;
-
-  input {
-    display: none;
+  @media(min-width: @screen-sm) {
+    padding: 0 194px;    
   }
 
-}
+  @media(min-width: @screen-lg) {
+    padding: 0 455px;    
+  }
 
+  &__list {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid @color-border;
+    padding: 0;
+    
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-color: @color-border;
+      top: 48%;
+      left: 50%;
+      width: 1px;
+      height: 107px;
+    }
+
+  }
+
+  .order-step {
+    display: block;
+  }
+
+  &__option {
+    text-transform: uppercase;
+    padding-top: 15px;
+  
+    input {
+      display: none;
+    }
+
+  }
+
+  &__item {
+    display: inline-block;
+    height: 160px;
+    width: 49%;
+    text-align: center;
+    
+    position: relative;
+    margin: 0;
+    padding: 25px 0;
+  
+    &:after {
+      content: "";
+      background: url('../../img/ic-hotel.png');
+      background-repeat: no-repeat;
+      width: 84px;
+      height: 62px;
+      top: 45%;
+      right: 20%;
+      position: absolute;
+      opacity: 0.4;
+
+      @media(min-width: @screen-sm) {
+        right: 30%;  
+      }
+
+      @media(min-width: @screen-lg) {
+        right: 30%;  
+      }
+    }
+
+    &:nth-child(2):after {
+      background: url('../../img/ic-cottage.png');
+      opacity: 1;
+      background-repeat: no-repeat;
+    }
+  }
 
 }

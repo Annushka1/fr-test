@@ -1,0 +1,76 @@
+.type-digs {
+  background-color: @color-form;
+  .order-step {
+    display: block;
+  }
+
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid @color-border;
+
+    @media(min-width: @screen-sm) {
+      flex-direction: row;
+    }
+
+    // @media(min-width: @screen-lg) {
+    //   width: @container-lg;
+    //   display: flex;
+    //   justify-content: center;    
+    // }
+  }
+
+  &__item {
+    width: 100%;
+
+  @media(min-width: @screen-sm) {
+    width: 25%;
+    padding: 30px 0;
+    
+
+  }
+    
+  }
+
+  &__option {
+    display: none;
+
+    @media(min-width: @screen-sm) {
+      
+      &--active {
+        display: block;
+        position: absolute;
+      }
+      
+    }   
+  }
+
+  &__title {
+    color: @color-textForm;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &--active {
+      color: #000;
+      position: relative;
+
+      &:before {
+        content: "";
+        background: url('../../img/ic-check.png');
+        width: 16px;
+        height: 12px;
+        left: 30%;
+        top: 10%;
+        position: absolute;
+
+        @media(min-width: @screen-sm) {
+          left: 45%;
+          top: 180%;
+       }
+      }
+    }
+  }
+}

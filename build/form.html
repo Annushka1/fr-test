@@ -78,16 +78,18 @@
 			<div class="order-step order-step--bg-white">
 				<span class="order-step__step">Шаг 2</span>
 				<h3 class="order-step__title">Место проживания</h3>
-				<div class="location__item">
-					<h4 class="location__option">
+				<ul class="location__list">
+					<li class="location__item">
+					<span class="location__option">
 					<input type="radio" name="place-type" value="hotel" id="hotel" checked><label for="hotel"></label>
-					Отель</h4>
-				</div>
-				<div class="location__item">
-					<h4 class="location__option">
+					Отель</span>
+				</li>
+				<li class="location__item">
+					<span class="location__option">
 					<input type="radio" name="place-type" value="cottage" id="cottage"><label for="cottage"></label>
-					Коттедж</h4>
-				</div>
+					Коттедж</span>
+				</li>
+				</ul>
 			</div>
 		</section>
 
@@ -95,8 +97,9 @@
 			<div class="order-step">
 				<span class="order-step__step">Шаг 3</span>
 				<h3 class="order-step__title">Тип коттеджа</h3>
-				<div class="type-digs__item">
-					<h4 class="type-digs__title">Флагман</h4>
+				<div class="type-digs__inner">
+					<div class="type-digs__item">
+					<h4 class="type-digs__title  type-digs__title--active">Флагман</h4>
 					<ul class="type-digs__option  type-digs__option--active">
 						<li>Площадь 100 м.кв</li>
 						<li>3 комнаты</li>
@@ -136,6 +139,7 @@
 					</ul>
 				</div>
 			</div>
+				</div>
 		</section>
 
 		<section class="personal-information">

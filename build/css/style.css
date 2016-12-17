@@ -685,11 +685,13 @@ h3 {
 }
 .order-main__text--orange {
   color: #ff7435;
+  font-weight: bold;
 }
 .order-step {
   text-align: center;
   padding: 50px 0;
   margin: 0 auto;
+  position: relative;
 }
 .order-step__step {
   color: #929292;
@@ -706,11 +708,58 @@ h3 {
 .date-to-stay {
   background-color: #f1f1f1;
 }
+.location {
+  padding: 0 20px;
+}
+.location__list {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  padding: 0;
+}
+.location__list:before {
+  content: "";
+  position: absolute;
+  background-color: #ebebeb;
+  top: 48%;
+  left: 50%;
+  width: 1px;
+  height: 107px;
+}
+.location .order-step {
+  display: block;
+}
 .location__option {
-  width: 50%;
+  text-transform: uppercase;
+  padding-top: 15px;
 }
 .location__option input {
   display: none;
+}
+.location__item {
+  display: inline-block;
+  height: 160px;
+  width: 49%;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding: 25px 0;
+}
+.location__item:after {
+  content: "";
+  background: url('../../img/ic-hotel.png');
+  background-repeat: no-repeat;
+  width: 84px;
+  height: 62px;
+  top: 45%;
+  right: 20%;
+  position: absolute;
+  opacity: 0.4;
+}
+.location__item:nth-child(2):after {
+  background: url('../../img/ic-cottage.png');
+  opacity: 1;
+  background-repeat: no-repeat;
 }
 .footer-link__link {
   height: 35px;
@@ -729,6 +778,46 @@ h3 {
 }
 .footer-link__link--fb {
   background-image: url('../../img/footer-fb.png');
+}
+.type-digs {
+  background-color: #f1f1f1;
+}
+.type-digs .order-step {
+  display: block;
+}
+.type-digs__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+}
+.type-digs__item {
+  width: 100%;
+}
+.type-digs__option {
+  display: none;
+}
+.type-digs__title {
+  color: #979696;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.type-digs__title--active {
+  color: #000;
+  position: relative;
+}
+.type-digs__title--active:before {
+  content: "";
+  background: url('../../img/ic-check.png');
+  width: 16px;
+  height: 12px;
+  left: 30%;
+  top: 10%;
+  position: absolute;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header__inner {
@@ -750,7 +839,7 @@ h3 {
   .room-details__inner {
     width: 321px;
   }
-  .other-room {
+  .other-room__inner {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -784,9 +873,6 @@ h3 {
   }
   .room-details {
     width: 285px;
-  }
-  .room-details__img {
-    width: 321px;
   }
   .placement-item:last-child__discription {
     width: 280px;
@@ -924,14 +1010,11 @@ h3 {
   .room-details {
     width: 727px;
   }
-  .room-details__img {
-    width: 768px;
-  }
   .room-details__advantages {
     -moz-columns: 2;
     columns: 2;
   }
-  .other-room {
+  .other-room__inner {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -959,6 +1042,28 @@ h3 {
   }
   .order-step__option {
     text-align: center;
+  }
+  .location {
+    padding: 0 194px;
+  }
+  .location__item:after {
+    right: 30%;
+  }
+  .type-digs__inner {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .type-digs__item {
+    width: 25%;
+    padding: 30px 0;
+  }
+  .type-digs__option--active {
+    display: block;
+    position: absolute;
+  }
+  .type-digs__title--active:before {
+    left: 45%;
+    top: 180%;
   }
 }
 @media (min-width: 1260px) {
@@ -1122,9 +1227,6 @@ h3 {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .room-details__img {
-    width: 580px;
-  }
   .room-details__discription {
     width: 580px;
   }
@@ -1135,7 +1237,7 @@ h3 {
     -moz-columns: 2;
     columns: 2;
   }
-  .other-room {
+  .other-room__inner {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -1149,6 +1251,21 @@ h3 {
     width: 50%;
     background-color: #fff;
     padding-bottom: 50px;
+  }
+  .order-step__item:after {
+    content: "";
+    position: absolute;
+    background-color: #ebebeb;
+    top: 52%;
+    left: 50%;
+    width: 1px;
+    height: 88px;
+  }
+  .location {
+    padding: 0 455px;
+  }
+  .location__item:after {
+    right: 30%;
   }
 }
 
