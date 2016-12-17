@@ -23,21 +23,48 @@
 //   })
 // });
 
-var tabs = document.querySelectorAll('.rest-type-switcher__item a');
-var typeItem = document.querySelectorAll('.rest-type-switcher__type-item');
 
-function changeTab(e) {
-  for(var i=0; i<tabs.length; i++) {
-    tabs[i].parentNode.classList.remove('rest-type-switcher__item--active');
-    typeItem[i].classList.remove('rest-type-switcher__type-item--active');
-  }
-  e.target.parentNode.classList.add('rest-type-switcher__item--active');
 
-  var link = event.target.getAttribute('href');
-  document.querySelector(link).classList.add('rest-type-switcher__type-item--active');
 
-}
+// var tabs = document.querySelectorAll('.rest-type-switcher__item a');
+// var typeItem = document.querySelectorAll('.rest-type-switcher__type-item');
 
-for (var i=0;i<tabs.length; i++) { 
-  tabs[i].addEventLinstener('click', changeTab()) 
-}
+// function changeTab(e) {
+//   for(var i=0; i<tabs.length; i++) {
+//     tabs[i].parentNode.classList.remove('rest-type-switcher__item--active');
+//     typeItem[i].classList.remove('rest-type-switcher__type-item--active');
+//   }
+//   e.target.parentNode.classList.add('rest-type-switcher__item--active');
+
+//   var link = event.target.getAttribute('href');
+//   document.querySelector(link).classList.add('rest-type-switcher__type-item--active');
+
+// }
+
+// for (var i=0;i<tabs.length; i++) { 
+//   tabs[i].addEventLinstener('click', changeTab()) 
+// }
+
+
+
+console.log(666)
+
+// var buttonTitle = document.querySelectorAll('.type-digs__title');
+// var typeOption = document.querySelectorAll('.type-digs__option');
+
+// function changeTab(e) {
+//   for(var i=0; i<buttonTitle.length; i++) {
+//     buttonTitle[i].classList.remove('type-digs__title--active');
+//     typeOption[i].classList.remove('type-digs__option--active');
+//   }
+//   e.currentTarget.classList.add('type-digs__title--active');
+//   var index = buttonTitle.indexOf(this);
+//   console.log(index);
+//   // var link = event.target.getAttribute('href');
+//   typeOption[index].classList.add('type-digs__option--active');
+
+// }
+
+// for (var i=0;i<buttonTitle.length; i++) { 
+//   buttonTitle[i].addEventLinstener('click', changeTab()) 
+// }

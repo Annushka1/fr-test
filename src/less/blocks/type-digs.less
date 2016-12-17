@@ -1,5 +1,6 @@
 .type-digs {
   background-color: @color-form;
+
   .order-step {
     display: block;
   }
@@ -11,9 +12,16 @@
     justify-content: center;
     background-color: #fff;
     border: 1px solid @color-border;
+    width: @container-xs;
+    margin: 0 auto;
 
     @media(min-width: @screen-sm) {
       flex-direction: row;
+      width: @container-sm;
+    }
+
+    @media(min-width: @screen-lg) {
+      width: @container-lg;
     }
 
     // @media(min-width: @screen-lg) {

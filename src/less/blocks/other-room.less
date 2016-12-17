@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   &__inner {
-
+    margin: 0 auto;
     
     @media(min-width: @screen-xs) and (max-width: 767px) {
       display: flex;
@@ -12,11 +12,13 @@
     }
 
     @media(min-width: @screen-sm) {
+      width: @container-sm;
       display: flex;
       justify-content: space-around;
     }
 
     @media(min-width: @screen-lg) {
+      width: @container-lg;
       display: flex;
       justify-content: space-around;   
     }
