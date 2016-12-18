@@ -379,7 +379,7 @@ h3 {
   position: absolute;
   height: 15px;
   width: 15px;
-  background: url('../../img/ic-calendar.png');
+  background: url('../img/ic-calendar.png');
   top: 10px;
   left: 15px;
   background-repeat: no-repeat;
@@ -471,7 +471,7 @@ h3 {
 .track-type__item:last-child:before {
   content: "";
   position: absolute;
-  background: url('../../img/electro.png');
+  background: url('../img/electro.png');
   width: 60px;
   height: 80px;
   bottom: 95px;
@@ -482,7 +482,7 @@ h3 {
 .track-type__item:first-child:before {
   content: "";
   position: absolute;
-  background: url('../../img/bus.png');
+  background: url('../img/bus.png');
   width: 50px;
   height: 75px;
   top: 45px;
@@ -549,7 +549,7 @@ h3 {
 .hotel-promo {
   padding: 40px 0;
   text-align: center;
-  background-image: url(../../img/hotel-promo.png);
+  background-image: url(../img/hotel-promo.png);
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -728,7 +728,7 @@ h3 {
   opacity: 0.4;
 }
 .location__label--1:after {
-  background-image: url('../../img/ic-hotel.png');
+  background-image: url('../img/ic-hotel.png');
 }
 .location__label--2:after {
   background-image: url('../../img/ic-cottage.png');
@@ -776,14 +776,14 @@ h3 {
   vertical-align: middle;
 }
 .footer-link__link--vk {
-  background-image: url('../../img/footer-vk.png');
+  background-image: url('../img/footer-vk.png');
   margin-top: 15px;
 }
 .footer-link__link--ins {
-  background-image: url('../../img/footer-inst.png');
+  background-image: url('../img/footer-inst.png');
 }
 .footer-link__link--fb {
-  background-image: url('../../img/footer-fb.png');
+  background-image: url('../img/footer-fb.png');
 }
 .type-digs {
   background-color: #f1f1f1;
@@ -820,7 +820,7 @@ h3 {
 }
 .type-digs__title--active:before {
   content: "";
-  background: url('../../img/ic-check.png');
+  background: url('../img/ic-check.png');
   width: 16px;
   height: 12px;
   left: 30%;
