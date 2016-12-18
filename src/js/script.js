@@ -1,4 +1,4 @@
-// $(document).ready(function(){
+$(document).ready(function(){
 //   $('#gallery-thumbs').owlCarousel({
 //     items: 3,
 //     loop: true,
@@ -21,29 +21,44 @@
 //     var imgUrl = $(this).attr('href');
 //     $('#gallery-main-pict').html('<img src="'+imgUrl+'" alt="">');
 //   })
-// });
 
 
 
+//Табы на главной странице
 
-// var tabs = document.querySelectorAll('.rest-type-switcher__item a');
-// var typeItem = document.querySelectorAll('.rest-type-switcher__type-item');
+var tabs = document.querySelectorAll('.rest-type-switcher__tab .rest-type-switcher__item a');
+var typeItem = document.querySelectorAll('.rest-type-switcher__type-item');
 
-// function changeTab(e) {
-//   for(var i=0; i<tabs.length; i++) {
-//     tabs[i].parentNode.classList.remove('rest-type-switcher__item--active');
-//     typeItem[i].classList.remove('rest-type-switcher__type-item--active');
-//   }
-//   e.target.parentNode.classList.add('rest-type-switcher__item--active');
+function changeTab(e) {
+  e.preventDefault()
+  for(var i=0; i<tabs.length; i++) {
+    tabs[i].parentNode.classList.remove('rest-type-switcher__item--active');
+    typeItem[i].classList.remove('rest-type-switcher__type-item--active');
+  }
+  e.target.parentNode.classList.add('rest-type-switcher__item--active');
 
-//   var link = event.target.getAttribute('href');
-//   document.querySelector(link).classList.add('rest-type-switcher__type-item--active');
+  var link = e.target.getAttribute('href');
+  document.querySelector(link).classList.add('rest-type-switcher__type-item--active');
 
-// }
+}
 
-// for (var i=0;i<tabs.length; i++) { 
-//   tabs[i].addEventLinstener('click', changeTab()) 
-// }
+for (var i=0; i<tabs.length; i++) {
+  tabs[i].addEventListener('click', changeTab);
+}
+
+
+
+//Выпадающее меню
+
+  // $(".gamburger").on("click", function(){
+  //   $(".main-nav").slideToggle();
+  //   $(this).addClass("active");
+  // });
+
+
+  $('.gamburger').on('click', function(){
+    $('.main-nav').slideToggle();
+  })
 
 
 
@@ -68,3 +83,7 @@ console.log(666)
 // for (var i=0;i<buttonTitle.length; i++) { 
 //   buttonTitle[i].addEventLinstener('click', changeTab()) 
 // }
+
+
+
+});

@@ -7,13 +7,11 @@
 		position: relative;
     
     @media (min-width: @screen-xs) and (max-width: 767px){
-      width: @container-xs;
-      padding: 17px 0;
+      padding: 17px 0 0 0;
     }
 
 		@media (min-width: @screen-sm)  and (max-width: 1259px){
-			width: @container-sm;
-      padding: 17px 0;
+      padding: 17px 0 0 0;
 	 	}
 
 		@media (min-width: @screen-lg) {
@@ -66,13 +64,13 @@
 		display: inline-block;
 		vertical-align: middle;
     color: #0ab89d;
+    margin-bottom: 15px;
 	}
 }
 
 
 
 .main-nav {
-  font-weight: @font-weight-Medium;
   display: none;
   
   @media (min-width: @screen-lg) {
@@ -87,10 +85,29 @@
 	&__item {
 	display: block;	
 	text-transform: uppercase;
+  border-bottom: 1px solid #ebebeb;
+  padding: 17px 0;
+  
+  @media (min-width: @screen-lg) {
+    border: 0;
+  }  
+
+  &:first-child {
+  border-top:  1px solid #ebebeb;
+      @media (min-width: @screen-lg) {
+    border: 0;
+  } 
+}
 
   a {
     color: @text-color;
+
+    &:hover {
+      color:@color-orange;
+    }
   }
+
+
 
 		@media (min-width: @screen-lg) {
 			display: inline-block;
@@ -99,6 +116,10 @@
 	}
 	&__list {
 		padding-left: 0;
+    margin-bottom: 0;
+    @media (min-width: @screen-lg) {
+      margin-bottom: 15px;
+    }
 	}
 
   &__item--active {
@@ -111,25 +132,29 @@
 
 .gamburger {
 	position: absolute;
-	top: 0;
+	top: -2px;
 	right: 0;
   display: block;
   margin-top: 25px;
+  cursor: pointer;
   span {
   	position: relative;
+    margin-right: 10px;
   	width: 40px;
   	height: 5px;
   	background-color: @color-orange;
   	display: inline-block;
+    cursor: pointer;
 
   	@media (min-width: @screen-lg) {
   		display: none;
   	}
   	&:before {
   		content: "";
+      cursor: pointer;
   		position: absolute;
   		top: 10px;
-  		left: 0;
+  		right: 0px;
   		width: 40px;
   		height: 5px;
   		background-color: @color-orange;
@@ -138,8 +163,9 @@
   	&:after {
   		content: "";
   		position: absolute;
+      cursor: pointer;
   		top: 20px;
-  		left: 0;
+  		right: 0px;
   		width: 40px;
   		height: 5px;
   		background-color: @color-orange;

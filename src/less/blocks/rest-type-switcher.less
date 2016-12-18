@@ -8,15 +8,15 @@
 	&__item {
 		display: inline-block;
 		text-transform: uppercase;
-		padding-right: 5px;
+		padding-right: 22px;
 
 		@media(min-width: @screen-sm) {
-			padding-right: 20px;
+			padding-right: 35px;
 		}
 
 		a {
 			text-decoration: none;
-			color: #838383;
+			color: @colorTab;
 		}
 
 		&--active {
@@ -29,11 +29,11 @@
 			&:before {
 				position: absolute;
 				content: "";
-				width: 32px;
-				height: 3px;
+				width: 30px;
+				height: 2px;
 				background-color: @color-orange;
-				bottom: -10px;
-				right: 50%;
+				bottom: -5px;
+    		right: 58%;
 				transform: translateX(50%);
 			}
 		}
@@ -47,15 +47,19 @@
 	background-size: cover;
 	background-position: bottom;
 	display: none;
-	text-align: left;
-	display: none;
+	min-height: 321px;
+	font-size: 18px;
+  font-weight: 300;
+  color: @text-color;
+  background-color: #fff;
+  text-align: center;
 
 		&:first-child {
 			background-image: url('../img/main-gall-1.png');
 		}
 
 		&:last-child {
-			background-image: url('../img/main-gall-2.png');
+			background-image: url('../img/main-galliry-2.png');
 		}
 
 		&--active {
@@ -70,26 +74,35 @@
 	}
 
 	&__type-inner {
-		padding: 19px 0;
+		padding: 28px 0 167px 0;
 		text-align: center;
-
+		
 		@media (min-width: @screen-sm) {
+			padding: 28px 0 141px 19px;
 			text-align: left;
 		}
 
 		@media (min-width: @screen-lg) {
-			width: 348px;
-			padding: 70px 0;
-			display: flex;
-			flex-direction: column;
+			width: @container-lg;
+			padding: 99px 0 180px 0;
 			text-align: left;
+			display: inline-flex;
+			flex-direction: column;
 		}
 
 		p {
-			padding: 10px;
-			background-color: @color-white;
-		}
+			opacity: 0.9;
+			background-color: #fff;
 
+		  @media (min-width: @screen-sm)  {
+		  	background-color: transparent;
+	  	  span {
+				  display: inline-block;
+				  background-color: @color-white;
+				  padding: 0 13px 0 11px;
+        }
+		  }
+		}
 	}
 
 	&__type-title  {
@@ -98,32 +111,25 @@
 		font-size: @font-size36;
 	  font-weight: 500;
 	  padding: 0;
-	  display: block;
-
-
+    line-height: 40px;
+		text-align: center;
+		opacity: 0.9;
+		// display: inline-block;
+		background-color: #fff;
 
 	  @media (min-width: @screen-sm)  {
-	  	display: inline-block;
-	  	background: #fff;
-
       background-color: transparent;
+      text-align: left;
+      margin-bottom: 22px;
 
       span {
-
+				padding: 0px 11px 0px 7px;
+				background-color: @color-white;
       }
-	  }
+    }
 
 		@media (min-width: @screen-lg) {
 			display: inline-block;
-			span {
-				background-color: @color-white;
-
-			}
-		}
-
-		span {
-			background-color: @color-white;
-			display: block;
 		}
 	}
 

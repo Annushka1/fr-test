@@ -76,9 +76,9 @@ h3 {
   display: inline-block;
   vertical-align: middle;
   color: #0ab89d;
+  margin-bottom: 15px;
 }
 .main-nav {
-  font-weight: 500;
   display: none;
 }
 .main-nav__item-active a {
@@ -87,12 +87,21 @@ h3 {
 .main-nav__item {
   display: block;
   text-transform: uppercase;
+  border-bottom: 1px solid #ebebeb;
+  padding: 17px 0;
+}
+.main-nav__item:first-child {
+  border-top: 1px solid #ebebeb;
 }
 .main-nav__item a {
   color: #191919;
 }
+.main-nav__item a:hover {
+  color: #ff7435;
+}
 .main-nav__list {
   padding-left: 0;
+  margin-bottom: 0;
 }
 .main-nav__item--active {
   color: #ff7435;
@@ -100,23 +109,27 @@ h3 {
 }
 .gamburger {
   position: absolute;
-  top: 0;
+  top: -2px;
   right: 0;
   display: block;
   margin-top: 25px;
+  cursor: pointer;
 }
 .gamburger span {
   position: relative;
+  margin-right: 10px;
   width: 40px;
   height: 5px;
   background-color: #ff7435;
   display: inline-block;
+  cursor: pointer;
 }
 .gamburger span:before {
   content: "";
+  cursor: pointer;
   position: absolute;
   top: 10px;
-  left: 0;
+  right: 0px;
   width: 40px;
   height: 5px;
   background-color: #ff7435;
@@ -124,8 +137,9 @@ h3 {
 .gamburger span:after {
   content: "";
   position: absolute;
+  cursor: pointer;
   top: 20px;
-  left: 0;
+  right: 0px;
   width: 40px;
   height: 5px;
   background-color: #ff7435;
@@ -174,7 +188,7 @@ h3 {
 .rest-type-switcher__item {
   display: inline-block;
   text-transform: uppercase;
-  padding-right: 5px;
+  padding-right: 22px;
 }
 .rest-type-switcher__item a {
   text-decoration: none;
@@ -189,11 +203,11 @@ h3 {
 .rest-type-switcher__item--active:before {
   position: absolute;
   content: "";
-  width: 32px;
-  height: 3px;
+  width: 30px;
+  height: 2px;
   background-color: #ff7435;
-  bottom: -10px;
-  right: 50%;
+  bottom: -5px;
+  right: 58%;
   transform: translateX(50%);
 }
 .rest-type-switcher__type {
@@ -203,14 +217,19 @@ h3 {
 .rest-type-switcher__type-item {
   background-size: cover;
   background-position: bottom;
-  text-align: left;
   display: none;
+  min-height: 321px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #191919;
+  background-color: #fff;
+  text-align: center;
 }
 .rest-type-switcher__type-item:first-child {
   background-image: url('../img/main-gall-1.png');
 }
 .rest-type-switcher__type-item:last-child {
-  background-image: url('../img/main-gall-2.png');
+  background-image: url('../img/main-galliry-2.png');
 }
 .rest-type-switcher__type-item--active {
   display: block;
@@ -219,11 +238,11 @@ h3 {
   display: block;
 }
 .rest-type-switcher__type-inner {
-  padding: 19px 0;
+  padding: 28px 0 167px 0;
   text-align: center;
 }
 .rest-type-switcher__type-inner p {
-  padding: 10px;
+  opacity: 0.9;
   background-color: #fff;
 }
 .rest-type-switcher__type-title {
@@ -232,11 +251,10 @@ h3 {
   font-size: 36px;
   font-weight: 500;
   padding: 0;
-  display: block;
-}
-.rest-type-switcher__type-title span {
+  line-height: 40px;
+  text-align: center;
+  opacity: 0.9;
   background-color: #fff;
-  display: block;
 }
 .rest-type-switcher__tab {
   -ms-flex-order: 2;
@@ -731,7 +749,7 @@ h3 {
   background-image: url('../img/ic-hotel.png');
 }
 .location__label--2:after {
-  background-image: url('../../img/ic-cottage.png');
+  background-image: url('../img/ic-cottage.png');
 }
 .location__list {
   display: inline-block;
@@ -841,8 +859,7 @@ h3 {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header__inner {
-    width: 285px;
-    padding: 17px 0;
+    padding: 17px 0 0 0;
   }
   .room-details__item {
     width: 321px;
@@ -911,8 +928,7 @@ h3 {
 }
 @media (min-width: 768px) and (max-width: 1259px) {
   .page-header__inner {
-    width: 727px;
-    padding: 17px 0;
+    padding: 17px 0 0 0;
   }
   .reviews__item {
     width: 479px;
@@ -952,15 +968,28 @@ h3 {
     text-align: left;
   }
   .rest-type-switcher__item {
-    padding-right: 20px;
+    padding-right: 35px;
   }
   .rest-type-switcher__type-inner {
+    padding: 28px 0 141px 19px;
     text-align: left;
   }
-  .rest-type-switcher__type-title {
-    display: inline-block;
-    background: #fff;
+  .rest-type-switcher__type-inner p {
     background-color: transparent;
+  }
+  .rest-type-switcher__type-inner p span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 13px 0 11px;
+  }
+  .rest-type-switcher__type-title {
+    background-color: transparent;
+    text-align: left;
+    margin-bottom: 22px;
+  }
+  .rest-type-switcher__type-title span {
+    padding: 0px 11px 0px 7px;
+    background-color: #fff;
   }
   .rest-type-switcher__options-list {
     padding: 0 140px;
@@ -1123,8 +1152,17 @@ h3 {
     display: block;
   }
   .main-nav__item {
+    border: 0;
+  }
+  .main-nav__item:first-child {
+    border: 0;
+  }
+  .main-nav__item {
     display: inline-block;
     padding-right: 15px;
+  }
+  .main-nav__list {
+    margin-bottom: 15px;
   }
   .gamburger span {
     display: none;
@@ -1144,19 +1182,16 @@ h3 {
     text-align: left;
   }
   .rest-type-switcher__type-inner {
-    width: 348px;
-    padding: 70px 0;
-    display: -ms-flexbox;
-    display: flex;
+    width: 1180px;
+    padding: 99px 0 180px 0;
+    text-align: left;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    text-align: left;
   }
   .rest-type-switcher__type-title {
     display: inline-block;
-  }
-  .rest-type-switcher__type-title span {
-    background-color: #fff;
   }
   .rest-type-switcher__options-list {
     width: 1180px;
