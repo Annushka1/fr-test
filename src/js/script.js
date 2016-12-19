@@ -73,6 +73,15 @@ $('.slider-nav').slick({
 
 
 
+//Карусель с отзывами
+// $('.multiple-items').slick({
+//   infinite: true,
+//   slidesToShow: 2,
+//   slidesToScroll: 2
+// });
+
+
+
 
 
 
