@@ -76,8 +76,23 @@ $('.slider-nav').slick({
 //Карусель с отзывами
 $('.multiple-items').slick({
   infinite: true,
+  speed: 350,
+// определяем скорость перелистывания
   slidesToShow: 2,
-  slidesToScroll: 2
+//количество слайдов для показа
+  slidesToScroll: 2,
+//сколько слайдов за раз перелистнется
+responsive: [
+    {
+      breakpoint: 800,
+//сообщает, при какой ширине экрана нужно включать настройки
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    }
+]
 });
 
 

@@ -306,6 +306,8 @@ h3 {
 }
 .reviews {
   background-color: #19bc99;
+  background-image: url('../img/reviews-bg.png');
+  background-size: cover;
   padding: 69px 0 55px 0;
   display: -ms-flexbox;
   display: flex;
@@ -322,6 +324,7 @@ h3 {
   -ms-flex-pack: center;
       justify-content: center;
   margin: 0 auto;
+  width: 285px;
 }
 .reviews__title {
   color: #fff;
@@ -330,7 +333,7 @@ h3 {
   font-weight: 400;
   width: 100%;
   text-align: center;
-  margin-bottom: 56px;
+  margin-bottom: 54px;
 }
 .reviews__item {
   background-color: #fff;
@@ -339,9 +342,11 @@ h3 {
   text-align: center;
   margin-bottom: 40px;
   position: relative;
-}
-.reviews__item:last-child {
   display: none;
+  width: 100%;
+}
+.reviews__item:first-child {
+  display: block;
 }
 .reviews__item:after {
   position: absolute;
@@ -368,21 +373,20 @@ h3 {
   font-weight: 500;
 }
 .reviews .slick-slider {
-  width: 976px;
+  width: 100%;
 }
-.reviews button:slick-next:before {
+.reviews .slick-prev:before,
+.reviews .slick-next:before {
   content: "";
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  width: 10px;
-  height: 10px;
-  display: block;
-  position: absolute;
-  right: 30px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+}
+.reviews .slick-next:before,
+.reviews [dir=rtl] {
   transform: rotate(45deg);
+  left: -10px;
+}
+.reviews .slick-prev:before {
+  transform: rotate(226deg);
+  right: 10px;
 }
 .btn {
   padding: 10px 20px 8px 20px;
@@ -422,7 +426,6 @@ h3 {
 .btn--reviews {
   border: 3px solid #fff;
   background-color: #19bc99;
-  padding: 10px 30px;
   margin: 0 auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -951,6 +954,12 @@ h3 {
 @media (min-width: 320px) and (max-width: 479px) {
   .reviews__item {
     width: 479px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .slick-active {
+    width: 100vw;
   }
 }
 @media (min-width: 320px) and (max-width: 1200px) {
@@ -964,8 +973,9 @@ h3 {
   }
   .reviews__item {
     width: 479px;
+    display: none;
   }
-  .reviews__item:last-child {
+  .reviews__item:first-child {
     display: block;
   }
   .room-details__item {
@@ -1046,6 +1056,9 @@ h3 {
   }
   .reviews__img {
     left: 41%;
+  }
+  .reviews .slick-slider {
+    width: 100%;
   }
   .stock__title {
     padding: 44px 0 34px 0;
@@ -1262,11 +1275,29 @@ h3 {
   .reviews__inner {
     width: 1180px;
   }
+  .reviews__title {
+    margin-bottom: 49px;
+  }
   .reviews__item {
     width: 470px;
   }
-  .reviews__item:last-child {
+  .reviews__item:first-child {
     display: block;
+  }
+  .reviews .slick-slider {
+    width: 100%;
+  }
+  .reviews .slick-prev:before,
+  .reviews .slick-next:before {
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    bottom: 0;
+    margin: auto;
   }
   .btn--underlined {
     display: inline-block;

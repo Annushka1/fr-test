@@ -1,5 +1,7 @@
 .reviews {
   background-color: @color-green;
+  background-image: url('../img/reviews-bg.png');
+  background-size: cover;
   padding: 69px 0 55px 0;
   display: flex;
   justify-content: center;
@@ -22,6 +24,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
+    width: @container-xs;
 
     @media (min-width: @screen-xs) {
       width: @container-xs;
@@ -43,7 +46,11 @@
     font-weight: 400;
     width: 100%;
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 54px;
+
+    @media (min-width: @screen-lg) {
+      margin-bottom: 49px;
+    }
   }
 
   &__item {
@@ -53,25 +60,30 @@
     text-align: center;
     margin-bottom: 40px;
     position: relative;
+    display: none;
+    // margin-right: 0;
+    width: 100%;
 
     @media(min-width: @screen-xs) and (max-width: 479px){
       width: 479px;
+      margin-right: 20px;
     }
 
-    &:last-child {
-      display: none;
+    &:first-child {
+      display: block;
     }
 
     @media (min-width: @screen-sm) and (max-width: 1259px){
       width: 479px;
-      &:last-child {
+      display: none;
+      &:first-child {
         display: block;
     }
   }
 
     @media (min-width: @screen-lg) {
       width: 470px;
-      &:last-child {
+      &:first-child {
         display: block;
       }
   }
@@ -112,23 +124,51 @@
     }
 
     .slick-slider {
-      width: 976px;
+      width: 100%;
+
+      @media (min-width: @screen-sm) {
+        width: 100%;
+      }
+
+      @media (min-width: @screen-lg) {
+        width: 100%;
+      }
     }
 
-    button:slick-next:before {
+    .slick-prev:before, .slick-next:before {
       content: "";
-      border-top: 2px solid #fff;
-      border-right: 2px solid #fff;
-      width: 10px;
-      height: 10px;
-      display: block;
-      position: absolute;
-      right: 30px;
-      top: 0;
-      bottom: 0;
-      margin: auto;
+      
+      @media (min-width: @screen-lg) {
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        top: -50px;
+        bottom: 0;
+        margin: auto;
+      }
+
+    }
+
+    .slick-next:before, [dir=rtl] { 
       transform: rotate(45deg);
+      left: -10px;
+
+    }
+
+    .slick-prev:before {
+      transform: rotate(226deg);
+      right: 10px;
     }
   }
+
+  .slick-active {
+    @media (min-width: @screen-xs) and (max-width: @screen-sm) {
+      width: 100vw;
+    }
+  }
+  
 
 
