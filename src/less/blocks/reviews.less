@@ -76,18 +76,6 @@
       }
   }
 
-
-    // &:before {
-    //    position: absolute;
-    //    content: "";
-    //    background: url('../../img/kate.png');
-    //    height: 82px;
-    //    width: 82px;
-    //    background-repeat: no-repeat;
-    //    top: -30px;
-    //    right: 50%;
-    //    transform: translateX(50%);
-    // }
     &:after {
       position: absolute;
       content: "";
@@ -122,5 +110,25 @@
       display: inline-block;
       font-weight: 500;
     }
+
+    .slick-slider {
+      width: 976px;
+    }
+
+    button:slick-next:before {
+      content: "";
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      width: 10px;
+      height: 10px;
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transform: rotate(45deg);
+    }
   }
+
 
