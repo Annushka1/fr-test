@@ -26,18 +26,20 @@
     @media(min-width: @screen-lg) {
       width: 580px;
       height: 393px;
-
-      // &:after {
-      //   content: "";
-      //   position: absolute;
-      //   height: 30px;
-      //   width: 30px;
-      //   background-image: url('../../img/loop.png');
-      //   right: 0;
-      //   top: 10px;
-      // }
     }
   
+  }
+
+  &__loop:after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url('../../img/loop.png');
+    right: 15px;
+    top: 15px;
+    z-index: 2;
+    background-repeat: no-repeat;
   }
 
   &__title {
@@ -66,6 +68,7 @@
     @media(min-width: @screen-lg) {
       flex-direction: row;
       justify-content: center;
+      position: relative;
     }
   }
 
@@ -165,32 +168,32 @@
 }
 
 .slick-next:before, .slick-prev:before {
-  // color: #000;
-  // display: block !important;
-  // right: 5%;
    content: "";
       
    @media (min-width: @screen-lg) {
-    border-top: 3px solid #000;
-    border-right: 3px solid #000;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
     width: 20px;
     height: 20px;
     display: block;
     position: absolute;
-    top: -50px;
+    top: 0;
     bottom: 0;
     margin: auto;
+    z-index: 1;
+    opacity: 1;
   }
 
 }
 
   .slick-next:before { 
       transform: rotate(45deg);
+      left: -40px;
     }
 
     .slick-prev:before {
       transform: rotate(226deg);
-      right: 10px;
+      right: -50px;
     }
   .slick-track {
     width: 100vw;

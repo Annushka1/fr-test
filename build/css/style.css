@@ -338,10 +338,9 @@ h3 {
 }
 .reviews__item {
   background-color: #fff;
-  margin-right: 20px;
   padding: 70px 40px;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 20px 20px 40px 0;
   position: relative;
   display: none;
   outline: none;
@@ -682,6 +681,17 @@ h3 {
   width: 100%;
   margin-bottom: 40px;
 }
+.room-details__loop:after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-image: url('../../img/loop.png');
+  right: 15px;
+  top: 15px;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
 .room-details__title {
   font-size: 30px;
   margin-bottom: 18px;
@@ -741,10 +751,11 @@ h3 {
 }
 .room-details .slick-next:before {
   transform: rotate(45deg);
+  left: -40px;
 }
 .room-details .slick-prev:before {
   transform: rotate(226deg);
-  right: 10px;
+  right: -50px;
 }
 .room-details .slick-track {
   width: 100vw;
@@ -1448,6 +1459,7 @@ h3 {
     flex-direction: row;
     -ms-flex-pack: center;
     justify-content: center;
+    position: relative;
   }
   .room-details__img {
     height: 393px;
@@ -1466,15 +1478,17 @@ h3 {
   }
   .room-details .slick-next:before,
   .room-details .slick-prev:before {
-    border-top: 3px solid #000;
-    border-right: 3px solid #000;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
     width: 20px;
     height: 20px;
     display: block;
     position: absolute;
-    top: -50px;
+    top: 0;
     bottom: 0;
     margin: auto;
+    z-index: 1;
+    opacity: 1;
   }
   .other-room__inner {
     width: 1180px;
