@@ -40,9 +40,13 @@
     background-image: url(../img/stock-bg.png);
     background-size: cover;
     background-position: 30% 45%;
+    width: @container-xs;
+    outline: none;
+
 
     @media(min-width: @screen-lg) {
       background-position: 0 0;
+      width: @container-lg;
     }
 
     &--active {
@@ -60,6 +64,46 @@
     padding: 8px;
     background-color: #fff;
     font-size: @font-size16;
+  }
+
+  &__gallery {
+    @media(min-width: @screen-lg) {
+      padding: 0 110px;
+    }
+  }
+
+  .slick-dots li button {
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    border: 2px solid @color-orange;
+    content: "";
+    opacity: 1;
+    position: absolute;
+    top: 31px;
+  }
+
+  .slick-dots li.slick-active button:before {
+    background-color: @color-orange;
+    content: "";
+    border-radius: 8px;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+  }
+
+  .slick-dots li button:before {
+    color: @color-white;
+    left: -2px;
+    top: -2px;
+  }
+
+  .slick-dots {
+    margin: 0 auto;
+   
+    @media(min-width: @screen-lg) {
+      width: 1066px;
+    }
   }
 
 }
