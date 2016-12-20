@@ -678,6 +678,10 @@ h3 {
   text-align: center;
   margin: 0 auto;
 }
+.room-details__gallery {
+  width: 100%;
+  margin-bottom: 40px;
+}
 .room-details__title {
   font-size: 30px;
   margin-bottom: 18px;
@@ -685,6 +689,18 @@ h3 {
 .room-details__item {
   margin: 50px 0;
   text-align: left;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.room-details__img {
+  width: 319px;
+  height: 100%;
+}
+.room-details__discription {
+  -ms-flex-order: 1;
+      order: 1;
 }
 .room-details__title-item {
   font-size: 26px;
@@ -718,6 +734,20 @@ h3 {
 .room-details__bonus {
   font-size: 16px;
   list-style-type: none;
+}
+.room-details .slick-next:before,
+.room-details .slick-prev:before {
+  content: "";
+}
+.room-details .slick-next:before {
+  transform: rotate(45deg);
+}
+.room-details .slick-prev:before {
+  transform: rotate(226deg);
+  right: 10px;
+}
+.room-details .slick-track {
+  width: 100vw;
 }
 .other-room {
   background-color: #fafafa;
@@ -975,8 +1005,6 @@ h3 {
   }
   .room-details__discription {
     width: 321px;
-    -ms-flex-order: 1;
-    order: 1;
   }
   .room-details__inner {
     width: 321px;
@@ -1103,6 +1131,10 @@ h3 {
   }
   .room-details {
     width: 727px;
+  }
+  .room-details__img {
+    width: 100%;
+    height: 524px;
   }
   .room-details__advantages {
     -moz-columns: 2;
@@ -1407,14 +1439,23 @@ h3 {
   .room-details {
     width: 1180px;
   }
+  .room-details__gallery {
+    width: 580px;
+    height: 393px;
+  }
   .room-details__item {
-    display: -ms-flexbox;
-    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .room-details__img {
+    height: 393px;
+  }
   .room-details__discription {
     width: 580px;
+    -ms-flex-order: 0;
+    order: 0;
   }
   .room-details__inner {
     width: 580px;
@@ -1422,6 +1463,18 @@ h3 {
   .room-details__advantages {
     -moz-columns: 2;
     columns: 2;
+  }
+  .room-details .slick-next:before,
+  .room-details .slick-prev:before {
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    bottom: 0;
+    margin: auto;
   }
   .other-room__inner {
     width: 1180px;
