@@ -1093,6 +1093,7 @@ h3 {
   .room-item__img {
     text-align: center;
     margin: 50px 75px 0 75px;
+    width: 575px;
   }
   .room-item__discriprion {
     margin: 0;
