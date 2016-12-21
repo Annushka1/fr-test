@@ -86,7 +86,7 @@ function changeTab(e) {
   e.preventDefault()
   for(var i=0; i<tabs.length; i++) {
     tabs[i].parentNode.classList.remove('rest-type-switcher__item--active');
-    typeItem[i].classList.remove('rest-type-switcher__tye-item--active');
+    typeItem[i].classList.remove('rest-type-switcher__type-item--active');
   }
   e.target.parentNode.classList.add('rest-type-switcher__item--active');
 
