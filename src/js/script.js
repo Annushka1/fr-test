@@ -26,38 +26,53 @@ $('.slider-nav').slick({
 
 
 //Карусель с отзывами
-$('.multiple-items').slick({
+$('.responsive').slick({
+  dots: false,
   infinite: true,
-  speed: 350,
-// определяем скорость перелистывания
+  speed: 300,
   slidesToShow: 2,
-//количество слайдов для показа
   slidesToScroll: 2,
-//сколько слайдов за раз перелистнется
-responsive: [
+  responsive: [
     {
-      breakpoint: 800,
-//сообщает, при какой ширине экрана нужно включать настройки
+      breakpoint: 1024,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 790,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     }
-]
+  ]
 });
 
 //Карусель акций
 $('.one-time').slick({
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: true
+  adaptiveHeight: true,
+  arrows: false
 });
 
 
 //Карусель на третьей странице
+
+$('.one-time-second').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  arrows: true
+});
 
 //Табы на главной странице
 

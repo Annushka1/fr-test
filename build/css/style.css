@@ -325,7 +325,6 @@ h3 {
   -ms-flex-pack: center;
       justify-content: center;
   margin: 0 auto;
-  width: 285px;
 }
 .reviews__title {
   color: #fff;
@@ -340,11 +339,12 @@ h3 {
   background-color: #fff;
   padding: 70px 40px;
   text-align: center;
-  margin: 20px 20px 40px 0;
+  margin: 20px 0;
   position: relative;
   display: none;
   outline: none;
-  width: 100%;
+  width: 100vw;
+  border: 1px solid #ebebeb;
 }
 .reviews__item:first-child {
   display: block;
@@ -363,7 +363,7 @@ h3 {
 .reviews__img {
   position: absolute;
   top: -30px;
-  left: 35%;
+  left: 44%;
 }
 .reviews__review-text {
   font-size: 16px;
@@ -373,8 +373,12 @@ h3 {
   display: inline-block;
   font-weight: 500;
 }
+.reviews .slick-next {
+  right: 0;
+}
 .reviews .slick-slider {
-  width: 100%;
+  width: 96.5vw;
+  margin: 0;
 }
 .reviews .slick-prev:before,
 .reviews .slick-next:before {
@@ -383,7 +387,7 @@ h3 {
 .reviews .slick-next:before,
 .reviews [dir=rtl] {
   transform: rotate(45deg);
-  left: -10px;
+  left: 40px;
 }
 .reviews .slick-prev:before {
   transform: rotate(226deg);
@@ -683,14 +687,6 @@ h3 {
 }
 .room-details__loop:after {
   content: "";
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  background-image: url('../../img/loop.png');
-  right: 15px;
-  top: 15px;
-  z-index: 2;
-  background-repeat: no-repeat;
 }
 .room-details__title {
   font-size: 30px;
@@ -705,23 +701,27 @@ h3 {
       flex-direction: column;
 }
 .room-details__img {
-  width: 319px;
+  width: 100%;
   height: 100%;
 }
 .room-details__discription {
   -ms-flex-order: 1;
       order: 1;
+  width: 100%;
+  padding: 0 25px;
 }
 .room-details__title-item {
   font-size: 26px;
+  width: 100%;
+  margin-bottom: 25px;
 }
 .room-details__text {
   font-size: 16px;
-  padding: 25px 0;
 }
 .room-details__advantages {
   font-size: 16px;
   list-style-type: none;
+  padding: 0;
 }
 .room-details__advantages li {
   position: relative;
@@ -744,6 +744,25 @@ h3 {
 .room-details__bonus {
   font-size: 16px;
   list-style-type: none;
+  padding: 0;
+}
+.room-details__bonus li {
+  position: relative;
+  padding-left: 20px;
+}
+.room-details__bonus li:after {
+  content: "";
+  border-top: 2px solid #ff7435;
+  border-right: 2px solid #ff7435;
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(45deg);
 }
 .room-details .slick-next:before,
 .room-details .slick-prev:before {
@@ -760,6 +779,9 @@ h3 {
 .room-details .slick-track {
   width: 100vw;
 }
+.room-details .slick-next {
+  left: 5px;
+}
 .other-room {
   background-color: #fafafa;
   padding: 50px 0;
@@ -767,16 +789,23 @@ h3 {
 }
 .other-room__inner {
   margin: 0 auto;
+  width: 285px;
 }
 .placement-item {
   text-align: center;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  margin-bottom: 20px;
 }
 .placement-item__img {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .placement-item__title {
   font-size: 26px;
   margin-bottom: 8px;
+}
+.placement-item__discription {
+  padding-bottom: 40px;
 }
 .order-main {
   padding: 75px 0 45px 0;
@@ -972,9 +1001,6 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .reviews__inner {
-    width: 285px;
-  }
   .track-type__inner {
     width: 285px;
   }
@@ -988,9 +1014,6 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .room-details {
-    width: 285px;
-  }
   .placement-item:last-child__discription {
     width: 280px;
     background-color: #fff;
@@ -998,27 +1021,15 @@ h3 {
 }
 @media (min-width: 320px) and (max-width: 479px) {
   .reviews__item {
-    width: 479px;
-  }
-}
-@media (min-width: 320px) and (max-width: 768px) {
-  .reviews .slick-active {
-    width: 321px;
+    width: 100vw;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .room-details__item {
-    width: 321px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-  .room-details__discription {
-    width: 321px;
-  }
-  .room-details__inner {
-    width: 321px;
   }
   .other-room__inner {
     display: -ms-flexbox;
@@ -1093,7 +1104,7 @@ h3 {
     width: 727px;
   }
   .reviews__img {
-    left: 41%;
+    left: 50%;
   }
   .reviews .slick-slider {
     width: 100%;
@@ -1140,9 +1151,6 @@ h3 {
   .room-item__discriprion-inner {
     padding-left: 110px;
   }
-  .room-details {
-    width: 727px;
-  }
   .room-details__img {
     width: 100%;
     height: 524px;
@@ -1162,6 +1170,9 @@ h3 {
     width: 355px;
     height: 138px;
     background-color: #fff;
+  }
+  .placement-item {
+    margin: 0 20px 0 0;
   }
   .order-step {
     display: -ms-inline-flexbox;
@@ -1242,24 +1253,16 @@ h3 {
   .reviews__item {
     width: 479px;
     display: none;
+    margin-right: 20px;
   }
   .reviews__item:first-child {
     display: block;
   }
   .room-details__item {
-    width: 768px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-  .room-details__discription {
-    width: 768px;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-  .room-details__inner {
-    width: 768px;
   }
 }
 @media (min-width: 1260px) {
@@ -1348,6 +1351,7 @@ h3 {
   }
   .reviews__item {
     width: 470px;
+    margin-left: 20px;
   }
   .reviews__item:first-child {
     display: block;
@@ -1363,7 +1367,7 @@ h3 {
     height: 20px;
     display: block;
     position: absolute;
-    top: -50px;
+    top: 0;
     bottom: 0;
     margin: auto;
   }
@@ -1447,12 +1451,19 @@ h3 {
     flex: 0 0 50%;
     max-width: 50%;
   }
-  .room-details {
-    width: 1180px;
-  }
   .room-details__gallery {
     width: 580px;
     height: 393px;
+  }
+  .room-details__loop:after {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url('../../img/loop.png');
+    right: 15px;
+    top: 15px;
+    z-index: 2;
+    background-repeat: no-repeat;
   }
   .room-details__item {
     -ms-flex-direction: row;
@@ -1460,17 +1471,16 @@ h3 {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .room-details__img {
     height: 393px;
   }
   .room-details__discription {
-    width: 580px;
     -ms-flex-order: 0;
     order: 0;
-  }
-  .room-details__inner {
-    width: 580px;
   }
   .room-details__advantages {
     -moz-columns: 2;
@@ -1487,7 +1497,6 @@ h3 {
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 1;
     opacity: 1;
   }
   .other-room__inner {
@@ -1500,6 +1509,9 @@ h3 {
   .placement-item:last-child__discription {
     width: 380px;
     background-color: #fff;
+  }
+  .placement-item {
+    margin-right: 0;
   }
   .order-step__item {
     width: 50%;
@@ -1552,6 +1564,11 @@ h3 {
   }
   .gallery {
     width: 1180px;
+  }
+}
+@media (min-width: 0) and (max-width: 768px) {
+  .reviews .slick-active {
+    width: 100%;
   }
 }
 

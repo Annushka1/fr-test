@@ -24,11 +24,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    width: @container-xs;
+    // width: @container-xs;
 
-    @media (min-width: @screen-xs) {
-      width: @container-xs;
-    }
     @media (min-width: @screen-sm) {
       width: @container-sm;
     }
@@ -57,15 +54,16 @@
     background-color: #fff;
     padding: 70px 40px;
     text-align: center;
-    margin: 20px 20px 40px 0;
+    margin: 20px 0;
     position: relative;
     display: none;
     outline: none;
     // margin-right: 0;
-    width: 100%;
+    width: 100vw;
+    border: 1px solid @color-border;
 
     @media(min-width: @screen-xs) and (max-width: 479px){
-      width: 479px;
+      width: 100vw;
       // margin-right: 20px;
     }
 
@@ -76,7 +74,7 @@
     @media (min-width: @screen-sm) and (max-width: 1259px){
       width: 479px;
       display: none;
-      // margin-right: 20px;
+      margin-right: 20px;
       &:first-child {
         display: block;
     }
@@ -84,6 +82,7 @@
 
     @media (min-width: @screen-lg) {
       width: 470px;
+      margin-left: 20px;
       &:first-child {
         display: block;
       }
@@ -105,11 +104,11 @@
     &__img {
       position: absolute;
       top: -30px;
-      left: 35%;
+      left: 44%;
 
 
       @media(min-width: @screen-sm) {
-        left: 41%;
+        left: 50%;
       }
     }
 
@@ -124,16 +123,20 @@
       font-weight: 500;
     }
 
+    .slick-next {
+      right: 0;
+    }
+
     .slick-slider {
-      width: 100%;
+      width: 96.5vw;
+      margin: 0;
 
       @media (min-width: @screen-sm) {
         width: 100%;
       }
 
       @media (min-width: @screen-lg) {
-        width: 976px;
-        
+        width: 976px;        
       }
     }
 
@@ -147,7 +150,7 @@
         height: 20px;
         display: block;
         position: absolute;
-        top: -50px;
+        top: 0;
         bottom: 0;
         margin: auto;
       }
@@ -156,7 +159,7 @@
 
     .slick-next:before, [dir=rtl] { 
       transform: rotate(45deg);
-      left: -10px;
+      left: 40px;
 
     }
 
@@ -166,8 +169,8 @@
     }
 
   .slick-active {
-    @media (min-width: @screen-xs) and (max-width: @screen-sm) {
-      width: 321px;
+    @media (min-width: 0) and (max-width: @screen-sm) {
+      width: 100%;
     }
   }
 
