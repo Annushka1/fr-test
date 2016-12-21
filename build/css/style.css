@@ -685,9 +685,6 @@ h3 {
   width: 100%;
   margin-bottom: 40px;
 }
-.room-details__loop:after {
-  content: "";
-}
 .room-details__title {
   font-size: 30px;
   margin-bottom: 18px;
@@ -770,7 +767,7 @@ h3 {
 }
 .room-details .slick-next:before {
   transform: rotate(45deg);
-  left: -40px;
+  left: 40px;
 }
 .room-details .slick-prev:before {
   transform: rotate(226deg);
@@ -780,7 +777,7 @@ h3 {
   width: 100vw;
 }
 .room-details .slick-next {
-  left: 5px;
+  left: 85%;
 }
 .other-room {
   background-color: #fafafa;
@@ -1455,7 +1452,8 @@ h3 {
     width: 580px;
     height: 393px;
   }
-  .room-details__loop:after {
+  .room-details__loop {
+    content: "";
     position: absolute;
     height: 30px;
     width: 30px;
@@ -1464,6 +1462,7 @@ h3 {
     top: 15px;
     z-index: 2;
     background-repeat: no-repeat;
+    cursor: pointer;
   }
   .room-details__item {
     -ms-flex-direction: row;
