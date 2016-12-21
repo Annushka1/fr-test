@@ -929,11 +929,13 @@ h3 {
       justify-content: center;
   background-color: #fff;
   border: 1px solid #ebebeb;
-  width: 285px;
+  width: 100vw;
   margin: 0 auto;
 }
 .type-digs__item {
   width: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .type-digs__option {
   display: none;
@@ -942,8 +944,19 @@ h3 {
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
+.type-digs #flagman:before {
+  left: 12%;
+}
+.type-digs #Ozerny:before {
+  left: 38%;
+}
+.type-digs #Olhovka:before {
+  left: 63%;
+}
+.type-digs #portovy:before {
+  left: 88%;
+}
 .type-digs__option-item {
-  width: 20%;
   position: relative;
 }
 .type-digs__option-item--1:after {
@@ -954,7 +967,7 @@ h3 {
   width: 50px;
   background-repeat: no-repeat;
   top: -55px;
-  left: 75px;
+  left: 15px;
 }
 .type-digs__option-item--2:after {
   content: "";
@@ -964,17 +977,35 @@ h3 {
   width: 50px;
   background-repeat: no-repeat;
   top: -55px;
-  left: 86px;
+  left: 35px;
 }
 .type-digs__option-item--3:after {
   content: "";
   position: absolute;
-  background-image: url('../../img/item-offer-3.png');
+  background-image: url('../img/item-offer-3.png');
   height: 50px;
   width: 55px;
   background-repeat: no-repeat;
   top: -55px;
-  left: 70px;
+  left: 22px;
+}
+.type-digs__option-item--4:after {
+  content: "";
+  position: absolute;
+  background-image: url('../img/item-offer-4.png');
+  height: 50px;
+  width: 55px;
+  background-repeat: no-repeat;
+  top: -55px;
+  left: 20px;
+}
+.type-digs__option-item--5:after {
+  content: "";
+  position: absolute;
+  background-image: url('../img/item-offer-Wi-FI.png');
+  height: 50px;
+  width: 55px;
+  background-repeat: no-repeat;
 }
 .type-digs__title {
   color: #979696;
@@ -990,9 +1021,9 @@ h3 {
   background: url('../img/ic-check.png');
   width: 16px;
   height: 12px;
+  position: absolute;
   left: 30%;
   top: 10%;
-  position: absolute;
 }
 .personal-information__inner {
   margin: 0 auto;
@@ -1232,7 +1263,7 @@ h3 {
   .type-digs__inner {
     -ms-flex-direction: row;
     flex-direction: row;
-    width: 727px;
+    width: 100vw;
   }
   .type-digs__item {
     width: 25%;
@@ -1244,11 +1275,27 @@ h3 {
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    padding: 80px 0 24px 0;
+    padding: 85px 30px 20px 30px;
+    position: relative;
+  }
+  .type-digs__option--active:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    transform: rotate(45deg) translateX(-17px);
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+  }
+  .type-digs__option-item--5:after {
+    top: -55px;
+    left: -5px;
   }
   .type-digs__title--active:before {
     left: 45%;
-    top: 180%;
+    top: 150%;
   }
   .personal-information__inner {
     width: 727px;
@@ -1573,8 +1620,18 @@ h3 {
   .location__label:after {
     right: 30%;
   }
+  .type-digs .order-step {
+    width: 780px;
+  }
   .type-digs__inner {
-    width: 1180px;
+    width: 780px;
+  }
+  .type-digs__option-item--5:after {
+    left: -5px;
+  }
+  .type-digs__title--active:before {
+    left: 45%;
+    top: 180%;
   }
   .personal-information__inner {
     width: 1180px;

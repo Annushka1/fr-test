@@ -3,6 +3,11 @@
 
   .order-step {
     display: block;
+
+
+    @media(min-width: @screen-lg) {
+     width: 780px;
+    }
   }
 
 
@@ -12,16 +17,16 @@
     justify-content: center;
     background-color: #fff;
     border: 1px solid @color-border;
-    width: @container-xs;
+    width: 100vw;
     margin: 0 auto;
 
     @media(min-width: @screen-sm) {
       flex-direction: row;
-      width: @container-sm;
+      width: 100vw;
     }
 
     @media(min-width: @screen-lg) {
-      width: @container-lg;
+      width: 780px;
     }
 
     // @media(min-width: @screen-lg) {
@@ -33,6 +38,8 @@
 
   &__item {
     width: 100%;
+    text-transform: uppercase;
+    font-size: @font-size;
     @media(min-width: @screen-sm) {
       width: 25%;
       padding: 30px 0;
@@ -44,20 +51,53 @@
     font-size: @font-size18;
     margin: 20px 0 0 0;
     justify-content: space-between;
-
+    // padding: 45px 0 15px 0;
+   
     @media(min-width: @screen-sm) {
       &--active {
         display: block;
         background-color: @color-white;
         display: flex;
         list-style-type: none;
-        padding: 80px 0 24px 0;
+        padding: 85px 30px 20px 30px;
+        position: relative;
+
+        &:before {
+          content: "";
+          width: 24px;
+          height: 24px;
+          transform: rotate(45deg) translateX(-17px);
+          border-left: 1px solid rgba(0, 0, 0, 0.08);
+          border-top: 1px solid rgba(0, 0, 0, 0.08);
+          background-color: #fff;
+          position: absolute;
+          top: 0;
+        }
       }
     }
   }
 
+  #flagman:before {
+    left: 12%;
+  }
+
+  #Ozerny:before {
+    left: 38%;
+  }
+
+  #Olhovka:before {
+    left: 63%;
+  }
+
+  #portovy:before {
+    left: 88%;
+  }
+
+  &__item-offer {
+
+  }
+
 &__option-item {
-  width: 20%;
   position: relative;
 
   &--1:after {
@@ -68,7 +108,7 @@
     width: 50px;
     background-repeat: no-repeat;
     top: -55px;
-    left: 75px;
+    left: 15px;
   }
 
     &--2:after {
@@ -79,18 +119,47 @@
     width: 50px;
     background-repeat: no-repeat;
     top: -55px;
-    left: 86px;
+    left: 35px;
   }
 
  &--3:after {
     content: "";
     position: absolute;
-    background-image: url('../../img/item-offer-3.png');
+    background-image: url('../img/item-offer-3.png');
     height: 50px;
     width: 55px;
     background-repeat: no-repeat;
     top: -55px;
-    left: 70px;
+    left: 22px;
+  }
+
+  &--4:after {
+    content: "";
+    position: absolute;
+    background-image: url('../img/item-offer-4.png');
+    height: 50px;
+    width: 55px;
+    background-repeat: no-repeat;
+    top: -55px;
+    left: 20px;
+  }
+
+  &--5:after {
+      content: "";
+      position: absolute;
+      background-image: url('../img/item-offer-Wi-FI.png');
+      height: 50px;
+      width: 55px;
+      background-repeat: no-repeat;
+
+      @media(min-width: @screen-sm) {
+        top: -55px;
+        left: -5px;
+      }
+
+    @media(min-width: @screen-lg) {
+        left: -5px;
+    }
   }
 }
 
@@ -109,14 +178,20 @@
         background: url('../img/ic-check.png');
         width: 16px;
         height: 12px;
+        position: absolute;
         left: 30%;
         top: 10%;
-        position: absolute;
 
         @media(min-width: @screen-sm) {
           left: 45%;
+          top: 150%;
+        }
+  
+
+        @media(min-width: @screen-lg) {
+          left: 45%;
           top: 180%;
-       }
+        }
       }
     }
   }
