@@ -23,6 +23,7 @@
     @media(min-width: @screen-sm) {
       flex-direction: row;
       width: 100vw;
+      padding: 20px 0;
     }
 
     @media(min-width: @screen-lg) {
@@ -42,7 +43,12 @@
     font-size: @font-size;
     @media(min-width: @screen-sm) {
       width: 25%;
-      padding: 30px 0;
+      padding: 12px 0;
+      border-right: 1px solid @color-border;
+
+      &:last-child {
+        border: 0;
+      }
     }
   }
 
