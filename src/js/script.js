@@ -100,21 +100,21 @@ for (var i=0; i<tabs.length; i++) {
 }
 
 
-// var buttonTitle = document.querySelectorAll('.type-digs__title');
-// var typeOption = document.querySelectorAll('.type-digs__option');
+var buttonTitle = document.querySelectorAll('.type-digs__title');
+var typeOption = document.querySelectorAll('.type-digs__option');
 
-// function changeTab(e) {
-//   for(var i=0; i<buttonTitle.length; i++) {
-//     buttonTitle[i].classList.remove('type-digs__title--active');
-//     typeOption[i].classList.remove('type-digs__option--active');
-//   }
-//   e.currentTarget.classList.add('type-digs__title--active');
-//   var index = buttonTitle.indexOf(this);
-//   console.log(index);
-//   // var link = event.target.getAttribute('href');
-//   typeOption[index].classList.add('type-digs__option--active');
+function changeTab(this) {
+  for(var i=0; i<buttonTitle.length; i++) {
+    buttonTitle[i].classList.remove('type-digs__title--active');
+    typeOption[i].classList.remove('type-digs__option--active');
+  }
+  this.classList.add('type-digs__title--active');
+  var idElement = this.attr('id');
+  console.log(idElement);
+  // var link = event.target.getAttribute('href');
+  typeOption[index].classList.add('type-digs__option--active');
 
-// }
+}
 
 // for (var i=0;i<buttonTitle.length; i++) {
 //   buttonTitle[i].addEventLinstener('click', changeTab())
