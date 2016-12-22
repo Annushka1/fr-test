@@ -164,29 +164,31 @@
 							<section class="payment">
 								<div class="order-step">
 									<span class="order-step__step">Шаг 5</span>
-									<h4 class="order-step__title">Способ оплаты</h3>
+									<h3 class="order-step__title">Способ оплаты</h3>
 										<div class="payment__inner">
 										<div class="payment__inner-2">
 											<div class="payment__postpayment">
-											<h4 class="payment__postpayment-title">По приезду</h4>
+											<p class="payment__title">По приезду</p>
 											<p class="payment__postpayment-text">Вы можете произвести оплату по факту заселения.</p>
 										</div>
 										<div class="payment__prepayment">
-											<h4 class="payment__prepayment-title">Сейчас</h4>
+											<p class="payment__title">Сейчас</p>
 											<p class="payment__prepayment-text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
 											<div class="requisite">
-												<label class="requisite__item">Номер карты <input name="payment-number" type="text" placeholder="0000-0000-0000-0000"  class="requisite__item--long"></label>
-												<label class="requisite__item">Код CVV <input name="payment-code" type="text" placeholder="123"  class="requisite__item--short"> </label>
-												<p class="requisite__hint">Здесь будет подсказка</p>
-												<label class="requisite__item">Фамилия владельца карты <input name="payment-name" type="text" placeholder="Vladimirov Vladimir"  class="requisite__item--long"></label>
-												<label class="requisite__item"> Действует до <input name="payment-validity" type="text" placeholder="01/2018"  class="requisite__item--short"></label>
+												<label class="requisite__item">Номер карты <input name="payment-number" type="text" placeholder="0000-0000-0000-0000"  class="requisite__item-input requisite__item-input--long"></label>
+<!-- 												<p class="requisite__hint">Здесь будет подсказка</p>
+ -->												<label class="requisite__item requisite__item">Фамилия владельца карты <input name="payment-name" type="text" placeholder="Vladimirov Vladimir"  class="requisite__item-input requisite__item-input--long"></label>
+ <label class="requisite__item"><span>Код CVV </span><input name="payment-code" type="text" placeholder="123"  class="requisite__item-input requisite__item-input--short"> </label>
+												<label class="requisite__item"> <span>Действует до </span><input name="payment-validity" type="text" placeholder="01/2018"  class="requisite__item-input requisite__item-input--short"></label>
 											</div>
 										</div>
 										</div>
-
-										<div class="payment__total-payment">
-											<h4 class="payment__total-payment-title">К оплате</h4>
-											<p class="payment_total-payment-text">Пожалуйста, <span class="payment_total-payment-text--underline"> выберите дату</span> въезда и выезда, чтобы увидеть сумму к оплате</p>
+										<div class="invoice">
+											<div class="payment__total-payment">
+											<p class="payment__title">К оплате</p>
+											<div class="payment__slash">-</div>
+											<p class="payment__total-payment-text">Пожалуйста, <a class="payment__total-payment-text--underline"> выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате</p>
+										</div>
 										</div>
 										</div>
 										<div class="payment__btn">
