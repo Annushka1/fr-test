@@ -1116,7 +1116,6 @@ h3 {
 .payment__postpayment {
   background-color: #fff;
   margin-bottom: 20px;
-  text-transform: uppercase;
   border: 1px solid #ebebeb;
 }
 .payment__postpayment-text,
@@ -1125,12 +1124,12 @@ h3 {
 }
 .payment__title {
   font-weight: 500;
-  padding: 20px 0 20px 70px;
+  padding: 20px 20px 20px 70px;
+  text-transform: uppercase;
 }
 .payment__prepayment {
   background-color: #fff;
   margin-bottom: 20px;
-  text-transform: uppercase;
   border: 1px solid #ebebeb;
 }
 .gallery .slider-nav {
@@ -1814,6 +1813,19 @@ h3 {
   }
   .payment__inner {
     width: 780px;
+  }
+  .payment__total-payment .payment__title {
+    display: block;
+  }
+  .payment__postpayment-text,
+  .payment__prepayment-text {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
+  .payment__title {
+    display: inline-block;
   }
   .gallery .slider-nav {
     width: 100%;
