@@ -107,5 +107,17 @@ for (var i=0; i<tabs.length; i++) {
   tabs[i].addEventListener('click', changeTab);
 }
 
+
+// var navItem = document.querySelectorAll('.main-nav__link');
+// for (var j=0; i<navItem.length; j++) {
+// navItem[j].addEventListener('click', function(e) {
+//   for(var i=0; i<navItem.length; i++) {
+//     navItem[i].parentNode.classList.remove('main-nav__item-active');
+//   }
+  
+//   e.target.parentNode.classList.add('main-nav__item-active');
+// });
+// }
+
 });
 

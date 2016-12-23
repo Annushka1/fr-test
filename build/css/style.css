@@ -82,14 +82,12 @@ h3 {
 .main-nav {
   display: none;
 }
-.main-nav__item-active a {
-  color: #ff7435;
-}
 .main-nav__item {
   display: block;
   text-transform: uppercase;
   border-bottom: 1px solid #ebebeb;
   padding: 17px 0;
+  position: relative;
 }
 .main-nav__item:first-child {
   border-top: 1px solid #ebebeb;
@@ -104,9 +102,8 @@ h3 {
   padding-left: 0;
   margin: 0;
 }
-.main-nav__item--active {
+.main-nav__item-active {
   color: #ff7435;
-  font-weight: 500;
 }
 .gamburger {
   position: absolute;
@@ -392,7 +389,6 @@ h3 {
 }
 .btn {
   padding: 10px 20px 8px 20px;
-  background-color: #ff7435;
   color: #fff;
   border-radius: 50px;
   display: inline-block;
@@ -409,6 +405,12 @@ h3 {
   font-weight: 500;
   text-transform: uppercase;
   margin: auto;
+}
+.btn--bg-orange {
+  background-color: #ff7435;
+}
+.btn--bg-orange:hover {
+  background-color: #e85715;
 }
 .btn--icon-calendar {
   padding: 10px 20px 10px 40px;
@@ -433,6 +435,10 @@ h3 {
       -ms-grid-row-align: center;
       align-self: center;
 }
+.btn--reviews:hover {
+  background-color: #fff;
+  color: #19bc99;
+}
 .btn--underlined {
   background-color: transparent;
   color: #191919;
@@ -442,8 +448,14 @@ h3 {
   margin-left: 70px;
   display: none;
 }
+.btn--underlined:hover {
+  border: 0;
+}
 .btn--green {
-  background-color: #19bc99;
+  background-color: #0ab89d;
+}
+.btn--green:hover {
+  background-color: #079b84;
 }
 .btn--form {
   display: block;
@@ -798,7 +810,6 @@ h3 {
   text-align: center;
   /* Полупрозрачный серый фон */
   background: rgba(0, 0, 0, 0.7);
-  margin: 0 0 0 150px;
   width: 100%;
 }
 .pressbox img {
@@ -1620,6 +1631,15 @@ h3 {
   .main-nav {
     margin-right: 35px;
     display: block;
+  }
+  .main-nav__item a:hover:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #ff7435;
+    bottom: 10px;
+    transform: translateX(50%);
   }
   .main-nav__item {
     border: 0;

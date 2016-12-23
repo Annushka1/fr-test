@@ -1,6 +1,5 @@
 .btn {
   padding: 10px 20px 8px 20px;
-  background-color: #ff7435;
   color: #fff;
   border-radius: 50px;
   font-weight: 500;
@@ -17,6 +16,13 @@
   font-weight: 500;
   text-transform: uppercase;
   margin:  auto;
+
+  &--bg-orange {
+    background-color: #ff7435;
+    &:hover {
+    background-color: #e85715;
+  }
+  }
 
   &--icon-calendar {
     padding: 10px 20px 10px 40px;
@@ -44,6 +50,11 @@
       // padding: 10px 30px;
       margin: 0 auto;
       align-self: center;
+
+      &:hover {
+        background-color: @color-white;
+        color: @color-green;
+      }
     }
 
     &--underlined {
@@ -53,14 +64,21 @@
       border-radius: 0;
       padding: 0;
       margin-left: 70px;
-      display: none;
+      display: none; 
+      &:hover {
+        border: 0;
+      }
 
       @media(min-width: @screen-lg) {
         display: inline-block;
       }
     }
   &--green {
-    background-color: @color-green;
+    background-color: #0ab89d;
+
+    &:hover {
+      background-color: #079b84;
+    }
   }
 
   &--form {
