@@ -5,6 +5,7 @@
 	<title>Form</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i,700|PT+Sans+Caption:400,700|PT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -64,12 +65,16 @@
 					<span class="order-step__step">Шаг 1</span>
 					<h3 class="order-step__title">Дата отдыха</h3>
 					<div class="order-step__item">
-						<h4 class="order-step__option">Дата въезда</h4>
-						<input type="date" name="date-from">
+						<label class="order-step__option">Дата въезда</label>
+						<span>
+							<input type="number" placeholder="ДД" class="date-form__day" maxlength="2"><input type="number" placeholder="MM" class="date-form__month" maxlength="2"/><input type="number" class="date-form__year" placeholder="ГГГГ" maxlength="4">
+						</span>
 					</div>
 					<div class="order-step__item">
-						<h4 class="order-step__option">Дата въезда</h4>
-						<input type="date" name="date-to">
+						<label class="order-step__option" for="datepicker">Дата въезда</label>
+						<span>
+						<input type="number" class="date-form__day" placeholder="ДД"  id="datepicker" maxlength="2"><input type="number" class="date-form__month" placeholder="MM" maxlength="2"><input type="number" class="date-form__year" placeholder="ГГГГ" maxlength="4">
+						</span>
 					</div>
 				</div>
 			</section>
@@ -108,12 +113,12 @@
 									<h4 class="type-digs__title" id="Olhovka">Ольховка</h4>
 								</div>
 								<div class="type-digs__item">
-									<h4 class="type-digs__title  type-digs__title--active" id="portovy">Портовый</h4>
+									<h4 class="type-digs__title" id="portovy">Портовый</h4>
 
 								</div>
 							</div>
 							<div class="type-digs__item-offer">
-							<ul class="type-digs__option" id="flagman">
+							<ul class="type-digs__option flagman" id="flagman-1">
 								<li class="type-digs__option-item type-digs__option-item--1">Площадь<br> 100 м.кв</li>
 								<li class="type-digs__option-item  type-digs__option-item--2">3 комнаты</li>
 								<li class="type-digs__option-item  type-digs__option-item--3">5 спальных<br> мест</li>
@@ -121,22 +126,22 @@
 								<li class="type-digs__option-item  type-digs__option-item--5">WI-FI</li>
 							</ul>
 
-							<ul class="type-digs__option" id="Ozerny">
-								<li class="type-digs__option-item type-digs__option-item--1">Площадь 100 м.кв</li>
+							<ul class="type-digs__option Ozerny" id="Ozerny">
+								<li class="type-digs__option-item type-digs__option-item--1">Площадь<br> 100 м.кв</li>
 								<li class="type-digs__option-item  type-digs__option-item--2">3 комнаты</li>
-								<li class="type-digs__option-item  type-digs__option-item--3">5 спальных мест</li>
-								<li class="type-digs__option-item  type-digs__option-item--4">Раздельны санузел</li>
+								<li class="type-digs__option-item  type-digs__option-item--3">5 спальных<br> мест</li>
+								<li class="type-digs__option-item  type-digs__option-item--4">Раздельны<br> санузел</li>
 								<li class="type-digs__option-item  type-digs__option-item--5">WI-FI</li>
 							</ul>
-							<ul class="type-digs__option" id="Olhovka">Ольховка
-								<li class="type-digs__option-item type-digs__option-item--1">Площадь 100 м.кв</li>
+							<ul class="type-digs__option Olhovka" id="Olhovka">Ольховка
+								<li class="type-digs__option-item type-digs__option-item--1">Площадь<br> 100 м.кв</li>
 								<li class="type-digs__option-item  type-digs__option-item--2">3 комнаты</li>
-								<li class="type-digs__option-item  type-digs__option-item--3">5 спальных мест</li>
-								<li class="type-digs__option-item  type-digs__option-item--4">Раздельны санузел</li>
+								<li class="type-digs__option-item  type-digs__option-item--3">5 спальных<br> мест</li>
+								<li class="type-digs__option-item  type-digs__option-item--4">Раздельны<br> санузел</li>
 								<li class="type-digs__option-item  type-digs__option-item--5">WI-FI</li>
 							</ul>
-							<ul class="type-digs__option  type-digs__option--active" id="portovy">
-								<li class="type-digs__option-item type-digs__option-item--1">Площадь <br>100 м.кв</li>
+							<ul class="type-digs__option portovy" id="portovy">
+								<li class="type-digs__option-item type-digs__option-item--1">Площадь<br> 100 м.кв</li>
 								<li class="type-digs__option-item  type-digs__option-item--2">3 комнаты</li>
 								<li class="type-digs__option-item  type-digs__option-item--3">5 спальных<br> мест</li>
 								<li class="type-digs__option-item  type-digs__option-item--4">Раздельны<br> санузел</li>
@@ -175,11 +180,15 @@
 											<p class="payment__title">Сейчас</p>
 											<p class="payment__prepayment-text">Прямо сейчас вы можете произвести<br> оплату с помощью банковской карты.</p>
 											<div class="requisite">
+											<div class="requisite__inner-human">
 												<label class="requisite__item">Номер карты <input name="payment-number" type="text" placeholder="0000-0000-0000-0000"  class="requisite__item-input requisite__item-input--long"></label>
 <!-- 												<p class="requisite__hint">Здесь будет подсказка</p>
- -->												<label class="requisite__item requisite__item">Фамилия владельца карты <input name="payment-name" type="text" placeholder="Vladimirov Vladimir"  class="requisite__item-input requisite__item-input--long"></label>
- <label class="requisite__item"><span>Код CVV </span><input name="payment-code" type="text" placeholder="123"  class="requisite__item-input requisite__item-input--short"> </label>
+ -->												<label class="requisite__item requisite__item"> <span>Фамилия владельца карты </span><input name="payment-name" type="text" placeholder="Vladimirov Vladimir"  class="requisite__item-input requisite__item-input--long"></label>
+											</div>			
+											<div class="requisite__inner-card">
+												<label class="requisite__item"><span class='cvv'>Код CVV </span><input name="payment-code" type="text" placeholder="123"  class="requisite__item-input requisite__item-input--short"> </label>
 												<label class="requisite__item"> <span>Действует до </span><input name="payment-validity" type="text" placeholder="01/2018"  class="requisite__item-input requisite__item-input--short"></label>
+											</div>								
 											</div>
 										</div>
 										</div>
@@ -196,7 +205,7 @@
 										</div>
 
 									</section>
-								</form>
+								</form>	</div>
 
 								<footer class="page-footer">
 									<div class="page-footer__inner">
@@ -216,9 +225,15 @@
 											<a href="tel:+7 812 777-55-88" class="page-footer__contact-item">+7 812 777-55-88</a>
 											<a href="mailto:info@greenvalley.ru" class="page-footer__contact-item">info@greenvalley.ru</a>
 										</div>
-									</div>
 								</footer>
 <script src="js/script.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--   <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script> -->
+
 
 							</body>
 							</html>

@@ -4,12 +4,18 @@
   flex-direction: column;
   justify-content: flex-start;
 
+
+    @media(min-width: @screen-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   &__item {
     display: block;
     padding: 10px 0;
     span {
       display: block;
     }
+
   }
 
   &__item-input {
@@ -21,7 +27,37 @@
 
     &--short {
       width: 50%;
+
+      @media(min-width: @screen-sm) {
+        width: 100%;
+      }
     }
+  }
+
+  &__inner-human {
+    @media(min-width: @screen-sm) {
+      width: 65%;
+    }
+  }
+
+  &__inner-card {
+    @media(min-width: @screen-sm) {
+      width: 30%;
+    }
+  }
+
+  .cvv {
+    position: relative;
+  }
+
+  .cvv:before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/reply.png');
+    height: 17px;
+    width: 16px;
+    top: 0;
+    right: 0;
   }
 
 }

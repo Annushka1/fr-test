@@ -812,7 +812,7 @@ h3 {
   padding-bottom: 40px;
 }
 .order-main {
-  padding: 75px 0 45px 0;
+  padding: 75px 0 0 0;
   text-align: center;
 }
 .order-main__promo {
@@ -946,24 +946,25 @@ h3 {
   width: 100%;
   text-transform: uppercase;
   font-size: 14px;
+  cursor: pointer;
 }
 .type-digs__option {
-  display: none;
   font-size: 18px;
   margin: 20px 0 0 0;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  display: none;
 }
-.type-digs #flagman:before {
+.type-digs .flagman:before {
   left: 12%;
 }
-.type-digs #Ozerny:before {
+.type-digs .Ozerny:before {
   left: 38%;
 }
-.type-digs #Olhovka:before {
+.type-digs .Olhovka:before {
   left: 63%;
 }
-.type-digs #portovy:before {
+.type-digs .portovy:before {
   left: 88%;
 }
 .type-digs__option-item {
@@ -1174,6 +1175,40 @@ h3 {
 }
 .requisite__item-input--short {
   width: 50%;
+}
+.requisite .cvv {
+  position: relative;
+}
+.requisite .cvv:before {
+  content: "";
+  position: absolute;
+  background-image: url('../img/reply.png');
+  height: 17px;
+  width: 16px;
+  top: 0;
+  right: 0;
+}
+.date-form__day {
+  width: 40px;
+  height: 27px;
+  margin: 0;
+}
+.date-form__month {
+  width: 42px;
+  height: 27px;
+}
+.date-form__year {
+  width: 52px;
+  height: 27px;
+}
+.date-to-stay .order-step__option {
+  display: block;
+  padding: 29px 0 18px 0;
+  text-transform: uppercase;
+}
+.date-to-stay input {
+  color: #19bc99;
+  font-weight: 500;
 }
 @media (min-width: 320px) {
   .page-footer__inner {
@@ -1495,6 +1530,21 @@ h3 {
   }
   .gallery .slider-for__item {
     height: 405px;
+  }
+  .requisite {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .requisite__item-input--short {
+    width: 100%;
+  }
+  .requisite__inner-human {
+    width: 65%;
+  }
+  .requisite__inner-card {
+    width: 30%;
   }
 }
 @media (min-width: 768px) and (max-width: 1259px) {

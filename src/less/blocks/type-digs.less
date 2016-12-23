@@ -41,6 +41,7 @@
     width: 100%;
     text-transform: uppercase;
     font-size: @font-size;
+    cursor: pointer;
     @media(min-width: @screen-sm) {
       width: 25%;
       padding: 12px 0;
@@ -53,11 +54,12 @@
   }
 
   &__option {
-    display: none;
     font-size: @font-size18;
     margin: 20px 0 0 0;
     justify-content: space-between;
     // padding: 45px 0 15px 0;
+    display: none;
+   
    
     @media(min-width: @screen-sm) {
       &--active {
@@ -83,19 +85,19 @@
     }
   }
 
-  #flagman:before {
+  .flagman:before {
     left: 12%;
   }
 
-  #Ozerny:before {
+  .Ozerny:before {
     left: 38%;
   }
 
-  #Olhovka:before {
+  .Olhovka:before {
     left: 63%;
   }
 
-  #portovy:before {
+  .portovy:before {
     left: 88%;
   }
 
