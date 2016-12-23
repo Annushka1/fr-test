@@ -66,15 +66,34 @@
 					<h3 class="order-step__title">Дата отдыха</h3>
 					<div class="order-step__item">
 						<label class="order-step__option">Дата въезда</label>
-						<span>
-							<input type="number" placeholder="ДД" class="date-form__day" maxlength="2"><input type="number" placeholder="MM" class="date-form__month" maxlength="2"/><input type="number" class="date-form__year" placeholder="ГГГГ" maxlength="4">
-						</span>
+						<div class="parent">
+  						<input class="field" type="text" id="start" placeholder="дата начала отдыха" />
+						  <span class="parent__pseudo-field" id="start-d">
+						    <span class="parent__pseudo-placeholder">ДД</span>
+						  </span>
+						  <span class="parent__pseudo-field" id="start-m">
+						    <span class="parent__pseudo-placeholder">ММ</span>
+						  </span>
+						  <span class="parent__pseudo-field" id="start-y">
+						    <span class="parent__pseudo-placeholder">ГГ</span>
+						  </span>
+						</div>
+							
 					</div>
 					<div class="order-step__item">
 						<label class="order-step__option" for="datepicker">Дата въезда</label>
-						<span>
-						<input type="number" class="date-form__day" placeholder="ДД"  id="datepicker" maxlength="2"><input type="number" class="date-form__month" placeholder="MM" maxlength="2"><input type="number" class="date-form__year" placeholder="ГГГГ" maxlength="4">
-						</span>
+						<div class="parent">
+							 <input class="field" type="text" id="fin" placeholder="дата конца всего сущего" />
+  						 <span class="parent__pseudo-field" id="fin-d">
+    					 	<span class="parent__pseudo-placeholder">ДД</span>
+ 							 </span>
+  						 <span class="parent__pseudo-field" id="fin-m">
+    						 <span class="parent__pseudo-placeholder">ММ</span>
+  						 </span>
+  						<span class="parent__pseudo-field" id="fin-y">
+   						 <span class="parent__pseudo-placeholder">ГГ</span>
+  						</span>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -133,7 +152,7 @@
 								<li class="type-digs__option-item  type-digs__option-item--4">Раздельны<br> санузел</li>
 								<li class="type-digs__option-item  type-digs__option-item--5">WI-FI</li>
 							</ul>
-							<ul class="type-digs__option Olhovka" id="Olhovka">Ольховка
+							<ul class="type-digs__option Olhovka" id="Olhovka">
 								<li class="type-digs__option-item type-digs__option-item--1">Площадь<br> 100 м.кв</li>
 								<li class="type-digs__option-item  type-digs__option-item--2">3 комнаты</li>
 								<li class="type-digs__option-item  type-digs__option-item--3">5 спальных<br> мест</li>
@@ -228,11 +247,37 @@
 								</footer>
 <script src="js/script.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<!--   <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
+  <script>
+ $( function() {
+    var from = $( "#start" ).datepicker()
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+          var date = $(this).datepicker('getDate');
+          $( "#start-d" ).text( date.getDate() );
+          $( "#start-m" ).text( date.getMonth() + 1 );
+          $( "#start-y" ).text( date.getFullYear() );
+        }),
+      to = $( "#fin" ).datepicker()
+        .on( "change", function() {
+          from.datepicker( "option", "maxDate", getDate( this ) );
+          var date = $(this).datepicker('getDate');
+          $( "#fin-d" ).text( date.getDate() );
+          $( "#fin-m" ).text( date.getMonth() + 1 );
+          $( "#fin-y" ).text( date.getFullYear() );
+        });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( "mm/dd/yy", element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
   } );
-  </script> -->
+  </script>
 
 
 							</body>

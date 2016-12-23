@@ -898,6 +898,61 @@ h3 {
 .date-to-stay {
   background-color: #f1f1f1;
 }
+* {
+  box-sizing: border-box;
+}
+.parent {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170px;
+  height: 45px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+.parent__pseudo-field {
+  display: block;
+  width: 33%;
+  height: 100%;
+  padding: 3px;
+  padding-top: 15px;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+  background-color: #fff;
+  color: #19bc99;
+  font-weight: 500;
+}
+.parent__pseudo-placeholder {
+  color: gray;
+}
+.field {
+  height: 35px;
+  padding: 3px;
+  width: 100%;
+  border: 1px solid #000;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  border-color: transparent;
+}
+.field::-webkit-input-placeholder {
+  color: transparent;
+}
+.field::-moz-placeholder {
+  color: transparent;
+}
+.field:-moz-placeholder {
+  color: transparent;
+}
+.field:-ms-input-placeholder {
+  color: transparent;
+}
 .location {
   padding: 0 20px;
 }
@@ -1272,10 +1327,6 @@ h3 {
   display: block;
   padding: 29px 0 18px 0;
   text-transform: uppercase;
-}
-.date-to-stay input {
-  color: #19bc99;
-  font-weight: 500;
 }
 @media (min-width: 320px) {
   .page-footer__inner {
