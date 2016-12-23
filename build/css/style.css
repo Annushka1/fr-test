@@ -786,6 +786,43 @@ h3 {
 .room-details .slick-next {
   left: 85%;
 }
+.pressbox {
+  width: 0;
+  height: 0;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  /* Поверх всех остальных элементов */
+  z-index: 9999;
+  text-align: center;
+  /* Полупрозрачный серый фон */
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0 0 0 150px;
+  width: 100%;
+}
+.pressbox img {
+  /* изначально полностью прозрачная картинка */
+  opacity: 0;
+  padding: 10px;
+  background: #ffffff;
+  margin-top: 100px;
+  width: 50%;
+  /* тени */
+  box-shadow: 0px 0px 15px #444;
+  /* свойство прозрачности изменяется не сразу а за четверть секунды */
+  transition: opacity 0.25s ease-in-out;
+}
+.pressbox:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+}
+.pressbox:target img {
+  opacity: 1;
+  z-index: 9999;
+}
 .other-room {
   background-color: #fafafa;
   padding: 50px 0;
