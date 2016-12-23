@@ -7,7 +7,7 @@
  	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i,700|PT+Sans+Caption:400,700|PT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<link rel="stylesheet" href="//fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -88,9 +88,17 @@
 		</div>
 		<span class="room-details__loop"></span>
 		<div class="room-details__gallery one-time-second">
-			<div><img src="img/room1.png" alt="room" class="room-details__img"></div>
-			<div><img src="img/room2.png" alt="room" class="room-details__img"></div>
-			<div><img src="img/room33.png" alt="room" class="room-details__img"></div>
+			<div><a href="img/room1.png" class="fancybox-thumb" rel="fancybox-thumb" class="img-loop fancybox">
+			<img src="img/room1.png" alt="room" class="room-details__img">
+			</a>
+			</div>
+			<div><a href="img/room2.png" class="fancybox-thumb" rel="fancybox-thumb" class="img-loop fancybox">
+			<img src="img/room2.png" alt="room" class="room-details__img">
+			</a>
+			</div>
+			<div><a href="img/room33.png" class="fancybox-thumb" rel="fancybox-thumb" class="img-loop fancybox"><img src="img/room33.png" alt="room" class="room-details__img">
+			</a>
+			</div>
 		</div>
 	</div>
   <a href="form.html" class="btn btn--bg-orange btn--icon-calendar">Забронировать</a>
@@ -146,5 +154,8 @@
 </footer>
 <script src="js/script.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="//fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="//fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
 </body>
 </html>
