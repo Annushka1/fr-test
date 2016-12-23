@@ -90,6 +90,7 @@
     background-color: #fff;
     margin-bottom: 20px;    
     border: 1px solid @color-border;
+    cursor: pointer;
   }
 
   &__postpayment-text, &__prepayment-text {
@@ -107,6 +108,7 @@
     font-weight: @font-weight-Medium;
     padding: 20px 20px 20px 70px;
     text-transform: uppercase;
+    position: relative;
     @media(min-width: @screen-lg) {
       display: inline-block;
     }
@@ -117,12 +119,28 @@
     background-color: #fff;
     margin-bottom: 20px;
     border: 1px solid @color-border;
+    cursor: pointer;
 
     @media(min-width: @screen-sm) {
       margin-bottom: 0;
     }
 
   }
+  .check:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+    top: 20px;
+    width: 16px;
+    height: 10px;
+    border-bottom: 4px solid #ebebeb;
+    border-left: 4px solid #ebebeb;
+    transform: rotate(-45deg);
+  }
 
-
+  .check--active:before {
+    border-bottom: 4px solid @color-green;
+    border-left: 4px solid @color-green;
+  }
 }

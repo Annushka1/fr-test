@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+$('.payment__postpayment').click(function(){
+  $('.payment__title').removeClass('check--active');
+  console.log(111111)
+  $(this).find('.payment__title').addClass('check--active');
+});
+
+$('.payment__prepayment').click(function(){
+  $('.payment__title').removeClass('check--active');
+  console.log(111111)
+  $(this).find('.payment__title').addClass('check--active');
+});
+
 //Выпадающее меню
 $('.gamburger').on('click', function(){
   $('.main-nav').slideToggle();
@@ -105,19 +117,8 @@ function changeTab(e) {
 
 for (var i=0; i<tabs.length; i++) {
   tabs[i].addEventListener('click', changeTab);
-}
+};
 
-
-// var navItem = document.querySelectorAll('.main-nav__link');
-// for (var j=0; i<navItem.length; j++) {
-// navItem[j].addEventListener('click', function(e) {
-//   for(var i=0; i<navItem.length; i++) {
-//     navItem[i].parentNode.classList.remove('main-nav__item-active');
-//   }
-  
-//   e.target.parentNode.classList.add('main-nav__item-active');
-// });
-// }
 
 });
 

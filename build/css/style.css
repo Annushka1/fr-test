@@ -1166,6 +1166,7 @@ h3 {
   background-color: #fff;
   margin-bottom: 20px;
   border: 1px solid #ebebeb;
+  cursor: pointer;
 }
 .payment__postpayment-text,
 .payment__prepayment-text {
@@ -1175,11 +1176,29 @@ h3 {
   font-weight: 500;
   padding: 20px 20px 20px 70px;
   text-transform: uppercase;
+  position: relative;
 }
 .payment__prepayment {
   background-color: #fff;
   margin-bottom: 20px;
   border: 1px solid #ebebeb;
+  cursor: pointer;
+}
+.payment .check:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 20px;
+  top: 20px;
+  width: 16px;
+  height: 10px;
+  border-bottom: 4px solid #ebebeb;
+  border-left: 4px solid #ebebeb;
+  transform: rotate(-45deg);
+}
+.payment .check--active:before {
+  border-bottom: 4px solid #19bc99;
+  border-left: 4px solid #19bc99;
 }
 .gallery .slider-nav {
   width: 285px;
