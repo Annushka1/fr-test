@@ -1,5 +1,12 @@
 $(document).ready(function(){
-var from = $( "#start" ).datepicker()
+var from = $( "#start" ).datepicker(
+  {
+ monthNames: ['Январь', 'Февраль', 'Март', 'Апрель',
+'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
+'Октябрь', 'Ноябрь', 'Декабрь'],
+ dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+ firstDay: 1,
+})
   .on( "change", function() {
     to.datepicker( "option", "minDate", getDate( this ) );
     var date = $(this).datepicker('getDate');
@@ -7,7 +14,14 @@ var from = $( "#start" ).datepicker()
     $( "#start-m" ).text( date.getMonth() + 1 );
     $( "#start-y" ).text( date.getFullYear() );
    }),
-   to = $( "#fin" ).datepicker()
+   to = $( "#fin" ).datepicker(
+    {
+ monthNames: ['Январь', 'Февраль', 'Март', 'Апрель',
+'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
+'Октябрь', 'Ноябрь', 'Декабрь'],
+ dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+ firstDay: 1,
+})
     .on( "change", function() {
     from.datepicker( "option", "maxDate", getDate( this ) );
     var date = $(this).datepicker('getDate');
