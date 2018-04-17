@@ -37,9 +37,6 @@ h3 {
 .line-break {
   display: block;
 }
-.pops__block {
-  display: none;
-}
 header {
   margin-bottom: 65px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -102,6 +99,10 @@ header {
 .main-menu__item {
   padding: 15px 0 0 0;
   cursor: pointer;
+}
+.main-menu__item a {
+  text-decoration: none;
+  color: #000;
 }
 .switcher {
   color: #888888;
@@ -246,12 +247,16 @@ footer {
 }
 .popup-container:target {
   visibility: visible;
-  display: block;
   opacity: 1;
   transform: scale(1);
 }
 .popup-container h3 {
   margin: 10px;
+}
+.about {
+  width: 256px;
+  text-transform: capitalize;
+  margin: 0 auto;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -520,6 +525,13 @@ th {
     width: 100%;
     font-size: 16px;
   }
+  .fruits img {
+    width: 100%;
+    height: 100%;
+  }
+  .about {
+    width: 580px;
+  }
 }
 @media (min-width: 1260px) {
   .header-inner {
@@ -574,6 +586,13 @@ th {
     margin-bottom: 45px;
   }
   .footer__inner {
+    width: 1016px;
+  }
+  .fruits .offers__view-bag {
+    width: 320px;
+    height: 362px;
+  }
+  .about {
     width: 1016px;
   }
 }
