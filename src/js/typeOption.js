@@ -64,3 +64,4 @@ function changeOffer(e) {
 for (var i=0;i<buttonTitle.length; i++) {
   buttonTitle[i].addEventListener('click', changeOffer)
 }
+
