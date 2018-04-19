@@ -48,22 +48,23 @@ header {
       flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px 0 40px 0;
+  padding: 35px 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-bottom: 1px solid #dcdcdc;
+  width: 250px;
+  margin: 0 auto;
 }
 .gamburger {
   position: relative;
-  bottom: 10px;
+  bottom: 5px;
   left: 0;
   display: block;
-  margin-bottom: 5px;
   cursor: pointer;
 }
 .gamburger span {
   position: relative;
-  margin-right: 10px;
+  left: -10px;
   width: 20px;
   height: 4px;
   background-color: #767676;
@@ -97,7 +98,6 @@ header {
   padding: 0;
 }
 .main-menu__item {
-  padding: 15px 0 0 0;
   cursor: pointer;
 }
 .main-menu__item a {
@@ -106,11 +106,16 @@ header {
 }
 .switcher {
   color: #888888;
+  display: -ms-flexbox;
+  display: flex;
 }
 .switcher__btn {
   padding-left: 10px;
   display: inline-block;
   cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .switcher__btn-active {
   color: #000;
@@ -125,6 +130,7 @@ header {
 }
 .logo {
   display: block;
+  margin-bottom: 15px;
 }
 .offers img {
   max-width: 226px;
@@ -200,7 +206,7 @@ footer {
 .footer__inner .rights {
   font-size: 14px;
   color: #888888;
-  text-transform: capitalize;
+  text-transform: none;
 }
 .offers__view {
   display: -ms-flexbox;
@@ -254,9 +260,39 @@ footer {
   margin: 10px;
 }
 .about {
-  width: 256px;
-  text-transform: capitalize;
+  width: 250px;
   margin: 0 auto;
+}
+.about a {
+  color: #0079c1;
+}
+.about p {
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+  font-size: 16px;
+  text-align: justify;
+  color: #666;
+}
+.about__advantages {
+  margin: 0 0 40px 0;
+  padding: 0;
+  text-transform: none;
+  font-size: 16px;
+  text-align: justify;
+  color: #666;
+}
+.about li {
+  list-style-type: none;
+}
+.about__source {
+  margin-bottom: 35px;
+}
+.about__title {
+  font-size: 18px;
+}
+.about__advantages {
+  margin-bottom: 40px;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -444,12 +480,13 @@ th {
   .header-inner {
     -ms-flex-pack: center;
     justify-content: center;
+    width: 580px;
   }
   .gamburger span {
     display: none;
   }
   .main-menu {
-    width: 60%;
+    width: 84%;
     padding-right: 40px;
     display: -ms-flexbox;
     display: flex;
@@ -457,7 +494,7 @@ th {
     flex-wrap: wrap;
   }
   .main-menu__item {
-    padding-left: 30px;
+    padding-right: 70px;
   }
   .main-menu__item:last-child {
     margin-left: 57px;
@@ -468,7 +505,6 @@ th {
     -ms-flex-align: end;
     align-items: flex-end;
     padding-bottom: 30px;
-    margin-right: 43px;
   }
   .logo-item {
     display: none;
@@ -529,6 +565,9 @@ th {
     width: 100%;
     height: 100%;
   }
+  .about__advantages {
+    margin-bottom: 60px;
+  }
   .about {
     width: 580px;
   }
@@ -536,12 +575,14 @@ th {
 @media (min-width: 1260px) {
   .header-inner {
     padding: 40px 0;
+    width: 1016px;
   }
   .main-menu {
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
+    width: 89%;
   }
   .main-menu__item {
     padding: 0;
@@ -591,6 +632,9 @@ th {
   .fruits .offers__view-bag {
     width: 320px;
     height: 362px;
+  }
+  .about__advantages {
+    margin-bottom: 75px;
   }
   .about {
     width: 1016px;
