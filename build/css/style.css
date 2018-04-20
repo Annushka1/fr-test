@@ -130,7 +130,6 @@ header {
 }
 .logo {
   display: block;
-  margin-bottom: 15px;
 }
 .offers img {
   max-width: 226px;
@@ -293,6 +292,30 @@ footer {
 }
 .about__advantages {
   margin-bottom: 40px;
+}
+.contact {
+  width: 248px;
+  margin: 0 auto;
+}
+.contact__map {
+  width: 100%;
+  height: 220px;
+}
+.contact__office,
+.contact__stock {
+  margin-bottom: 40px;
+}
+.contact__stock-title,
+.contact__office-title {
+  font-size: 14px;
+}
+.contact__title {
+  font-size: 18px;
+}
+.contact p {
+  color: #666;
+  font-size: 14px;
+  text-transform: none;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -510,6 +533,7 @@ th {
     display: none;
   }
   .logo {
+    margin-bottom: 15px;
     text-align: center;
     width: 100%;
     font-size: 22px;
@@ -570,6 +594,19 @@ th {
   }
   .about {
     width: 580px;
+  }
+  .contact {
+    width: 580px;
+  }
+  .contact__map {
+    height: 365px;
+  }
+  .contact__stock-title,
+  .contact__office-title {
+    font-size: 18px;
+  }
+  .contact p {
+    font-size: 16px;
   }
 }
 @media (min-width: 1260px) {
@@ -638,6 +675,31 @@ th {
   }
   .about {
     width: 1016px;
+  }
+  .contact {
+    width: 1056px;
+  }
+  .contact__map {
+    width: 500px;
+    height: 313px;
+    padding-top: 5px;
+  }
+  .contact__adress {
+    width: 488px;
+    margin-left: 30px;
+  }
+  .contact__office,
+  .contact__stock {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .contact__stock-title,
+  .contact__office-title {
+    margin: 0;
   }
 }
 @media (min-width: 768px) and (min-width: 1260px) {

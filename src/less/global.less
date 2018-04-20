@@ -243,8 +243,8 @@ header {
 
 .logo {
   display: block;
-  margin-bottom: 15px;
   @media (min-width: @screen-sm) {
+    margin-bottom: 15px;
     text-align: center;
     width: 100%;
     font-size: 22px;
@@ -497,7 +497,7 @@ footer {
   }
 }
 
-
+// about.html
 .about {
   width: 250px;
   margin: 0 auto;
@@ -551,4 +551,77 @@ footer {
   &__advantages {
     margin-bottom: 40px;
   }
+}
+
+
+// contact.html
+ // width="600" height="450" 
+.contact {
+  width: 248px;
+  margin: 0 auto;
+  @media (min-width: @screen-sm) {
+    width: 580px;
+  }
+  @media (min-width: @screen-lg) {
+    width: 1056px;
+  }
+
+
+
+  &__map {
+    width: 100%;
+    height: 220px;
+    @media (min-width: @screen-sm) {
+      height: 365px;
+    }
+
+    @media (min-width: @screen-lg) {
+      width: 500px;
+      height: 313px;
+      padding-top: 5px;
+    }
+  }
+
+  &__adress {
+    @media (min-width: @screen-lg) {
+      width: 488px;
+      margin-left: 30px;
+    }
+
+  }
+
+  &__office, &__stock {
+    margin-bottom: 40px;
+    @media (min-width: @screen-lg) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__stock-title, &__office-title {
+    font-size: 14px;
+
+    @media (min-width: @screen-sm) {
+      font-size: 18px;
+    }
+    @media (min-width: @screen-lg) {
+      margin: 0;
+    }
+
+  }
+
+  &__title {
+    font-size: 18px;
+  }
+  p {
+    color: #666;
+    font-size: 14px;
+    text-transform: none;
+    @media (min-width: @screen-sm) {
+      font-size: 16px;
+    }
+  }
+
+  
 }
