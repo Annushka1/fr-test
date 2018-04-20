@@ -15,6 +15,7 @@ $(document).ready(function(){
 //Выпадающее меню
 $('.gamburger').on('click', function(){
   $('.main-menu').slideToggle();
+  $('.logo-item').hide();
 })
 
 // //1-й слайдер

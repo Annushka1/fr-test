@@ -94,11 +94,18 @@ header {
 .main-menu {
   display: none;
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  -ms-flex-order: 1;
+      order: 1;
+  position: relative;
+  left: -40px;
 }
 .main-menu__item {
   cursor: pointer;
+  padding: 15px 0 15px 0;
+}
+.main-menu__item:last-child {
+  padding-bottom: 0;
 }
 .main-menu__item a {
   text-decoration: none;
@@ -504,6 +511,8 @@ th {
     -ms-flex-pack: center;
     justify-content: center;
     width: 580px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .gamburger span {
     display: none;
@@ -619,7 +628,7 @@ th {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    width: 89%;
+    width: 93%;
   }
   .main-menu__item {
     padding: 0;
@@ -677,7 +686,7 @@ th {
     width: 1016px;
   }
   .contact {
-    width: 1056px;
+    width: 1016px;
   }
   .contact__map {
     width: 500px;

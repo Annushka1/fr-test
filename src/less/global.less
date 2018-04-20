@@ -99,12 +99,13 @@ header {
   @media (min-width: @screen-sm) {
     justify-content: center;
     width: 580px;
-    // margin: 0 auto;
+    justify-content: space-between;
   }
 
   @media (min-width: @screen-lg) {
     padding: 40px 0;
     width: 1016px;
+
   }
 }
 
@@ -156,8 +157,11 @@ header {
 .main-menu {
   display: none;
   list-style-type: none;    
-  margin: 0;
+  // margin: 0;
   padding: 0;
+  order:1;
+  position: relative;
+  left: -40px;  
   
   @media (min-width: @screen-sm) {
     width: 84%;
@@ -168,11 +172,15 @@ header {
   @media (min-width: @screen-lg) {
     justify-content: space-between;
     align-items: center;
-    width: 89%;
+    width: 93%;
   }
   &__item {
     // padding: 15px 0 0 0;
     cursor: pointer;
+    padding: 15px 0 15px 0;
+    &:last-child {
+      padding-bottom: 0;
+    }
     @media (min-width: @screen-sm) {
       padding-right: 70px;
 
@@ -186,6 +194,7 @@ header {
 
       &:last-child {
       margin: 0;
+
     }
     }
     
@@ -563,7 +572,7 @@ footer {
     width: 580px;
   }
   @media (min-width: @screen-lg) {
-    width: 1056px;
+    width: 1016px;
   }
 
 
