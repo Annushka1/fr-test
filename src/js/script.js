@@ -16,6 +16,8 @@ $(document).ready(function(){
 $('.gamburger').on('click', function(){
   $('.main-menu').slideToggle();
   $('.logo-item').hide();
+  // $('body').addClass('openmenu')
+  // $('.main-menu').addClass('fixmenu')
 })
 
 // //1-й слайдер
