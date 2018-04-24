@@ -640,8 +640,9 @@ footer {
 
 // index.html
 .main-page {
-  max-width: 320px;
-  margin: 0 auto;
+
+
+  
   background-image: url(../img/main320.png);
   background-repeat: no-repeat;
   background-position: 50% -3%;
@@ -656,8 +657,10 @@ footer {
     @media (min-width: @screen-lg) {
       max-width: 100%;
       background-image: url(../img/main1260.png);
-      background-position-y: 0%;
+      background-position-y: -8%;
     }
+
+
   &__title {
     font-size: 26px;
     font-family: 'Comfortaa', cursive;
@@ -742,8 +745,8 @@ footer {
       }
     }
 
-  &__description {
-    width: 248px;
+    &__inner {
+      width: 248px;
     margin: 0 auto;
 
     @media (min-width: @screen-sm) {
@@ -767,6 +770,10 @@ footer {
         padding-bottom: 398px;
       }
     }
+    }
+
+  &__description {
+    
    
   }
 
