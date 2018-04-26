@@ -90,7 +90,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 35px 0 ;
-  justify-content: space-around;
+  justify-content: space-between;
   // border-bottom: 1px solid #dcdcdc;
   width: 250px;
   margin: 0 auto;
@@ -119,9 +119,9 @@ header {
   span {
     position: relative;
     // margin-right: 10px;
-    left: -10px;
+    left: 4px;
     width: 20px;
-    height: 4px;
+    height: 1px;
     background-color: #767676;
     display: inline-block;
     cursor: pointer;
@@ -133,10 +133,10 @@ header {
       content: "";
       cursor: pointer;
       position: absolute;
-      top: 6.5px;
+      top: 4px;
       right: 0px;
       width: 20px;
-      height: 4px;
+      height: 1px;
       background-color: #767676;
 
     }
@@ -144,10 +144,10 @@ header {
       content: "";
       position: absolute;
       cursor: pointer;
-      top: 13px;
+      top: 8px;
       right: 0px;
       width: 20px;
-      height: 4px;
+      height: 1.4px;
       background-color: #767676;
 
     }
@@ -211,11 +211,15 @@ header {
 .switcher {
   color: #888888;
   display: flex;
+  justify-content: space-between;
+  width: 61px;
+    // justify-content: space-between;
   @media (min-width: @screen-sm) {
     display: flex;
     align-items: flex-end;
     padding-bottom: 30px;
     // margin-right: 43px;
+
   }
   @media (min-width: @screen-lg) {
     padding: 0;
@@ -223,10 +227,11 @@ header {
   }
   
   &__btn {
-    padding-left: 10px;
+    padding-top: 2px;
     display: inline-block;
     cursor: pointer;
     align-self: center;
+
   }
   &__btn-active {
     color: #000;
@@ -254,9 +259,12 @@ header {
 
 .logo {
   display: block;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 92px;
+  margin-left: 4px;
   @media (min-width: @screen-sm) {
     margin-bottom: 15px;
-    text-align: center;
     width: 100%;
     font-size: 22px;
   }
@@ -267,17 +275,31 @@ header {
 }
 
 .offers {
-   img {
-      max-width: 226px;
-      max-height: 190px;
+  padding: 65px 0 15px 0;
+  
+  &__inner {
+    
+  }
+  .small-img {
+    display: block;
+
+    @media (min-width: @screen-sm) {
+      display: none;
+    }
+  }
+   .big-img {
+      display: none;
 
       @media (min-width: @screen-sm) {
+        display: block;
         max-width: 452px;
         max-height: 252px;
       }      
     }
     &__title {
       font-size: 18px;
+      letter-spacing: 4px;
+      line-height: 1.4;
       @media (min-width: @screen-lg) {
         order:1;
       }
@@ -310,6 +332,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 250px;
+    margin: 0 auto;
+    padding: 0 1px 0 1px;
     
 
     @media (min-width: @screen-lg) {
@@ -321,12 +346,12 @@ header {
     }
   }
   &__view-bag {
-      width: 248px;
+      // width: 248px;
       border: 1px solid #dcdcdc;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      padding: 35px 14px 35px 20px;
-      height: 376px;
-      margin-bottom: 64px;
+      padding: 32px 14px 39px 18px;
+      height: 373px;
+      margin-bottom: 61px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -346,6 +371,13 @@ header {
 
    
   }
+
+  .bag20 {
+    padding: 25px 14px 35px 18px;
+  }
+
+  .bag220 {
+    padding: 32px 14px 33px 18px;
 }
 
 
@@ -362,6 +394,10 @@ footer {
     flex-direction: column;
     justify-content: center;
 
+    span:first-child {
+      letter-spacing: 3px;
+    }
+
     @media (min-width: @screen-sm) {
       width: 40%;
     }
@@ -370,9 +406,16 @@ footer {
   .phone span:last-child, .email span:last-child {
     color: #888888;
     font-size: 14px;
-    margin: 20px 0 25px;
+    margin: 13px 0 33px 0;
+    letter-spacing: 1px;
     @media (min-width: @screen-sm) {
       font-size: 16px;
+    }
+  }
+
+  .email {
+    span:last-child {
+      text-transform: lowercase;
     }
   }
 
@@ -398,6 +441,10 @@ footer {
     width: 1016px;
   }
 
+  .footer-logo {
+    margin-bottom: 15px;
+  }
+
   .footer-logo:before  {
       content: '';
       position: relative;
@@ -407,7 +454,7 @@ footer {
       background: #888;
       right: 0;
       left: 0;
-      bottom: 25px;
+      bottom: 29px;
       margin: auto;
       @media (min-width: @screen-sm) {
       width: 100%;
@@ -418,6 +465,7 @@ footer {
     font-size: 14px;
     color: #888888;
     text-transform: none;
+    // letter-spacing: 1px;
     @media (min-width: @screen-sm) {
       width: 100%;
       font-size: 16px;
@@ -426,65 +474,10 @@ footer {
 }
 
 // попсы
-.offers__view{
-  display:flex;
-  flex-wrap:wrap;
-}
 
-.popup-container {
-    visibility: hidden;
-    // display: none;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.3);
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(21, 17, 17, 0.61);
-    display: flex;
-    align-items: center;
-}
 .popup-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-
-}
-
-.popup-content a.close{
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    background: none;
-    padding: 0;
-    margin: 0;
-    text-decoration:none;
-}
-
-.popup-content a.close:hover{
-  color:#333;
-}
-
-
-
-.popup-container:target{
-  visibility: visible;
-  // display: block;
-  opacity: 1;
-  transform: scale(1);
-}
-
-.popup-container h3{
-  margin:10px;
-}
-
-// конец попапа
+  display: none;
+ }
 
 // fruits.html
 
@@ -512,6 +505,7 @@ footer {
 .about {
   width: 250px;
   margin: 0 auto;
+  padding: 36px 0 15px 0;
   a {
     color: #0079c1;
   }
@@ -520,17 +514,19 @@ footer {
     margin: 0;
     text-transform: none;
     font-size: 16px;
-    text-align: justify;
+    text-align: left;
     color: #666;
+    line-height: 1.5;
   }
 
   &__advantages {
-    margin: 0 0 40px 0;
     padding: 0;
     text-transform: none;
     font-size: 16px;
-    text-align: justify;
+    text-align: left;
     color: #666;
+    margin: 26px 0 33px 0;
+    line-height: 1.5;
 
     @media (min-width: @screen-sm) {
       margin-bottom: 60px;
@@ -553,14 +549,16 @@ footer {
   }
 
   &__source {
-    margin-bottom: 35px;
+    margin-bottom: 23px;
+
+    // &:last-child {
+    //   margin-bottom: 26px;
+    // }
   }
   &__title {
     font-size: 18px;
-  }
-
-  &__advantages {
-    margin-bottom: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
   }
 }
 
@@ -568,13 +566,20 @@ footer {
 // contact.html
  // width="600" height="450" 
 .contact {
-  width: 248px;
   margin: 0 auto;
-  @media (min-width: @screen-sm) {
-    width: 580px;
-  }
-  @media (min-width: @screen-lg) {
-    width: 1016px;
+  // padding-top: 36px;
+  padding: 36px 0 15px 0;
+  
+
+  &__inner {
+    width: 250px;
+    margin: 0 auto;
+    @media (min-width: @screen-sm) {
+      width: 580px;
+    }
+    @media (min-width: @screen-lg) {
+      width: 1016px;
+    }
   }
 
 
@@ -602,7 +607,8 @@ footer {
   }
 
   &__office, &__stock {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+    padding-top: 16px;
     @media (min-width: @screen-lg) {
       display: flex;
       flex-direction: row;
@@ -610,8 +616,19 @@ footer {
     }
   }
 
+
+  
+  &__office-title {
+    margin: 20px 0 9px;
+  }
+
+  &__stock-title {
+    margin: 21px 0 14px 0;
+  }
+
   &__stock-title, &__office-title {
     font-size: 14px;
+    letter-spacing: 3px;
 
     @media (min-width: @screen-sm) {
       font-size: 18px;
@@ -624,13 +641,22 @@ footer {
 
   &__title {
     font-size: 18px;
+    letter-spacing: 4px;
   }
   p {
     color: #666;
     font-size: 14px;
     text-transform: none;
+    margin: 0 0 3px 0;
+    letter-spacing: 1px;
     @media (min-width: @screen-sm) {
       font-size: 16px;
+    }
+  }
+
+   &__stock {
+    p {
+      letter-spacing: 0px;
     }
   }
 
@@ -826,4 +852,26 @@ footer {
     width: 350px;
     margin-top: 95px;
   }
+}
+
+// меню под jq
+.fixmenu {
+  position: fixed;
+  background-color: #fff;
+  z-index: 11;
+  top: 65px;
+  left: 0;
+  padding: 0 35px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,.11);
+  // border-bottom: 1px solid rgba(0,0,0,.3);
+
+
+  .main-menu__item:last-child {
+    // width: 250px;
+    padding-bottom: 20px;
+  }
+}
+
+.openmenu{
+  overflow: hidden;
 }

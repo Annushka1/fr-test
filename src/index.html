@@ -6,6 +6,7 @@
 <title>Заголовок</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" href="img/fav-icon.png" />
 <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
 <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -42,7 +43,7 @@
       <img class="main-page__img" src="img/fruit1260.png" alt="">
       <div class="main-page__block">
         <h1 class="main-page__title-pages">КОНЦЕНТРированный сок из смеси тропических фруктов</h1>
-      <a class="main-page__pop-btn" href="#popup1">Спецификация</a>
+      <a class="main-page__pop-btn" data-fancybox data-src="popup1"  href="javascript:;">Спецификация</a>
       <a class="btn-to-page" href="fruit.html">Другие соки и пюре</a>
       </div>
     </div>
@@ -50,7 +51,7 @@
       <img class="main-page__img" src="img/bag1260.png" alt="">
       <div class="main-page__block">
         <h1 class="main-page__title-pages">Асептический мешок 220 литров</h1>
-      <a class="main-page__pop-btn" href="#popup2">Спецификация</a>
+      <a class="main-page__pop-btn btn-pop" data-fancybox data-src="#popup2"  href="javascript:;">Спецификация</a>
       <a class="btn-to-page" href="bag.html">Другие мешки</a>
       </div>
       
@@ -66,9 +67,7 @@
     </div>
    </div>
   <div class="pops">
-      <div class="popup-container" id="popup1">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup1">
           <h1>Концентрированный сок из смеси тропических фруктов</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 65 +/- 1</p>
@@ -79,11 +78,8 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit1.png">
         </div>
-      </div>
 
-      <div class="popup-container" id="popup2">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content"  id="popup2">
           <h1>Асептический мешок 220 литров</h1>
           <div class="pops__block-descriptions">
             <span><strong>Объем:</strong> 220 л</span><span><strong>Кислородный барьер:</strong> стандартный / высокий</span><span><strong>Горловина:</strong> возможны варианты</span><span><strong>Структура мешка:</strong></span>
@@ -98,7 +94,6 @@
             <p>«О безопасности упаковки»</p>
           </div><img src="img/10-2.png">
         </div>
-      </div>
     
   </div>
 

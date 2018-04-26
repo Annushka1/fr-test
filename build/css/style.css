@@ -48,8 +48,8 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 35px 0 ;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 250px;
   margin: 0 auto;
 }
@@ -62,9 +62,9 @@ header {
 }
 .gamburger span {
   position: relative;
-  left: -10px;
+  left: 4px;
   width: 20px;
-  height: 4px;
+  height: 1px;
   background-color: #767676;
   display: inline-block;
   cursor: pointer;
@@ -73,20 +73,20 @@ header {
   content: "";
   cursor: pointer;
   position: absolute;
-  top: 6.5px;
+  top: 4px;
   right: 0px;
   width: 20px;
-  height: 4px;
+  height: 1px;
   background-color: #767676;
 }
 .gamburger span:after {
   content: "";
   position: absolute;
   cursor: pointer;
-  top: 13px;
+  top: 8px;
   right: 0px;
   width: 20px;
-  height: 4px;
+  height: 1.4px;
   background-color: #767676;
 }
 .main-menu {
@@ -112,9 +112,12 @@ header {
   color: #888888;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 61px;
 }
 .switcher__btn {
-  padding-left: 10px;
+  padding-top: 2px;
   display: inline-block;
   cursor: pointer;
   -ms-flex-item-align: center;
@@ -134,13 +137,24 @@ header {
 }
 .logo {
   display: block;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 92px;
+  margin-left: 4px;
 }
-.offers img {
-  max-width: 226px;
-  max-height: 190px;
+.offers {
+  padding: 65px 0 15px 0;
+}
+.offers .small-img {
+  display: block;
+}
+.offers .big-img {
+  display: none;
 }
 .offers__title {
   font-size: 18px;
+  letter-spacing: 4px;
+  line-height: 1.4;
 }
 .offers__size {
   display: none;
@@ -152,14 +166,16 @@ header {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+  width: 250px;
+  margin: 0 auto;
+  padding: 0 1px 0 1px;
 }
 .offers__view-bag {
-  width: 248px;
   border: 1px solid #dcdcdc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  padding: 35px 14px 35px 20px;
-  height: 376px;
-  margin-bottom: 64px;
+  padding: 32px 14px 39px 18px;
+  height: 373px;
+  margin-bottom: 61px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -167,6 +183,12 @@ header {
   -ms-flex-pack: justify;
       justify-content: space-between;
   position: relative;
+}
+.offers .bag20 {
+  padding: 25px 14px 35px 18px;
+}
+.offers .bag220 {
+  padding-top: 17px;
 }
 footer {
   background-color: #2b2b32;
@@ -184,15 +206,26 @@ footer {
   -ms-flex-pack: center;
       justify-content: center;
 }
+.phone span:first-child,
+.email span:first-child {
+  letter-spacing: 3px;
+}
 .phone span:last-child,
 .email span:last-child {
   color: #888888;
   font-size: 14px;
-  margin: 20px 0 25px;
+  margin: 13px 0 33px 0;
+  letter-spacing: 1px;
+}
+.email span:last-child {
+  text-transform: lowercase;
 }
 .footer-logo {
   font-size: 22px;
   margin: 30px 0 20px 0;
+}
+.footer__inner .footer-logo {
+  margin-bottom: 15px;
 }
 .footer__inner .footer-logo:before {
   content: '';
@@ -203,7 +236,7 @@ footer {
   background: #888;
   right: 0;
   left: 0;
-  bottom: 25px;
+  bottom: 29px;
   margin: auto;
 }
 .footer__inner .rights {
@@ -211,60 +244,13 @@ footer {
   color: #888888;
   text-transform: none;
 }
-.offers__view {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.popup-container {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.3);
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(21, 17, 17, 0.61);
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-}
 .popup-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
-}
-.popup-content a.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  background: none;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-}
-.popup-content a.close:hover {
-  color: #333;
-}
-.popup-container:target {
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1);
-}
-.popup-container h3 {
-  margin: 10px;
+  display: none;
 }
 .about {
   width: 250px;
   margin: 0 auto;
+  padding: 36px 0 15px 0;
 }
 .about a {
   color: #0079c1;
@@ -274,31 +260,36 @@ footer {
   margin: 0;
   text-transform: none;
   font-size: 16px;
-  text-align: justify;
+  text-align: left;
   color: #666;
+  line-height: 1.5;
 }
 .about__advantages {
-  margin: 0 0 40px 0;
   padding: 0;
   text-transform: none;
   font-size: 16px;
-  text-align: justify;
+  text-align: left;
   color: #666;
+  margin: 26px 0 33px 0;
+  line-height: 1.5;
 }
 .about li {
   list-style-type: none;
 }
 .about__source {
-  margin-bottom: 35px;
+  margin-bottom: 23px;
 }
 .about__title {
   font-size: 18px;
-}
-.about__advantages {
-  margin-bottom: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 24px;
 }
 .contact {
-  width: 248px;
+  margin: 0 auto;
+  padding: 36px 0 15px 0;
+}
+.contact__inner {
+  width: 250px;
   margin: 0 auto;
 }
 .contact__map {
@@ -307,19 +298,33 @@ footer {
 }
 .contact__office,
 .contact__stock {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
+  padding-top: 16px;
+}
+.contact__office-title {
+  margin: 20px 0 9px;
+}
+.contact__stock-title {
+  margin: 21px 0 14px 0;
 }
 .contact__stock-title,
 .contact__office-title {
   font-size: 14px;
+  letter-spacing: 3px;
 }
 .contact__title {
   font-size: 18px;
+  letter-spacing: 4px;
 }
 .contact p {
   color: #666;
   font-size: 14px;
   text-transform: none;
+  margin: 0 0 3px 0;
+  letter-spacing: 1px;
+}
+.contact__stock p {
+  letter-spacing: 0px;
 }
 .main-page {
   background-image: url(../img/main320.png);
@@ -401,6 +406,21 @@ footer {
   text-align: center;
   margin: 30px 0 45px 0;
   font-size: 14px;
+}
+.fixmenu {
+  position: fixed;
+  background-color: #fff;
+  z-index: 11;
+  top: 65px;
+  left: 0;
+  padding: 0 35px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.11);
+}
+.fixmenu .main-menu__item:last-child {
+  padding-bottom: 20px;
+}
+.openmenu {
+  overflow: hidden;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -623,11 +643,14 @@ th {
   }
   .logo {
     margin-bottom: 15px;
-    text-align: center;
     width: 100%;
     font-size: 22px;
   }
-  .offers img {
+  .offers .small-img {
+    display: none;
+  }
+  .offers .big-img {
+    display: block;
     max-width: 452px;
     max-height: 252px;
   }
@@ -684,7 +707,7 @@ th {
   .about {
     width: 580px;
   }
-  .contact {
+  .contact__inner {
     width: 580px;
   }
   .contact__map {
@@ -809,7 +832,7 @@ th {
   .about {
     width: 1016px;
   }
-  .contact {
+  .contact__inner {
     width: 1016px;
   }
   .contact__map {

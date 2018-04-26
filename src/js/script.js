@@ -16,9 +16,17 @@ $(document).ready(function(){
 $('.gamburger').on('click', function(){
   $('.main-menu').slideToggle();
   $('.logo-item').hide();
-  // $('body').addClass('openmenu')
-  // $('.main-menu').addClass('fixmenu')
-})
+  $('body').toggleClass('openmenu')
+  $('.main-menu').toggleClass('fixmenu')
+});
+
+if(jQuery(".main-menu").css('display') == 'none'){
+   $('.main-menu').removeClass('fixmenu');
+   $('.main-menu').removeClass('openmenu');
+}
+
+$('[data-fancybox]').fancybox({
+	});
 
 // //1-й слайдер
 //  $('.slider-for').slick({

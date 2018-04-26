@@ -6,8 +6,10 @@
 <title>Заголовок</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" href="img/fav-icon.png" />
 <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
 <link rel="stylesheet" href="css/style.min.css">
+<!-- <link rel="stylesheet" href="js/jquery.fancybox.min.css" type="text/css" media="screen"> -->
 </head>
 
  <body>
@@ -35,99 +37,97 @@
         <div class="offers__view-bag bag10">
         	<img src="img/fruit1.png">
           	<h1 class="offers__title">Концентрированный сок из смеси тропических фруктов <span class="line-break"></h1>
-          	<a href="#popup1">читать больше</a>
+          	<a data-fancybox data-src="#popup1" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag20">
           <img src="img/fruit2.png">
           <h1 class="offers__title">Концентрированный сок лимона</h1>
-          <a href="#popup2">читать больше</a>
+          <a data-fancybox data-src="#popup2" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag220">
           <img src="img/fruit3.png">
           <h1 class="offers__title">Концентрированный сок красного грейпфрута</h1>
-          <a href="#popup3">читать больше</a>
+          <a data-fancybox data-src="#popup3" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag1200">
           <img src="img/fruit4.png">
           <h1 class="offers__title">Концентрированный сок апельсина</h1>
-          <a href="#popup4">читать больше</a>
+          <a data-fancybox data-src="#popup4" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag10">
           <img src="img/fruit5.png">
             <h1 class="offers__title">Основы для сокосодержащих напитков</h1>
-            <a href="#popup5">читать больше</a>
+            <a data-fancybox data-src="#popup5" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag20">
           <img src="img/fruit6.png">
           <h1 class="offers__title">Концентрированный сок белого винограда</h1>
-          <a href="#popup6">читать больше</a>
+          <a data-fancybox data-src="#popup6" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag220">
           <img src="img/fruit7.png">
           <h1 class="offers__title">Концентрированный сок ананаса</h1>
-          <a href="#popup7">читать больше</a>
+          <a data-fancybox data-src="#popup7" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag1200">
           <img src="img/fruit8.png">
           <h1 class="offers__title">Пюре банана</h1>
-          <a href="#popup8">читать больше</a>
+          <a data-fancybox data-src="#popup8" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag10">
           <img src="img/fruit9.png">
             <h1 class="offers__title">Концентрированное пюре персика</h1>
-            <a href="#popup9">читать больше</a>
+            <a data-fancybox data-src="#popup9" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag20">
           <img src="img/fruit10.png">
           <h1 class="offers__title">Концентрированное пюре груши</h1>
-          <a href="#popup10">читать больше</a>
+          <a data-fancybox data-src="#popup10" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag220">
           <img src="img/fruit11.png">
           <h1 class="offers__title">КОНЦЕНТРИРОВАННОЕ ПЮРЕ МАНГО</h1>
-          <a href="#popup11">читать больше</a>
+          <a data-fancybox data-src="#popup11" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag1200">
           <img src="img/fruit12.png">
           <h1 class="offers__title">Концентрированное пюре абрикоса</h1>
-          <a href="#popup12">читать больше</a>
+          <a data-fancybox data-src="#popup12" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag10">
           <img src="img/fruit13.png">
             <h1 class="offers__title">Пюре яблока (концентрир. / неконцентрир.)</h1>
-            <a href="#popup13">читать больше</a>
+            <a data-fancybox data-src="#popup13" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag220">
           <img src="img/fruit14.png">
           <h1 class="offers__title">Концентрированный сок граната</h1>
-          <a href="#popup14">читать больше</a>
+          <a data-fancybox data-src="#popup14" href="javascript:;">читать больше</a>
         </div>
 
         <div class="offers__view-bag bag220">
           <img src="img/fruit15.png">
           <h1 class="offers__title">Овощные пюре</h1>
-          <a href="#popup15">читать больше</a>
+          <a data-fancybox data-src="#popup15" href="javascript:;">читать больше</a>
         </div>
       </div>
 
       <!-- попсы -->
       <div class="pops">
-      <div class="popup-container" id="popup1">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup1">
           <h1>Концентрированный сок из смеси тропических фруктов</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 65 +/- 1</p>
@@ -138,11 +138,8 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit1.png">
         </div>
-      </div>
 
-       <div class="popup-container" id="popup2">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup2">
           <h1>Концентрированный сок лимона</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 48 +/- 3</p>
@@ -153,11 +150,8 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit2.png">
         </div>
-      </div>
 
-       <div class="popup-container" id="popup3">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup3">
           <h1>Концентрированный сок красного грейпфрута</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 57 +/- 1 (с клеткой) 59 +/- 1 (без клетки)</p>
@@ -168,11 +162,8 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit3.png">
         </div>
-      </div>
 
-       <div class="popup-container" id="popup4">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup4">
           <h1>Концентрированный сок апельсина</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 60 +/- 1 (с клеткой)65 +/- 1 (без клетки)</p>
@@ -183,22 +174,16 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit4.png">
         </div>
-      </div>
 
-      <div class="popup-container" id="popup5">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup5">
           <h1>Основы для сокосодержащих напитков</h1>
           <div class="pops__block-descriptions">
             <p>Готовые основы для приготовления сокосодержащих напитков, при производстве необходимо добавить только воду, сахар и лимонную кислоту. 
 В состав основ входит концентрированный сок, сахар, красители, ароматизаторы. </p>
           </div><img src="img/fruit5.png">
         </div>
-      </div>
 
-       <div class="popup-container" id="popup6">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content"  id="popup6">
           <h1>Концентрированный сок белого винограда</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 66 +/- 1</p>
@@ -209,11 +194,8 @@
             <p>предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit6.png">
         </div>
-      </div>
 
-       <div class="popup-container" id="popup7">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content"  id="popup7">
           <h1>Концентрированный сок ананаса</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 60 +/- 1 </p>
@@ -224,11 +206,8 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit7.png">
         </div>
-      </div>
       
-       <div class="popup-container" id="popup8">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup8">
           <h1>Пюре банана</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 21-25</p>
@@ -239,11 +218,8 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit8.png">
         </div>
-      </div>
 
-      <div class="popup-container" id="popup9">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup9">
           <h1>Концентрированное пюре персика</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 30-32</p>
@@ -255,11 +231,8 @@
 предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit9.png">
         </div>
-      </div>
 
-       <div class="popup-container" id="popup10">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content"  id="popup10">
           <h1>Концентрированное пюре груши</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 30-32</p>
@@ -270,11 +243,9 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit10.png">
         </div>
-      </div>
 
-       <div class="popup-container" id="popup11">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+       <div class="popup-container">
+        <div class="popup-content"  id="popup11">
           <h1>Концентрированное пюре манго </h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 28-30</p>
@@ -285,11 +256,8 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit11.png">
         </div>
-      </div>
       
-       <div class="popup-container" id="popup12">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content"  id="popup12">
           <h1>Концентрированное пюре абрикоса</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 30-32</p>
@@ -300,11 +268,8 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit12.png">
         </div>
-      </div>
 
-      <div class="popup-container" id="popup13">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup13">
           <h1>Пюре яблока (концентрированное / неконцентрированное) </h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 10-12 / 30-32</p>
@@ -314,11 +279,8 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт <strong>предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit13.png">
         </div>
-      </div>
 
-       <div class="popup-container" id="popup14">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup14">
           <h1>Концентрированный сок граната</h1>
           <div class="pops__block-descriptions">
             <p><strong>Содержание растворимых сухих веществ, °Bx:</strong> 65 +/- 1
@@ -328,18 +290,14 @@
             <p>Данная информация является ознакомительной. Спецификация на конкретный продукт предоставляется вместе с образцом данного продукта.</p>
           </div><img src="img/fruit14.png">
         </div>
-      </div>
 
-       <div class="popup-container" id="popup15">
-        <div class="popup-content">
-          <a href="#" class="close">&times;</a>
+        <div class="popup-content" id="popup15">
           <h1>Овощные пюре</h1>
           <div class="pops__block-descriptions">
             <p>Натуральные пюре овощей, соответствующие требованиям к детскому питанию ТР ТС 023/2011 «Технический регламент на соковую продукцию из фруктов и овощей»; ТР ТС 021/2011 «О безопасности пищевой продукции».  </p>
             <p>Ассортимент: кабачок, брокколи, цветная капуста. /</p>
           </div><img src="img/fruit15.png">
         </div>
-      </div>        
     </div>    
     <footer>
     	<div class="footer__inner">
@@ -350,7 +308,8 @@
     	</div>
      
     </footer>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.min.js" type="text/javascript"></script>
+    <!-- <script src="js/jquery.fancybox.min.js" type="text/javascript"></script> -->
 
   </body>
 </html>
