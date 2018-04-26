@@ -16,8 +16,8 @@ $(document).ready(function(){
 $('.gamburger').on('click', function(){
   $('.main-menu').slideToggle();
   $('.logo-item').hide();
-  $('body').toggleClass('openmenu')
-  $('.main-menu').toggleClass('fixmenu')
+  $('body').addClass('openmenu')
+  $('.main-menu').addClass('fixmenu')
 });
 
 if(jQuery(".main-menu").css('display') == 'none'){
