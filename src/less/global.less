@@ -669,6 +669,14 @@ footer {
   width: 250px;
   margin: 0 auto;
   padding: 36px 0 15px 0;
+
+  @media (min-width: @screen-sm) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: @screen-lg) {
+    padding-top: 59px;
+  }
   a {
     color: #0079c1;
   }
@@ -692,11 +700,11 @@ footer {
     line-height: 1.5;
 
     @media (min-width: @screen-sm) {
-      margin-bottom: 60px;
+      margin-bottom: 42px;
     }
 
     @media (min-width: @screen-lg) {
-      margin-bottom: 75px;
+      margin-bottom: 55px;
     }
   }
   li {
@@ -722,6 +730,10 @@ footer {
     font-size: 18px;
     letter-spacing: 4px;
     margin-bottom: 24px;
+
+    @media (min-width: @screen-sm) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -889,7 +901,7 @@ footer {
     }
 
     @media (min-width: @screen-lg) {
-      max-width: 82%;
+      max-width: 1016px;
       background-image: url(../img/main1260.png);
       background-position-y: -6%;
     }
