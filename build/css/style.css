@@ -142,6 +142,10 @@ header {
   width: 92px;
   margin-left: 4px;
 }
+.logo a {
+  color: #000;
+  text-decoration: none;
+}
 .offers {
   padding: 65px 0 15px 0;
 }
@@ -206,12 +210,18 @@ header {
 .offers .bag220 .offers__title {
   margin-top: 10px;
 }
+.offers .bag220 .middle-img {
+  display: none;
+}
 .offers .bag1200 {
   padding: 16px 6px 39px 17px;
   margin-bottom: 47px;
 }
 .offers .bag1200 .offers__title {
   margin: 10px 0 18px 0;
+}
+.offers .bag1200 .middle-img {
+  display: none;
 }
 footer {
   background-color: #2b2b32;
@@ -446,8 +456,10 @@ footer {
 .main-page {
   background-image: url(../img/main320.png);
   background-repeat: no-repeat;
-  background-position: 50% -3%;
+  background-position: 40% -1%;
   background-size: contain;
+  width: 250px;
+  margin: 0 auto;
   box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
 }
 .main-page__title {
@@ -455,16 +467,15 @@ footer {
   font-family: 'Comfortaa', cursive;
   text-transform: none;
   margin: 0 auto;
-  padding: 42px 0 150px 0;
+  padding: 42px 0 115px;
   width: 100%;
 }
 .main-page__img {
-  width: 220px;
+  width: 264px;
 }
 .main-page__fruit,
 .main-page__bag,
 .main-page__about {
-  width: 248px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
@@ -473,6 +484,28 @@ footer {
   -ms-flex-align: center;
       align-items: center;
   border-bottom: 1px solid #a6a6a6;
+}
+.main-page__about {
+  padding-top: 12px;
+}
+.main-page__about .main-page__block {
+  position: relative;
+  left: -6px;
+  top: -15px;
+}
+.main-page__about p {
+  padding-top: 26px;
+  padding-bottom: 0;
+}
+.main-page__about .main-page__title-pages {
+  margin-bottom: 3px;
+  margin-top: 8px;
+}
+.main-page__bag {
+  padding-top: 12px;
+}
+.main-page__bag .main-page__block {
+  padding-top: 2px;
 }
 .main-page__fruit,
 .main-page__bag {
@@ -484,25 +517,32 @@ footer {
   text-transform: uppercase;
   width: 100%;
   text-align: left;
-  padding-right: 40px;
+  padding-right: 9px;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  margin-bottom: 17px;
 }
 .main-page__pop-btn {
-  width: 100%;
   color: #648cff;
   text-align: left;
   font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid #648cff;
+  width: 119px;
+  padding-bottom: 4px;
 }
 .main-page__inner {
-  width: 248px;
+  width: 250px;
   margin: 0 auto;
 }
 .main-page p {
   width: 246px;
   text-align: left;
   margin: 0 auto;
-  padding: 35px 0 40px;
+  padding: 35px 0 60px;
   text-transform: none;
   font-size: 14px;
+  line-height: 1.5;
 }
 .main-page__about p {
   padding-bottom: 0;
@@ -519,12 +559,14 @@ footer {
   background-color: #648cff;
   color: #fff;
   text-decoration: none;
-  width: 100%;
+  width: 247px;
   text-align: center;
-  margin: 30px 0 45px 0;
+  margin: 32px 0 43px;
   font-size: 14px;
+  letter-spacing: 1.3px;
 }
 .fixmenu {
+  display: block;
   position: fixed;
   background-color: #fff;
   z-index: 11;
@@ -539,6 +581,23 @@ footer {
 }
 .openmenu {
   overflow: hidden;
+}
+.btn-to-page:hover {
+  background-color: #789bff;
+}
+.btn-to-page:active {
+  background-color: #5278e5;
+}
+.main-menu__item a:hover {
+  border-bottom: 1px solid #648cff;
+  padding-bottom: 4px;
+  color: #648cff;
+}
+.main-page__pop-btn:hover {
+  color: #5278e5;
+}
+.main-page__pop-btn:active {
+  color: #5278e5;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -948,27 +1007,53 @@ th {
     margin-bottom: 8px;
   }
   .main-page {
-    max-width: 768px;
+    width: 768px;
     background-image: url(../img/main768.png);
     margin: 0 auto;
+    background-position: 40% -2.5%;
   }
   .main-page__title {
     padding-bottom: 0px;
     font-size: 60px;
   }
   .main-page__img {
-    width: 405px;
+    width: 369px;
+    position: relative;
+    left: -15px;
   }
   .main-page__fruit,
   .main-page__bag,
   .main-page__about {
     width: 580px;
-    padding-top: 50px;
+    padding-top: 30px;
     -ms-flex-align: start;
     align-items: flex-start;
   }
+  .main-page__about .main-page__img {
+    left: 3px;
+    width: 375px;
+  }
+  .main-page__about .main-page__block {
+    left: 3px;
+    top: 3px;
+  }
+  .main-page__about p {
+    padding-top: 25px;
+    line-height: 1.35;
+  }
+  .main-page__about .btn-to-page {
+    margin-bottom: 59px;
+  }
+  .main-page__bag {
+    padding-top: 10px;
+  }
+  .main-page__bag .main-page__img {
+    width: 473px;
+    left: -10px;
+  }
   .main-page__title-pages {
     font-size: 18px;
+    margin-bottom: 26px;
   }
   .main-page__pop-btn {
     font-size: 16px;
@@ -989,8 +1074,10 @@ th {
     font-size: 18px;
   }
   .btn-to-page {
-    width: 368px;
+    width: 359px;
     font-size: 16px;
+    padding: 18px 35px;
+    margin-bottom: 74px;
   }
 }
 @media (min-width: 1260px) {
@@ -1176,16 +1263,18 @@ th {
     line-height: 1.3;
   }
   .main-page {
-    max-width: 1016px;
+    width: 1260px;
     background-image: url(../img/main1260.png);
     background-position-y: -6%;
   }
   .main-page__title {
     width: 1016px;
     font-size: 94px;
+    letter-spacing: 2.7px;
   }
   .main-page__img {
-    width: 467px;
+    width: 446px;
+    left: -77px;
   }
   .main-page__fruit,
   .main-page__bag,
@@ -1193,10 +1282,44 @@ th {
     width: 1016px;
     -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 75px;
+  }
+  .main-page__about {
+    padding: 55px 0 69px 0;
+  }
+  .main-page__about .main-page__img {
+    left: -95px;
+  }
+  .main-page__about .btn-to-page {
+    margin-top: 81px;
+  }
+  .main-page__about .main-page__block {
+    width: 381px;
+    padding-top: 0;
+  }
+  .main-page__bag {
+    padding-bottom: 20px;
+  }
+  .main-page__bag .main-page__img {
+    left: -40px;
+  }
+  .main-page__bag .main-page__block {
+    width: 468px;
+    padding-top: 45px;
+  }
+  .main-page__fruit,
+  .main-page__bag {
+    margin-bottom: 16px;
+  }
+  .main-page__title-pages {
+    width: 377px;
+    line-height: 1.67;
+  }
+  .main-page__pop-btn {
+    width: 151px;
+    letter-spacing: 1.5px;
   }
   .main-page__inner {
     width: 1016px;
@@ -1204,14 +1327,15 @@ th {
   .main-page__inner p {
     width: 586px;
     font-size: 24px;
-    padding-bottom: 398px;
+    padding: 59px 0 413px 0;
   }
   .main-page__block {
-    width: 415px;
+    width: 441px;
+    padding-top: 101px;
   }
   .btn-to-page {
-    width: 350px;
-    margin-top: 95px;
+    width: 356px;
+    margin-top: 92px;
   }
 }
 

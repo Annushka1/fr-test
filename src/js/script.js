@@ -14,19 +14,45 @@ $(document).ready(function(){
 
 //Выпадающее меню
 $('.gamburger').on('click', function(){
-  $('.main-menu').slideToggle();
+  // $('.main-menu').slideToggle(); //добавить если у фиксменю не будет дисплай блок
   $('.logo-item').hide();
-  $('body').addClass('openmenu')
-  $('.main-menu').addClass('fixmenu')
+  $('body').toggleClass('openmenu');
+  $('.main-menu').toggleClass('fixmenu');
+  // $('.main-menu').removeClass('fixmenu');
 });
 
-if(jQuery(".main-menu").css('display') == 'none'){
-   $('.main-menu').removeClass('fixmenu');
-   $('.main-menu').removeClass('openmenu');
-}
+
+
+// $('.gamburger').on('click', function(){
+// 	 this.clicked = this.clicked === undefined ? false : !this.clicked;
+// if ( this.clicked ) {
+
+//        $('.main-menu').removeClass('fixmenu');
+//        $('body').removeClass('openmenu');
+//        // alert('боги');
+       
+//     } else {
+//     	$('.main-menu').addClass('fixmenu');
+//     	$('body').addClass('openmenu');
+//     	// alert('убивать');
+//     }
+// });
+
+// $(window).resize(function () {
+//     if($('.main-menu').css('display', 'none')  ){
+//         $('.main-menu').removeClass('fixmenu');
+//     };
+// }
+// if($(".main-menu").css('display') == 'none'){
+//    $('body').removeClass('openmenu');
+//    $('.main-menu').removeClass('fixmenu');
+// }
 
 $('[data-fancybox]').fancybox({
 	});
+
+var style = new YMaps.Style();
+style.hasHint = false;
 
 // //1-й слайдер
 //  $('.slider-for').slick({
