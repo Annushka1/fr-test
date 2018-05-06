@@ -100,10 +100,11 @@ header {
     width: 580px;
     justify-content: space-between;
     padding-bottom: 0;
+    padding-top: 19px;
   }
 
   @media (min-width: @screen-lg) {
-    padding: 40px 0 27px 0;
+    padding: 24px 0 27px;
     width: 1016px;
     justify-content: start;
   }
@@ -231,7 +232,7 @@ header {
   }
   
   &__btn {
-    padding-top: 2px;
+    padding-bottom: 2px;
     display: inline-block;
     cursor: pointer;
     align-self: center;
@@ -383,7 +384,7 @@ header {
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
       padding: 32px 6px 39px 20px;
       height: 373px;
-      margin-bottom: 65px;
+      margin-bottom: 62px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -414,8 +415,9 @@ header {
 
   .bag20 {
     padding: 25px 5px 35px 18px;
+
     .offers__title {
-      margin: 44px 0 23px 0;
+      margin: 14px 0 17px;
     }
 
 
@@ -437,7 +439,7 @@ header {
       }
 
       .offers__title {
-        margin-top: 55px;
+        margin: 57px 0 22px;
       }
     }
 
@@ -523,7 +525,7 @@ header {
     padding: 16px 6px 39px 17px;
     margin-bottom: 47px;
     .offers__title {
-      margin: 10px 0 18px 0;
+      margin: 12px 0 18px 0;
     }
     .middle-img {
         display: none;
@@ -532,7 +534,7 @@ header {
     @media (min-width: @screen-sm) {
       height: 510px;
       padding: 51px 20px 37px 29px;
-      margin-bottom: 53px;
+      margin-bottom: 69px;
 
       .offers__title {
         margin: 26px 0 18px 8px;
@@ -568,8 +570,12 @@ header {
         left: -10px;
       }
 
+      .offers__size {
+        top: 72px;
+      }
+
       .offers__title {
-        margin-top: 11px;
+        margin: 18px 0 22px 8px;
       }
       height: 513px;
       margin-bottom: 75px;
@@ -1664,7 +1670,8 @@ footer {
   background-repeat: no-repeat;
   background-position: 40% -1%;
   background-size: contain;
-  width: 250px;
+  width: 320px;
+  // background-size: 320px;
   margin: 0 auto;
   box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.3);
 
@@ -1677,6 +1684,7 @@ footer {
 
     @media (min-width: @screen-lg) {
       width: 1260px;
+      background-size: 1260px;
       background-image: url(../img/main1260.png);
       background-position-y: -6%;
     }
@@ -1866,6 +1874,7 @@ footer {
 
       @media (min-width: @screen-sm) {
         font-size: 16px;
+        width: 133px;
       }
 
       @media (min-width: @screen-lg) {

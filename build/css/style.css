@@ -117,7 +117,7 @@ header {
   width: 61px;
 }
 .switcher__btn {
-  padding-top: 2px;
+  padding-bottom: 2px;
   display: inline-block;
   cursor: pointer;
   -ms-flex-item-align: center;
@@ -180,7 +180,7 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 32px 6px 39px 20px;
   height: 373px;
-  margin-bottom: 65px;
+  margin-bottom: 62px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -201,7 +201,7 @@ header {
   padding: 25px 5px 35px 18px;
 }
 .offers .bag20 .offers__title {
-  margin: 44px 0 23px 0;
+  margin: 14px 0 17px;
 }
 .offers .bag220 {
   padding: 13px 6px 35px 17px;
@@ -218,7 +218,7 @@ header {
   margin-bottom: 47px;
 }
 .offers .bag1200 .offers__title {
-  margin: 10px 0 18px 0;
+  margin: 12px 0 18px 0;
 }
 .offers .bag1200 .middle-img {
   display: none;
@@ -547,7 +547,7 @@ footer {
   background-repeat: no-repeat;
   background-position: 40% -1%;
   background-size: contain;
-  width: 250px;
+  width: 320px;
   margin: 0 auto;
   box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
 }
@@ -892,6 +892,7 @@ th {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding-bottom: 0;
+    padding-top: 19px;
   }
   .gamburger span {
     display: none;
@@ -977,7 +978,7 @@ th {
     right: 25px;
   }
   .offers .bag20 .offers__title {
-    margin-top: 55px;
+    margin: 57px 0 22px;
   }
   .offers .bag220 {
     height: 511px;
@@ -1001,7 +1002,7 @@ th {
   .offers .bag1200 {
     height: 510px;
     padding: 51px 20px 37px 29px;
-    margin-bottom: 53px;
+    margin-bottom: 69px;
   }
   .offers .bag1200 .offers__title {
     margin: 26px 0 18px 8px;
@@ -1393,6 +1394,7 @@ th {
   }
   .main-page__pop-btn {
     font-size: 16px;
+    width: 133px;
   }
   .main-page__inner {
     width: 580px;
@@ -1424,7 +1426,7 @@ th {
 }
 @media (min-width: 1260px) {
   .header-inner {
-    padding: 40px 0 27px 0;
+    padding: 24px 0 27px;
     width: 1016px;
     -ms-flex-pack: start;
     justify-content: start;
@@ -1544,8 +1546,11 @@ th {
     width: 445px;
     left: -10px;
   }
+  .offers .bag1200 .offers__size {
+    top: 72px;
+  }
   .offers .bag1200 .offers__title {
-    margin-top: 11px;
+    margin: 18px 0 22px 8px;
   }
   .phone,
   .email {
@@ -1835,6 +1840,7 @@ th {
   }
   .main-page {
     width: 1260px;
+    background-size: 1260px;
     background-image: url(../img/main1260.png);
     background-position-y: -6%;
   }
