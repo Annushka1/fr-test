@@ -257,6 +257,11 @@ footer {
   font-size: 22px;
   margin: 30px 0 15px 0;
 }
+.footer-logo a {
+  color: #666;
+  cursor: pointer;
+  text-decoration: none;
+}
 .footer__inner .footer-logo:before {
   content: '';
   position: relative;
@@ -701,6 +706,9 @@ footer {
   padding-bottom: 4px;
   color: #648cff;
 }
+.logo-item a:hover {
+  border-bottom: 0;
+}
 .main-page__pop-btn:hover {
   color: #5278e5;
 }
@@ -719,6 +727,19 @@ footer {
 }
 .fruit-pops .pops__block-descriptions {
   font-size: 14px;
+  text-transform: none;
+}
+.map1,
+.map2,
+.map3 {
+  padding: 5px;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.6);
+  bottom: 1px solid #000;
+  position: relative;
+  right: -25px;
+  border-radius: 10px;
+  font-size: 10px;
   text-transform: none;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
@@ -1468,6 +1489,11 @@ th {
   }
   .pop-img {
     float: right;
+  }
+  .map1,
+  .map2,
+  .map3 {
+    width: 130px;
   }
 }
 @media (min-width: 1260px) {

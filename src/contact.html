@@ -9,6 +9,8 @@
   <link rel="icon" type="image/png" href="img/fav-icon.png" />
   <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+  
+
 </head>
 
 <body>
@@ -35,12 +37,14 @@
   <div class="contact__inner">
     <h1 class="contact__title">Контакты</h1>
     <div class="contact__office">
-     <iframe class="contact__map" src="https://yandex.ru/map-widget/v1/-/CBqJ6JfrtA"frameborder="0" style="border:0" allowfullscreen></iframe>
-         <!-- <div class="contact__map" id="yndxMap""></div> -->
+     <!-- <iframe class="contact__map" src="https://yandex.ru/map-widget/v1/-/CBqJ6JfrtA"frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    <!-- <div class="map" id="yndxMap""></div> -->
+    <div class="contact__map" id="map1"></div>
+
 
      <div class="contact__adress">
        <h2 class="contact__office-title">Офис в Москве</h2>
-       <p>ул. Водников, д.2, стр. 2? офис 3</p>
+       <p>ул. Водников, д.2, стр. 2, офис 3</p>
        <p>+7 (495) 640-77-81</p>
        <p>info@fruton.ru</p>
      </div>
@@ -48,7 +52,8 @@
    
    
    <div class="contact__stock">
-    <iframe class="contact__map" src="https://yandex.ru/map-widget/v1/-/CBqJ6JAtHB"  frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!-- <iframe class="contact__map" src="https://yandex.ru/map-widget/v1/-/CBqJ6JAtHB"  frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    <div class="contact__map" id="map2"></div>
     <div class="contact__adress">
      <h2 class="contact__stock-title">Склад в Москве</h2>
      <p>ООО «Н-Логистик» </p>
@@ -58,9 +63,10 @@
    
  </div>
  <div class="contact__stock novorosijsk">
-  <iframe class="contact__map " src="https://yandex.ru/map-widget/v1/-/CBqJ6JTy2C" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <!-- <iframe class="contact__map " src="https://yandex.ru/map-widget/v1/-/CBqJ6JTy2C" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+  <div class="contact__map" id="map3"></div>
   <div class="contact__adress">
-   <h2 class="contact__stock-title">Склад в Новоросийске</h2>
+   <h2 class="contact__stock-title">Склад в Новороcсийске</h2>
    <p>ООО «Рускон»</p>
    <p>г.Новороссийск, село Кирилловка,</p>
    <p>2-я ж/д петля</p>
@@ -74,13 +80,25 @@
 <footer>
  <div class="footer__inner">
    <div class="phone"><span>Москва</span><span>+7 (495) 640-77-81</span></div>
-   <div class="email"><span>e-mail</span><span>secretary@intersok.ru</span></div>
-   <div class="footer-logo">фрутон</div>
-   <div class="rights">All rights reserved</div>
- </div>
- 
+   <div class="email"><span>e-mail</span><span>info@fruton.ru</span></div>
+<div class="footer-logo"><a href="index.html">фрутон</a></div>   <div class="rights">All rights reserved</div>
+ </div> 
 </footer>
 <script src="js/script.min.js"></script>
-
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<!-- <script>
+  ymaps.ready(init); 
+    function init () {            
+        var myMap = new ymaps.Map('map1', {
+            center: [55.818392, 37.447917], //1 карта
+            zoom: 15
+        });
+    var myPlacemark = new ymaps.Placemark(
+      [55.818392, 37.447917], 
+      {iconContent: '<div class="map1">улица Водников, 2с2</div>',},
+      {preset: 'twirl#redIcon'});
+    myMap.geoObjects.add(myPlacemark);
+        }
+</script> -->
 </body>
 </html>
