@@ -1723,6 +1723,25 @@ footer {
     }
     }
 
+    &__description {
+      padding-bottom: 30px;
+      p {
+        display: none;
+      }
+    }
+@media (min-width: 768px) {
+  &__description {
+      padding: 65px 0 250px;
+    }
+}
+
+@media (min-width: 1260px) {
+  &__description {
+    padding: 0;
+    p{display: block;}
+  }
+}
+    
 
   &__title {
     font-size: 26px;
@@ -1735,7 +1754,7 @@ footer {
 
     @media (min-width: @screen-sm) {
       padding-bottom: 0px;
-      font-size: 60px;
+      font-size: 70px;
     } 
     @media (min-width: @screen-lg) {
       width: 1016px;
@@ -2109,14 +2128,14 @@ footer {
 
 
 .fancybox-stage {
-    width: 248px;
+    width: 250px;
     margin: 0 auto;
-    padding: 40px 10px 60px 20px;   
+    /* padding: 40px 10px 60px 20px;    */
 }
 
 @media (min-width: 768px) {
   .fancybox-stage {
-    width: 581px;
+    width: 590px;
   }
   .pop-img {
     float: right;
@@ -2125,7 +2144,7 @@ footer {
 
 @media (min-width: 1260px) {
   .fancybox-stage {
-    width: 834px;
+    width: 838px;
   }
 }
 

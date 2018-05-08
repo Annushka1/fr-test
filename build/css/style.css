@@ -560,6 +560,12 @@ footer {
   width: 250px;
   margin: 0 auto;
 }
+.main-page__description {
+  padding-bottom: 30px;
+}
+.main-page__description p {
+  display: none;
+}
 .main-page__title {
   font-size: 26px;
   font-family: 'Comfortaa', cursive;
@@ -716,9 +722,9 @@ footer {
   color: #5278e5;
 }
 .fancybox-stage {
-  width: 248px;
+  width: 250px;
   margin: 0 auto;
-  padding: 40px 10px 60px 20px;
+  /* padding: 40px 10px 60px 20px;    */
 }
 .fruit-pops h1 {
   font-size: 14px;
@@ -1399,9 +1405,12 @@ th {
     font-size: 18px;
     padding-bottom: 225px;
   }
+  .main-page__description {
+    padding: 65px 0 250px;
+  }
   .main-page__title {
     padding-bottom: 0px;
-    font-size: 60px;
+    font-size: 70px;
   }
   .main-page__img {
     width: 369px;
@@ -1485,7 +1494,7 @@ th {
     margin: 35px 0 74px;
   }
   .fancybox-stage {
-    width: 581px;
+    width: 590px;
   }
   .pop-img {
     float: right;
@@ -1924,6 +1933,12 @@ th {
     font-size: 24px;
     padding: 59px 0 413px 0;
   }
+  .main-page__description {
+    padding: 0;
+  }
+  .main-page__description p {
+    display: block;
+  }
   .main-page__title {
     width: 1016px;
     font-size: 94px;
@@ -2018,7 +2033,7 @@ th {
     margin-top: 92px;
   }
   .fancybox-stage {
-    width: 834px;
+    width: 838px;
   }
 }
 

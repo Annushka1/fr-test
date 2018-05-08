@@ -1,4 +1,15 @@
 $(document).ready(function(){
+
+  $('.gamburger').on('click', function(){
+  // $('.main-menu').slideToggle(); //добавить если у фиксменю не будет дисплай блок
+  $('.logo-item').hide();
+  $('body').toggleClass('openmenu');
+  $('.main-menu').toggleClass('fixmenu');
+  // $('.main-menu').removeClass('fixmenu');
+});
+});
+
+$(document).ready(function(){  
 	ymaps.ready(init); 
     function init () {            
         var map1 = new ymaps.Map('map1', {
@@ -33,134 +44,13 @@ $(document).ready(function(){
 		map1.geoObjects.add(myPlacemark1);
 		map2.geoObjects.add(myPlacemark2);
 		map3.geoObjects.add(myPlacemark3);
-        };
+  }; 
 
 
 
-// $('.payment__postpayment').click(function(){
-//   $('.payment__title').removeClass('check--active');
-//   console.log(111111)
-//   $(this).find('.payment__title').addClass('check--active');
-// });
 
-// $('.payment__prepayment').click(function(){
-//   $('.payment__title').removeClass('check--active');
-//   console.log(111111)
-//   $(this).find('.payment__title').addClass('check--active');
-// });
-
-//Выпадающее меню
-$('.gamburger').on('click', function(){
-  // $('.main-menu').slideToggle(); //добавить если у фиксменю не будет дисплай блок
-  $('.logo-item').hide();
-  $('body').toggleClass('openmenu');
-  $('.main-menu').toggleClass('fixmenu');
-  // $('.main-menu').removeClass('fixmenu');
-});
-
-
-// $('.gamburger').on('click', function(){
-// 	 this.clicked = this.clicked === undefined ? false : !this.clicked;
-// if ( this.clicked ) {
-
-//        $('.main-menu').removeClass('fixmenu');
-//        $('body').removeClass('openmenu');
-//        // alert('боги');
-       
-//     } else {
-//     	$('.main-menu').addClass('fixmenu');
-//     	$('body').addClass('openmenu');
-//     	// alert('убивать');
-//     }
-// });
-
-// $(window).resize(function () {
-//     if($('.main-menu').css('display', 'none')  ){
-//         $('.main-menu').removeClass('fixmenu');
-//     };
-// }
-// if($(".main-menu").css('display') == 'none'){
-//    $('body').removeClass('openmenu');
-//    $('.main-menu').removeClass('fixmenu');
-// }
 
 $('[data-fancybox]').fancybox({
 	});
-
-var style = new YMaps.Style();
-style.hasHint = false;
-
-// //1-й слайдер
-//  $('.slider-for').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   fade: true,
-//   asNavFor: '.slider-nav'
-// });
-
-// $('.slider-nav').slick({
-//   slidesToShow: 5,
-//   slidesToScroll: 1,
-//   asNavFor: '.slider-for',
-//   dots: false,
-//   centerMode: true,
-//   focusOnSelect: true
-// });
-
-
-
-// //Карусель с отзывами
-// $('.responsive').slick({
-//   dots: false,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 2,
-//   slidesToScroll: 2,
-//   responsive: [
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         infinite: true,
-//         dots: false
-//       }
-//     },
-//     {
-//       breakpoint: 790,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-//   ]
-// });
-
-// //Карусель акций
-// $('.one-time').slick({
-//   dots: true,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 1,
-//   adaptiveHeight: true,
-//   arrows: false
-// });
-
-
-// //Карусель на третьей странице
-
-// $('.one-time-second').slick({
-//   dots: false,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 1,
-//   adaptiveHeight: true,
-//   arrows: true
-// });
-
-// карты
-
-
 });
 
