@@ -15,7 +15,6 @@ body {
   box-sizing: border-box;
 }
 
-
 // Body reset
 
 html {
@@ -89,7 +88,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 35px 0 ;
+  padding: 19px 0 ;
   justify-content: space-between;
   // border-bottom: 1px solid #dcdcdc;
   width: 250px;
@@ -100,7 +99,7 @@ header {
     width: 580px;
     justify-content: space-between;
     padding-bottom: 0;
-    padding-top: 19px;
+    padding-top: 12px;
   }
 
   @media (min-width: @screen-lg) {
@@ -112,7 +111,7 @@ header {
 
 .gamburger {
   position: relative;
-  bottom: 5px;
+  bottom: -10px;
   left: 0;
   display: block;
   cursor: pointer;
@@ -121,7 +120,7 @@ header {
     position: relative;
     left: 4px;
     width: 20px;
-    height: 1px;
+    height: 1.5px;
     background-color: #767676;
     display: inline-block;
     cursor: pointer;
@@ -137,7 +136,7 @@ header {
       top: 4px;
       right: 0px;
       width: 20px;
-      height: 1px;
+      height: 1.5px;
       background-color: #767676;
     }
 
@@ -168,6 +167,7 @@ header {
     flex-wrap: wrap;
     order:0;
     margin-bottom: 5px;
+    margin-top: 0;
   }   
 
   @media (min-width: @screen-lg) {
@@ -175,6 +175,7 @@ header {
     align-items: center;
     width: 951px;
     padding-right: 68px;
+    margin-top: 7px;
   }
   &__item {
     cursor: pointer;
@@ -221,14 +222,14 @@ header {
     display: flex;
     align-self: flex-start;
     // padding-bottom: 30px;
-    margin-top: 27px;
+    margin-top: 15px;
   }
 
   @media (min-width: @screen-lg) {
     padding: 0;
     align-self: center;
     width: 63px;
-    margin-top: 6px;
+    margin-top: 4px;
   }
   
   &__btn {
@@ -244,7 +245,7 @@ header {
 }
 
 .logo, .logo-item, .footer-logo {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', light;
   font-size: 18px;
   font-weight: 200;
   text-transform: lowercase;
@@ -257,25 +258,32 @@ header {
 
   @media (min-width: @screen-lg) {
     display: block;
+    height: 15px;
+    position: relative;
+    top: -6px;
+    letter-spacing: 2.5px;
+    left: 2px;
     font-size: 22px;
-    // padding-bottom: 10px;
   }
+
 }
 
 .logo {
   display: block;
   letter-spacing: 3px;
   text-align: center;
-  width: 92px;
-  margin-left: 4px;
+  // width: 92px;
+  margin-right: 15px;
   a {
     color: #000;
   text-decoration: none;
   }
+
   @media (min-width: @screen-sm) {
-    margin-bottom: 4px;
+    margin-left: 19px;
+    margin-right: 0;
     width: 100%;
-    font-size: 22px;
+    font-size: 18px;
   }
 
   @media (min-width: @screen-lg) {
@@ -410,6 +418,7 @@ header {
       width: 111px;
       padding-bottom: 3px;
       border-bottom: 1px solid #648cff;
+      white-space: nowrap;
     }
   }
 
@@ -639,9 +648,6 @@ footer {
       width: 100%;
       margin-top: 84px;
     }
-    // @media (min-width: @screen-lg) {
-    //   margin-top: 84px;
-    // }
   }
 
   .footer__inner {
@@ -735,9 +741,9 @@ footer {
 }
 
 .fruits {
-  .offers__view {
-    padding-left: 5px;
-  }
+  // .offers__view {
+  //   padding-left: 5px;
+  // }
   .offers__view-bag {
     padding: 29px 6px 80px 18px;
     height: 427px;
@@ -1731,21 +1737,21 @@ footer {
     }
 @media (min-width: 768px) {
   &__description {
-      padding: 65px 0 250px;
+      padding: 77px 0 263px;
     }
 }
 
 @media (min-width: 1260px) {
   &__description {
-    padding: 0;
-    p{display: block;}
+    padding: 122px 0 440px;
+    // p{display: block;}
   }
 }
     
 
   &__title {
     font-size: 26px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', light;
     text-transform: none;
     // background-color: #e4e6ea;
     margin: 0 auto;
@@ -1758,7 +1764,7 @@ footer {
     } 
     @media (min-width: @screen-lg) {
       width: 1016px;
-      font-size: 94px;
+      font-size: 110px;
       letter-spacing: 2.7px;
     }
   }
@@ -2116,6 +2122,7 @@ footer {
 
 .logo-item a:hover {
   border-bottom: 0;
+  color: #000;
 }
 
 .main-page__pop-btn:hover {
@@ -2126,25 +2133,9 @@ footer {
   color: #5278e5;
 }
 
-
-.fancybox-stage {
-    width: 250px;
-    margin: 0 auto;
-    /* padding: 40px 10px 60px 20px;    */
-}
-
 @media (min-width: 768px) {
-  .fancybox-stage {
-    width: 590px;
-  }
   .pop-img {
     float: right;
-  }
-}
-
-@media (min-width: 1260px) {
-  .fancybox-stage {
-    width: 838px;
   }
 }
 

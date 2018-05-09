@@ -7,6 +7,9 @@ $(document).ready(function(){
   $('.main-menu').toggleClass('fixmenu');
   // $('.main-menu').removeClass('fixmenu');
 });
+
+  $('[data-fancybox]').fancybox({
+  });
 });
 
 $(document).ready(function(){  
@@ -47,10 +50,5 @@ $(document).ready(function(){
   }; 
 
 
-
-
-
-$('[data-fancybox]').fancybox({
-	});
 });
 
