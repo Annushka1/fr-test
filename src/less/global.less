@@ -176,6 +176,8 @@ header {
     width: 951px;
     padding-right: 68px;
     margin-top: 7px;
+   
+    
   }
   &__item {
     cursor: pointer;
@@ -2207,10 +2209,27 @@ footer {
 @media (min-width: 1260px) {
   width: 463px;
 }
+
+@media (max-width: 1259px){
+  .mfp-close {
+  top: 20px;
+  }
+}
+@media (min-width: 1260px) {
+  button.mfp-close {
+    top: 0;
+  }
+
+}
+
+
+
 div.popup-content {
-  padding: 31px 15px 27px 18px;
+  padding: 31px 15px 0px 18px;
   overflow: hidden;
   width: 250px;
+  margin-top: 20px;
+  background-color: white;
 
 @media (min-width: 768px) {
     width: 578px;
@@ -2220,7 +2239,9 @@ div.popup-content {
 @media (min-width: @screen-lg) {
     width: 838px;
     padding: 39px 0px 44px 38px;
-    position: relative;
+    // position: relative;
+    margin-top: 0;
+
   }
 }
 
@@ -2508,14 +2529,14 @@ div.popup-content {
     top: 34px;
 }
 .pop-fruit12 .pop-fruit-img {
-    left: -79px;
+    left: -126px;
     top: 39px;
     margin-left: 75px;
 }
 div.pop-fruit13 {
   padding-right: 25px;
   .pop-fruit-img {
-    left: -30px;
+    left: -121px;
     top: 22px;
   }
 
@@ -2525,7 +2546,7 @@ div.pop-fruit13 {
 }
 .pop-fruit14 {
   .pop-fruit-img {
-    left: -45px;
+    left: -102px;
     top: 15px;
   }
 
