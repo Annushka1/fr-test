@@ -9,7 +9,11 @@
   <link rel="icon" type="image/png" href="img/fav-icon.png" />
   <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="js/jquery.fancybox.min.css" type="text/css" media="screen">
+  <!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script> -->
+
 </head>
 
 <body>
@@ -27,7 +31,7 @@
       <li class="main-menu__item"><a href="contact.html">контакты</a></li>
     </ul>
     <div class="switcher">
-     <span class="header__lang switcher__btn switcher__btn-active ">rus</span><span class="header__lang switcher__btn">eng</span>
+     <span class="header__lang switcher__btn switcher__btn-active "><a href="#">rus</a></span><span class="header__lang switcher__btn"><a href="en/index.html">eng</a></span>
    </div>
  </div>
  
@@ -71,9 +75,9 @@
 </div></div>
 
 <!-- попсы -->
-<div class="pops">
-  <div class="bag-pops popup-content" id="popup1">
-    <h1 class="pop__title">Асептический мешок 10 литров</h1>
+<div class="pops" style="display: none;">
+  <div class="bag-pops popup-content pop-bag1" id="popup1">
+    <h1 class="pop__title">Асептический мешок <span class="pop__bag-size">10 литров</span></h1>
     <img class="pop-img pop-xs-img" src="img/pop10xs.png">
     <img src="img/pop10sm.png" alt="" class="pop-img pop-sm-img">
     <img src="img/pop10lg.png" alt="" class="pop-img pop-lg-img">
@@ -89,8 +93,8 @@
       <p class="pop__text"><strong>«О безопасности упаковки»</strong></p>
     </div>
   </div>
-  <div class="bag-pops popup-content" id="popup2">
-    <h1 class="pop__title">Асептический мешок 20 литров</h1>
+  <div class="bag-pops popup-content pop-bag2" id="popup2">
+    <h1 class="pop__title">Асептический мешок <span class="pop__bag-size">20 литров</span></h1>
     <img class="pop-img pop-xs-img" src="img/pop20xs.png">
     <img src="img/pop20sm.png" alt="" class="pop-img pop-sm-img">
     <img src="img/pop20lg.png" alt="" class="pop-img pop-lg-img">
@@ -104,8 +108,8 @@
       <p class="pop__text"><strong>«О безопасности упаковки»</strong></p>
     </div>
   </div>
-  <div class="bag-pops popup-content" id="popup3">
-    <h1 class="pop__title">Асептический мешок 220 литров</h1>
+  <div class="bag-pops popup-content pop-bag3" id="popup3">
+    <h1 class="pop__title">Асептический мешок <span class="pop__bag-size">220 литров</span></h1>
     <img class="pop-img pop-xs-img" src="img/pop220xs.png">
     <img src="img/pop220sm.png" alt="" class="pop-img pop-sm-img">
     <img src="img/pop220lg.png" alt="" class="pop-img pop-lg-img">
@@ -119,8 +123,8 @@
       <p class="pop__text"><strong>«О безопасности упаковки»</strong></p>
     </div>
   </div>
-  <div class="bag-pops popup-content" id="popup4">
-    <h1 class="pop__title">Асептический мешок 1200 литров</h1>
+  <div class="bag-pops popup-content pop-bag4" id="popup4">
+    <h1 class="pop__title">Асептический мешок <span class="pop__bag-size">1200 литров</span></h1>
     <img class="pop-img pop-xs-img" src="img/pop1200xs.png">
     <img src="img/pop1200sm.png" alt="" class="pop-img pop-sm-img">
     <img src="img/pop1200lg.png" alt="" class="pop-img pop-lg-img">
@@ -138,15 +142,15 @@
 
 
 
-<footer  style="font-weight:400;">
+<footer>
  <div class="footer__inner">
    <div class="phone"><span>Москва</span><span>+7 (495) 640-77-81</span></div>
    <div class="email"><span>e-mail</span><span>info@fruton.ru</span></div>
-<div class="footer-logo"><a href="index.html">фрутон</a></div>
+   <div class="footer-logo"><a href="index.html">фрутон</a></div>
    <div class="rights">All rights reserved</div>
  </div> 
 </footer>
 <script src="js/script.min.js"></script>
-<script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+
 </body>
 </html>
