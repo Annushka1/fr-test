@@ -119,8 +119,9 @@ header {
   padding-bottom: 1px;
   display: inline-block;
   cursor: pointer;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .switcher__btn a {
   color: #888;
@@ -291,7 +292,7 @@ footer {
   display: none;
 }
 .fruits .offers__view-bag {
-  padding: 29px 6px 80px 18px;
+  padding: 29px 6px 30px 18px;
   height: 427px;
   width: 248px;
   margin-bottom: 34px;
@@ -305,7 +306,7 @@ footer {
 }
 .fruits .fruit2 {
   height: 325px;
-  padding: 35px 6px 80px 9px;
+  padding: 35px 6px 30px 9px;
 }
 .fruits .fruit2 .small-img {
   width: 169px;
@@ -318,7 +319,7 @@ footer {
 }
 .fruits .fruit3 {
   height: 355px;
-  padding: 36px 0px 80px 8px;
+  padding: 36px 0px 30px 8px;
 }
 .fruits .fruit3 .small-img {
   width: 191px;
@@ -367,7 +368,7 @@ footer {
 }
 .fruits .fruit7 {
   height: 466px;
-  padding: 32px 6px 80px 20px;
+  padding: 32px 6px 30px 20px;
 }
 .fruits .fruit7 .small-img {
   width: 122px;
@@ -379,7 +380,7 @@ footer {
 }
 .fruits .fruit8 {
   height: 348px;
-  padding: 37px 6px 80px 19px;
+  padding: 37px 6px 30px 19px;
 }
 .fruits .fruit8 .small-img {
   width: 222px;
@@ -391,7 +392,7 @@ footer {
 }
 .fruits .fruit9 {
   height: 332px;
-  padding: 34px 6px 80px 20px;
+  padding: 34px 6px 30px 20px;
 }
 .fruits .fruit9 .small-img {
   width: 207px;
@@ -401,7 +402,7 @@ footer {
 }
 .fruits .fruit10 {
   height: 362px;
-  padding: 38px 6px 80px 20px;
+  padding: 38px 6px 30px 20px;
 }
 .fruits .fruit10 .small-img {
   width: 132px;
@@ -411,7 +412,7 @@ footer {
 }
 .fruits .fruit11 {
   height: 360px;
-  padding: 39px 6px 80px 20px;
+  padding: 39px 6px 30px 20px;
   margin-bottom: 35px;
 }
 .fruits .fruit11 .small-img {
@@ -422,7 +423,7 @@ footer {
 }
 .fruits .fruit12 {
   height: 321px;
-  padding: 33px 6px 80px 18px;
+  padding: 33px 6px 30px 18px;
 }
 .fruits .fruit12 .small-img {
   width: 158px;
@@ -434,7 +435,7 @@ footer {
 }
 .fruits .fruit13 {
   height: 362px;
-  padding: 53px 6px 80px 20px;
+  padding: 53px 6px 30px 20px;
   margin-bottom: 35px;
 }
 .fruits .fruit13 .small-img {
@@ -445,7 +446,7 @@ footer {
 }
 .fruits .fruit14 {
   height: 341px;
-  padding: 36px 6px 80px 19px;
+  padding: 36px 6px 30px 19px;
 }
 .fruits .fruit14 .small-img {
   width: 207px;
@@ -455,7 +456,7 @@ footer {
 }
 .fruits .fruit15 {
   height: 345px;
-  padding: 48px 6px 80px 19px;
+  padding: 48px 6px 30px 19px;
   margin-bottom: 60px;
 }
 .fruits .fruit15 .small-img {
@@ -558,6 +559,7 @@ footer {
   background-size: contain;
   background-position-y: -18px;
   background-repeat-y: no-repeat;
+  background-color: #e2e5ea;
 }
 .main-page__description .main-page__inner {
   padding: 42px 0 165px;
@@ -1537,7 +1539,7 @@ img.mfp-img {
   }
   .fruits .fruit1 {
     margin-bottom: 60px;
-    padding: 27px 6px 80px 36px;
+    padding: 27px 6px 30px 36px;
     height: 421px;
   }
   .fruits .fruit1 .middle-img {
@@ -1556,7 +1558,7 @@ img.mfp-img {
   }
   .fruits .fruit2 {
     height: 324px;
-    padding: 45px 6px 80px 25px;
+    padding: 45px 6px 30px 25px;
     margin-bottom: 60px;
   }
   .fruits .fruit2 .middle-img {
@@ -1570,7 +1572,7 @@ img.mfp-img {
   }
   .fruits .fruit3 {
     height: 352px;
-    padding: 31px 0 80px 24px;
+    padding: 31px 0 30px 24px;
     margin-bottom: 60px;
   }
   .fruits .fruit3 .middle-img {
@@ -1582,7 +1584,7 @@ img.mfp-img {
     margin-bottom: 21px;
   }
   .fruits .fruit4 {
-    padding: 30px 6px 80px 34px;
+    padding: 30px 6px 30px 34px;
     margin-bottom: 60px;
   }
   .fruits .fruit4 .middle-img {
@@ -1598,7 +1600,7 @@ img.mfp-img {
     margin: 0;
   }
   .fruits .fruit5 {
-    padding: 29px 6px 80px 32px;
+    padding: 29px 6px 30px 32px;
     margin-bottom: 60px;
   }
   .fruits .fruit5 .middle-img {
@@ -1611,7 +1613,7 @@ img.mfp-img {
     margin: 30px 0 27px 2px;
   }
   .fruits .fruit6 {
-    padding: 31px 6px 80px 34px;
+    padding: 31px 6px 30px 34px;
     margin-bottom: 60px;
   }
   .fruits .fruit6 .middle-img {
@@ -1626,7 +1628,7 @@ img.mfp-img {
     margin: 0;
   }
   .fruits .fruit7 {
-    padding: 32px 6px 80px 35px;
+    padding: 32px 6px 30px 35px;
     margin-bottom: 60px;
   }
   .fruits .fruit7 .middle-img {
@@ -1639,7 +1641,7 @@ img.mfp-img {
     width: 500px;
   }
   .fruits .fruit8 {
-    padding: 37px 6px 80px 35px;
+    padding: 37px 6px 30px 35px;
     margin-bottom: 60px;
   }
   .fruits .fruit8 .middle-img {
@@ -1655,7 +1657,7 @@ img.mfp-img {
   }
   .fruits .fruit9 {
     height: 330px;
-    padding: 33px 6px 80px 34px;
+    padding: 33px 6px 30px 34px;
     margin-bottom: 60px;
   }
   .fruits .fruit9 .middle-img {
@@ -1672,6 +1674,7 @@ img.mfp-img {
   }
   .fruits .fruit10 {
     padding-left: 35px;
+    padding-bottom: 30px;
     margin-bottom: 60px;
   }
   .fruits .fruit10 .middle-img {
@@ -1687,7 +1690,7 @@ img.mfp-img {
     width: 500px;
   }
   .fruits .fruit11 {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     padding-left: 35px;
   }
   .fruits .fruit11 .middle-img {
@@ -1703,7 +1706,7 @@ img.mfp-img {
     margin: 0;
   }
   .fruits .fruit12 {
-    padding: 32px 6px 80px 35px;
+    padding: 32px 6px 30px 35px;
     margin-bottom: 58px;
   }
   .fruits .fruit12 .middle-img {
@@ -1718,7 +1721,7 @@ img.mfp-img {
     margin: 0;
   }
   .fruits .fruit13 {
-    padding: 43px 6px 80px 35px;
+    padding: 43px 6px 30px 35px;
     margin-bottom: 60px;
   }
   .fruits .fruit13 .middle-img {
@@ -1730,7 +1733,7 @@ img.mfp-img {
     margin: 8px 0 27px;
   }
   .fruits .fruit14 {
-    padding: 30px 6px 80px 35px;
+    padding: 30px 6px 30px 35px;
     margin-bottom: 60px;
   }
   .fruits .fruit14 .middle-img {
@@ -1746,7 +1749,7 @@ img.mfp-img {
     margin: 5px 0 28px;
   }
   .fruits .fruit15 {
-    padding: 31px 6px 80px 34px;
+    padding: 31px 6px 30px 34px;
     height: 342px;
     margin-bottom: 68px;
   }
@@ -1826,7 +1829,7 @@ img.mfp-img {
     background-position-y: 17px;
     background-repeat-y: no-repeat;
   }
-  .main-page .main-page__inner {
+  .main-page__description .main-page__inner {
     padding: 37px 0 214px;
     background-image: url(../img/main768.png);
     background-position: 40% -2.5%;
@@ -2176,7 +2179,7 @@ img.mfp-img {
     right: 32px;
   }
   .offers .bag220 {
-    padding: 45px 0 63px 29px;
+    padding: 45px 0 30px 29px;
     margin-bottom: 75px;
     height: 513px;
   }
@@ -2240,7 +2243,7 @@ img.mfp-img {
     width: 300px;
   }
   .fruits .fruit1 {
-    padding: 25px 3px 80px 22px;
+    padding: 25px 3px 30px 22px;
     height: 364px;
     margin-bottom: 17px;
   }
@@ -2255,7 +2258,7 @@ img.mfp-img {
     width: 300px;
   }
   .fruits .fruit2 {
-    padding: 73px 6px 80px 12px;
+    padding: 73px 6px 30px 12px;
     margin-bottom: 17px;
   }
   .fruits .fruit2 .big-img {
@@ -2268,7 +2271,7 @@ img.mfp-img {
     margin: 22px 0 22px 9px;
   }
   .fruits .fruit3 {
-    padding: 61px 0 80px 14px;
+    padding: 61px 0 30px 14px;
     margin-bottom: 17px;
   }
   .fruits .fruit3 .big-img {
@@ -2281,7 +2284,7 @@ img.mfp-img {
     line-height: 1.3;
   }
   .fruits .fruit4 {
-    padding: 24px 6px 80px 23px;
+    padding: 24px 6px 30px 23px;
     margin-bottom: 17px;
   }
   .fruits .fruit4 .big-img {
@@ -2295,7 +2298,7 @@ img.mfp-img {
     line-height: 1.3;
   }
   .fruits .fruit5 {
-    padding: 19px 0 80px 24px;
+    padding: 19px 0 30px 24px;
     margin-bottom: 17px;
   }
   .fruits .fruit5 .big-img {
@@ -2312,7 +2315,7 @@ img.mfp-img {
     margin: 0;
   }
   .fruits .fruit6 {
-    padding: 39px 0 80px 24px;
+    padding: 39px 0 30px 24px;
     margin-bottom: 17px;
   }
   .fruits .fruit6 .big-img {
@@ -2326,7 +2329,7 @@ img.mfp-img {
     width: 268px;
   }
   .fruits .fruit7 {
-    padding: 19px 0 80px 23px;
+    padding: 19px 0 30px 23px;
     margin-bottom: 17px;
   }
   .fruits .fruit7 .big-img {
@@ -2343,7 +2346,7 @@ img.mfp-img {
     margin: 0;
   }
   .fruits .fruit8 {
-    padding: 55px 0 80px 24px;
+    padding: 55px 0 30px 24px;
     margin-bottom: 17px;
   }
   .fruits .fruit8 .big-img {
@@ -2357,7 +2360,7 @@ img.mfp-img {
     width: 268px;
   }
   .fruits .fruit9 {
-    padding: 83px 0 80px 23px;
+    padding: 83px 0 30px 23px;
     margin-bottom: 17px;
   }
   .fruits .fruit9 .big-img {
@@ -2371,7 +2374,7 @@ img.mfp-img {
     width: 268px;
   }
   .fruits .fruit10 {
-    padding: 41px 0 80px 23px;
+    padding: 41px 0 30px 23px;
     margin-bottom: 17px;
   }
   .fruits .fruit10 .big-img {
@@ -2385,7 +2388,7 @@ img.mfp-img {
     width: 268px;
   }
   .fruits .fruit11 {
-    padding: 40px 0 80px 23px;
+    padding: 40px 0 30px 23px;
     margin-bottom: 17px;
   }
   .fruits .fruit11 .big-img {
@@ -2399,7 +2402,7 @@ img.mfp-img {
     width: 268px;
   }
   .fruits .fruit12 {
-    padding: 68px 0 80px 23px;
+    padding: 68px 0 30px 23px;
     margin-bottom: 17px;
   }
   .fruits .fruit12 .big-img {
@@ -2413,7 +2416,7 @@ img.mfp-img {
     width: 268px;
   }
   .fruits .fruit13 {
-    padding: 74px 0 80px 23px;
+    padding: 74px 0 30px 23px;
     margin-bottom: 90px;
   }
   .fruits .fruit13 .big-img {
@@ -2430,7 +2433,7 @@ img.mfp-img {
     margin: 0;
   }
   .fruits .fruit14 {
-    padding: 51px 0 80px 23px;
+    padding: 51px 0 30px 23px;
     margin-bottom: 90px;
   }
   .fruits .fruit14 .big-img {
