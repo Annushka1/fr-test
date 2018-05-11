@@ -26,6 +26,10 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
+a:active,
+a:focus {
+  outline: none;
+}
 img {
   max-width: 100%;
 }
@@ -190,7 +194,7 @@ header {
       justify-content: space-between;
   position: relative;
 }
-.offers__view-bag a {
+.offers__view-bag .popup-link {
   letter-spacing: 1px;
   text-decoration: none;
   color: #648cff;
@@ -314,7 +318,7 @@ footer {
 .fruits .fruit2 .offers__title {
   margin: 9px 0 26px 9px;
 }
-.fruits .fruit2 a {
+.fruits .fruit2 .popup-link {
   margin-left: 9px;
 }
 .fruits .fruit3 {
@@ -331,7 +335,7 @@ footer {
   padding-left: 12px;
   line-height: 1.66;
 }
-.fruits .fruit3 a {
+.fruits .fruit3 .popup-link {
   margin-left: 12px;
 }
 .fruits .fruit4 {
@@ -819,7 +823,7 @@ div.popup-content {
   letter-spacing: 2px;
   width: 217px;
 }
-.header__lang .switcher__btn.switcher__btn-active a {
+.header__lang .switcher__btn.switcher__btn-active {
   color: #000;
   text-decoration: none;
 }
@@ -1405,7 +1409,7 @@ img.mfp-img {
   .offers__title {
     margin: 35px 0 23px 3px;
   }
-  .offers a {
+  .offers .popup-link {
     margin-left: 5px;
   }
   .offers__size {
@@ -1432,7 +1436,7 @@ img.mfp-img {
   .offers .bag20 .big-img {
     width: 435px;
   }
-  .offers .bag20 a {
+  .offers .bag20 .popup-link {
     margin: 0;
   }
   .offers .bag20 .offers__size {
@@ -1480,7 +1484,7 @@ img.mfp-img {
     display: block;
     width: 517px;
   }
-  .offers .bag1200 a {
+  .offers .bag1200 .popup-link {
     margin-left: 5px;
   }
   .phone,
@@ -1548,7 +1552,7 @@ img.mfp-img {
   .fruits .fruit1 .offers__title {
     margin: 12px 0 22px;
   }
-  .fruits .fruit1 a {
+  .fruits .fruit1 .popup-link {
     margin-left: 0;
   }
   .fruits .fruit2 {
@@ -1591,7 +1595,7 @@ img.mfp-img {
     margin-top: 14px;
     width: 457px;
   }
-  .fruits .fruit4 a {
+  .fruits .fruit4 .popup-link {
     margin: 0;
   }
   .fruits .fruit5 {
@@ -1619,7 +1623,7 @@ img.mfp-img {
   .fruits .fruit6 .offers__title {
     margin: 16px 0 27px;
   }
-  .fruits .fruit6 a {
+  .fruits .fruit6 .popup-link {
     margin: 0;
   }
   .fruits .fruit7 {
@@ -1644,7 +1648,7 @@ img.mfp-img {
     position: relative;
     left: -12px;
   }
-  .fruits .fruit8 a {
+  .fruits .fruit8 .popup-link {
     margin: 0;
   }
   .fruits .fruit8 .offers__title {
@@ -1664,7 +1668,7 @@ img.mfp-img {
     margin-top: 10px;
     width: 500px;
   }
-  .fruits .fruit9 a {
+  .fruits .fruit9 .popup-link {
     margin: 0;
   }
   .fruits .fruit10 {
@@ -1677,7 +1681,7 @@ img.mfp-img {
     position: relative;
     left: -4px;
   }
-  .fruits .fruit10 a {
+  .fruits .fruit10 .popup-link {
     margin: 0;
   }
   .fruits .fruit10 .offers__title {
@@ -1697,7 +1701,7 @@ img.mfp-img {
     width: 500px;
     margin-top: 11px;
   }
-  .fruits .fruit11 a {
+  .fruits .fruit11 .popup-link {
     margin: 0;
   }
   .fruits .fruit12 {
@@ -1712,7 +1716,7 @@ img.mfp-img {
   .fruits .fruit12 .offers__title {
     width: 500px;
   }
-  .fruits .fruit12 a {
+  .fruits .fruit12 .popup-link {
     margin: 0;
   }
   .fruits .fruit13 {
@@ -1736,7 +1740,7 @@ img.mfp-img {
     position: relative;
     left: -8px;
   }
-  .fruits .fruit14 a {
+  .fruits .fruit14 .popup-link {
     margin: 0;
   }
   .fruits .fruit14 .offers__title {
@@ -1753,7 +1757,7 @@ img.mfp-img {
     position: relative;
     left: 3px;
   }
-  .fruits .fruit15 a {
+  .fruits .fruit15 .popup-link {
     margin: 0;
   }
   .fruits .fruit15 .offers__title {
@@ -2126,7 +2130,7 @@ img.mfp-img {
     margin-top: 95px;
     letter-spacing: 4.7px;
   }
-  .offers a {
+  .offers .popup-link {
     -ms-flex-order: 1;
     order: 1;
   }
@@ -2298,7 +2302,7 @@ img.mfp-img {
     line-height: 1.3;
     width: 300px;
   }
-  .fruits .fruit5 a {
+  .fruits .fruit5 .popup-link {
     margin: 0;
   }
   .fruits .fruit6 {
@@ -2329,7 +2333,7 @@ img.mfp-img {
     line-height: 1.3;
     width: 268px;
   }
-  .fruits .fruit7 a {
+  .fruits .fruit7 .popup-link {
     margin: 0;
   }
   .fruits .fruit8 {
@@ -2416,7 +2420,7 @@ img.mfp-img {
     line-height: 1.3;
     width: 268px;
   }
-  .fruits .fruit13 a {
+  .fruits .fruit13 .popup-link {
     margin: 0;
   }
   .fruits .fruit14 {
