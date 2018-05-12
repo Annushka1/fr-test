@@ -51,7 +51,7 @@ header {
       flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 30px 0 ;
+  padding: 30px 0 14px 0;
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 250px;
@@ -123,9 +123,9 @@ header {
   padding-bottom: 1px;
   display: inline-block;
   cursor: pointer;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top: 7px;
 }
 .switcher__btn a {
   color: #888;
@@ -141,6 +141,18 @@ header {
   font-size: 18px;
   font-weight: 200;
   text-transform: lowercase;
+}
+.logo img,
+.logo-item img,
+.footer-logo img {
+  width: 140px;
+  position: relative;
+  top: -10px;
+  letter-spacing: 1.5px;
+}
+.footer-logo img {
+  top: 10px;
+  left: 4px;
 }
 .logo {
   display: block;
@@ -578,6 +590,12 @@ footer {
   margin: 0 auto;
   width: 100%;
 }
+.main-page__title img {
+  width: 220px;
+  position: relative;
+  left: 20px;
+  top: -21px;
+}
 .main-page__img {
   width: 264px;
 }
@@ -831,10 +849,7 @@ div.popup-content {
   width: 75px;
 }
 .eng-version .main-menu__item {
-  padding-right: 115px;
-}
-.eng-version .main-menu__item:last-child {
-  margin-left: 23px;
+  padding-right: 74px;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -1362,7 +1377,7 @@ img.mfp-img {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding-bottom: 0;
-    padding-top: 32px;
+    padding-top: 27px;
   }
   .gamburger span {
     display: none;
@@ -1391,7 +1406,7 @@ img.mfp-img {
     display: flex;
     -ms-flex-item-align: center;
     align-self: center;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
   .logo-item {
     display: none;
@@ -1401,6 +1416,10 @@ img.mfp-img {
     margin-right: 0;
     width: 100%;
     font-size: 18px;
+    height: 20px;
+  }
+  .logo img {
+    letter-spacing: 3px;
   }
   .offers {
     padding-top: 67px;
@@ -1838,6 +1857,11 @@ img.mfp-img {
     padding-bottom: 0px;
     font-size: 70px;
   }
+  .main-page__title img {
+    width: 484px;
+    position: relative;
+    left: -43px;
+  }
   .main-page__img {
     width: 369px;
     position: relative;
@@ -2078,6 +2102,12 @@ img.mfp-img {
     left: -25px;
     top: 20px;
     margin-left: 38px;
+  }
+  .eng-version .main-menu__item {
+    padding-right: 115px;
+  }
+  .eng-version .main-menu__item:last-child {
+    margin-left: 23px;
   }
 }
 @media (min-width: 1260px) {
@@ -2531,6 +2561,10 @@ img.mfp-img {
     font-size: 110px;
     letter-spacing: 2.7px;
   }
+  .main-page__title img {
+    width: 680px;
+    left: -69px;
+  }
   .main-page__img {
     width: 446px;
     left: -77px;
@@ -2757,6 +2791,22 @@ img.mfp-img {
     left: -57px;
     top: 0px;
     margin-left: 89px;
+  }
+  .eng-version .main-menu__item {
+    padding-right: 25px;
+  }
+  .eng-version .main-menu__item .logo-item {
+    padding-right: 0;
+  }
+  .main-menu.eng-version {
+    padding-right: 42px;
+  }
+  .eng-version .main-menu__item:last-child {
+    margin-left: 0;
+  }
+  .eng-version .main-menu__item:nth-child(1),
+  .main-menu__item:nth-child(2) {
+    padding-right: 40px;
   }
 }
 @media (max-width: 1259px) {
