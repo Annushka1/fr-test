@@ -44,7 +44,7 @@ h3 {
   display: block;
 }
 header {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 7px 9px -7px rgba(0, 0, 0, 0.3);
   width: 100%;
 }
 .header-inner {
@@ -572,6 +572,7 @@ a[href^="mailto:"] {
 }
 .main-page__description {
   margin-bottom: 30px;
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
 }
 .main-page__description .main-page__inner {
   padding: 42px 0 134px;
@@ -693,6 +694,7 @@ a[href^="mailto:"] {
 .main-page__about p {
   padding-bottom: 0;
   color: #666;
+  margin: 0;
 }
 .main-page__block {
   display: -ms-flexbox;
@@ -1995,7 +1997,6 @@ img.mfp-img {
     width: 127px;
   }
   .main-page__about p {
-    margin: 0;
     width: 465px;
     font-size: 18px;
   }
@@ -2170,6 +2171,9 @@ img.mfp-img {
   }
   .pop-fruit12 .pop__text:nth-child(1) {
     width: 300px;
+  }
+  .pop-fruit12 .pop__title {
+    width: 462px;
   }
   .pop-fruit13 {
     padding-right: 25px;

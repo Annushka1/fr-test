@@ -83,7 +83,7 @@ h1, h2, h3 {
 
 header {
   // margin-bottom: 65px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 7px 9px -7px rgba(0,0,0,.3);
   width: 100%;
 }
 
@@ -1779,6 +1779,7 @@ footer {
 
     &__description {
       margin-bottom: 30px;
+      box-shadow: inset 0 7px 9px -7px rgba(0,0,0,.3);
 
       .main-page__inner {
       padding: 42px 0 134px;
@@ -2171,8 +2172,8 @@ footer {
     &__about p {
       padding-bottom: 0;
       color: #666;
+      margin: 0;
       @media (min-width: @screen-sm) {
-        margin: 0;
         width: 465px;
         font-size: 18px;
       }
@@ -2776,6 +2777,9 @@ footer {
   .pop__text:nth-child(1) {
     width: 300px;
   }
+
+  .pop__title {
+    width: 462px;}
 }
 .pop-fruit13 {
   padding-right: 25px;
